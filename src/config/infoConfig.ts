@@ -13,7 +13,7 @@ export const githubUsername = 'yys806'
 // about page
 export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
 export const aboutParagraphs = [
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020.",
+  "Fancy meeting you here! My name is Yu Yaoshen. I'm from Yunnan and a student of TJU. I’ve been studying AI at TJU since 2023.",
   'Currently I am working on a new course called AI Camp, an innovative course where high school students create real-world products and startups while exploring the frontiers of AI.',
   "I started this blog to share the insights I learn every day. Most blogs focus on education in Artificial Intelligence and general computer science, while others share the life lessons I've learned.",
 ]
@@ -35,12 +35,12 @@ export const socialLinks: Array<SocialLinkType> = [
   {
     name: 'Tiktok',
     icon: 'tiktok',
-    href: 'https://www.tiktok.com/@harvard?lang=en',
+    href: 'https://www.douyin.com/user/self?from_tab_name=main',
   },
   {
     name: 'Bilibili',
     icon: 'bilibili',
-    href: 'https://space.bilibili.com/349721082',
+    href: 'https://space.bilibili.com/505921205',
   },
 ]
 
