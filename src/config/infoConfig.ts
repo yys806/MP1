@@ -6,7 +6,7 @@ export * from './career'
 export const name = 'Leo Yu'
 export const headline = 'Student at Tongji University.'
 export const introduction =
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020."
+  "How are you doing today! My name is Yu Yaoshen. I'm from Yunnan and a student of Tongji University. I’ve been studying AI at TJU since 2023."
 export const email = '3492675568@qq.com'
 export const githubUsername = 'yys806'
 
