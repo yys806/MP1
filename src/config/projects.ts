@@ -76,10 +76,28 @@ export const projectIntro = "Academic research and technical projects I've worke
 
 export const projects: Array<ProjectItemType> = [
   {
-    name: 'Research and development of a subway train passenger flow intelligent sensing and optimized carriage allocation system.',
-    description: 'Shanghai Municipal University Student Innovation and Entrepreneurship Project',
-    link: { href: '', label: 'GitHub Cards' },
+    name: 'Student Final Project Portfolio',
+    description: 'Static website portfolio',
+    link: { href: 'scls-cs.com', label: 'GitHub Cards' },
     tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
+  },
+  {
+    name: 'Seeking DNA',
+    description: '2022 SCLS Hackathon',
+    link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
+    tags: ['Hackathon', 'Java']
+  },
+  {
+    name: 'Texas Holdem Poker Judge',
+    description: '2024 SCLS Hackathon',
+    link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
+    tags: ['Hackathon']
+  },
+  {
+    name: 'AI Camp Course Development',
+    description: 'Developed a comprehensive AI curriculum for high school students, incorporating real-world projects and startup concepts.',
+    link: { href: 'https://scls-cs.gitbook.io/ai-camp', label: 'View Course' },
+    tags: ['Education', 'AI']
   },
 ]
 
