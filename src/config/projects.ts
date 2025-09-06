@@ -76,28 +76,34 @@ export const projectIntro = "Academic research and technical projects I've worke
 
 export const projects: Array<ProjectItemType> = [
   {
-    name: 'Student Final Project Portfolio',
-    description: 'Static website portfolio',
-    link: { href: 'scls-cs.com', label: 'GitHub Cards' },
-    tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
+    name: 'Research and development of intelligent passenger flow sensing and optimized carriage allocation system for subway trains',
+    description: 'Shanghai Municipal University Student Innovation and Entrepreneurship Project',
+    link: { href: 'https://yys806.github.io/', label: 'GitHub Cards' },
+    tags: ['Civil Engineering', 'Computer Vision', 'Raspberry Pi']
   },
   {
-    name: 'Seeking DNA',
-    description: '2022 SCLS Hackathon',
-    link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
-    tags: ['Hackathon', 'Java']
+    name: 'Tongji University Quality Control Office Agent Development',
+    description: 'An intelligent agent to assist the Quality Control Office in managing and analyzing quality data.',
+    link: { href: 'https://www.coze.cn/s/b7SWRlmpPaE/', label: 'View Course' },
+    tags: ['Workflow', 'Automation','Python', 'AI', 'Deepseek']
   },
   {
-    name: 'Texas Holdem Poker Judge',
-    description: '2024 SCLS Hackathon',
-    link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
-    tags: ['Hackathon']
+    name: 'Little Wang Robot Dog v1.0',
+    description: 'A robotic dog designed for companionship and assistance.',
+    link: { href: 'https://oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban', label: 'View Course' },
+    tags: ['PCB Design', 'Welding','TianWen', 'AI', 'Servo']
   },
   {
-    name: 'AI Camp Course Development',
-    description: 'Developed a comprehensive AI curriculum for high school students, incorporating real-world projects and startup concepts.',
-    link: { href: 'https://scls-cs.gitbook.io/ai-camp', label: 'View Course' },
-    tags: ['Education', 'AI']
+    name: 'Xiao Zhi AI Chatbot',
+    description: 'An AI chatbot designed for natural language understanding and conversation.',
+    link: { href: 'https://github.com/78/xiaozhi-esp32', label: 'View Course' },
+    tags: ['PCB Design', '3D Printing','MCP', 'Python', 'AI Chat', 'LLM']
+  },
+  {
+    name: 'Text recognizer based on STM32G0 and infrared sensors',
+    description: 'A project focused on developing a text recognition system using STM32G0 microcontroller and infrared sensors.',
+    link: { href: 'https://git.tongji.edu.cn/cdpa/doc', label: 'View Course' },
+    tags: ['Embedded Systems', 'STM32', 'Infrared Sensors', 'AI', 'Computer Vision']
   },
 ]
 
@@ -107,26 +113,27 @@ export const activitiesIntro = "Personal interests and community contributions."
 
 export const activities: Array<ActivityItemType> = [
   {
-    name: 'Python Workshop',
+    name: 'Cube Solving',
     description:
-      'Teaching basic Python programming concepts to beginners. Covering variables, control flow, and functions.',
-    date: '2024-02-24',
-    location: 'Shanghai',
-    link: 'https://example.com/python-workshop',
+      'Restore 2nd to 6th order Rubik\'s Cube, as well as Pyramid Cube, Mirror Cube, and Dodecahedron Cube',
+    date: '2018-Present',
+    location: 'Yunnan',
+    link: 'https://space.bilibili.com/199555828',
   },
   {
-    name: 'AI Ethics Discussion',
+    name: 'Running',
     description:
-      'A group discussion about the ethical implications of AI development and its impact on society.',
-    date: '2024-03-01',
-    location: 'Shanghai',
-    link: 'https://example.com/ai-ethics',
+      'Participating in local running events and promoting fitness in the community.',
+    date: 'Always',
+    location: 'Yunnan&Shanghai',
+    link: 'https://example.com/running',
   },
   {
-    name: 'Code Review Session',
+    name: 'Watching Movies',
     description:
-      'Helping students improve their coding skills through peer code review and best practices sharing.',
-    date: '2024-03-15',
-    location: 'Shanghai',
+      'Enjoying and analyzing films from various genres and directors.',
+    date: 'Always',
+    location: 'Yunnan&Shanghai',
+    link: 'https://tv-ten-chi.vercel.app/',
   },
 ]

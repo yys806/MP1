@@ -28,7 +28,7 @@ export type EducationItemType = {
     },
     {
       school: 'Mangshui Middle School',
-      major: 'study',
+      major: 'Study',
       logo: 'bank',
       start: '2018',
       end: '2020'
