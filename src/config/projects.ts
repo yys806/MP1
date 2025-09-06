@@ -78,31 +78,31 @@ export const projects: Array<ProjectItemType> = [
   {
     name: 'Research and development of intelligent passenger flow sensing and optimized carriage allocation system for subway trains',
     description: 'Shanghai Municipal University Student Innovation and Entrepreneurship Project',
-    link: { href: 'https://yys806.github.io/', label: 'GitHub Cards' },
+    link: { href: 'yys806.github.io/', label: 'View Course' },
     tags: ['Civil Engineering', 'Computer Vision', 'Raspberry Pi']
   },
   {
     name: 'Tongji University Quality Control Office Agent Development',
     description: 'An intelligent agent to assist the Quality Control Office in managing and analyzing quality data.',
-    link: { href: 'https://www.coze.cn/s/b7SWRlmpPaE/', label: 'View Course' },
+    link: { href: 'www.coze.cn/s/b7SWRlmpPaE/', label: 'View Course' },
     tags: ['Workflow', 'Automation','Python', 'AI', 'Deepseek']
   },
   {
     name: 'Little Wang Robot Dog v1.0',
     description: 'A robotic dog designed for companionship and assistance.',
-    link: { href: 'https://oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban', label: 'View Course' },
+    link: { href: 'oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban', label: 'View Course' },
     tags: ['PCB Design', 'Welding','TianWen', 'AI', 'Servo']
   },
   {
     name: 'Xiao Zhi AI Chatbot',
     description: 'An AI chatbot designed for natural language understanding and conversation.',
-    link: { href: 'https://github.com/78/xiaozhi-esp32', label: 'View Course' },
+    link: { href: 'github.com/78/xiaozhi-esp32', label: 'View Course' },
     tags: ['PCB Design', '3D Printing','MCP', 'Python', 'AI Chat', 'LLM']
   },
   {
     name: 'Text recognizer based on STM32G0 and infrared sensors',
     description: 'A project focused on developing a text recognition system using STM32G0 microcontroller and infrared sensors.',
-    link: { href: 'https://git.tongji.edu.cn/cdpa/doc', label: 'View Course' },
+    link: { href: 'git.tongji.edu.cn/cdpa/doc', label: 'View Course' },
     tags: ['Embedded Systems', 'STM32', 'Infrared Sensors', 'AI', 'Computer Vision']
   },
 ]
