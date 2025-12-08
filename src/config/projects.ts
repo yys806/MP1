@@ -96,7 +96,7 @@ export const projects: Array<ProjectItemType> = [
   {
     name: 'Tongji University Quality Control Office Agent Development',
     description: 'An intelligent agent to assist the Quality Control Office in managing and analyzing quality data.',
-    link: { href: 'www.coze.cn/s/b7SWRlmpPaE/', label: 'View Course' },
+    link: { href: 'agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg', label: 'View Course' },
     tags: ['Workflow', 'Automation','Python', 'AI', 'Deepseek']
   },
   {
