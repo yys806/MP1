@@ -20,6 +20,18 @@ export const awardsIntro = "Recognition for academic and professional achievemen
 
 export const awards: Array<ActivityItemType> = [
   {
+    name: 'The 7th Global Campus Artificial Intelligence Algorithm Elite Competition in 2025',
+    description: 'National First Prize',
+    date: '2025.12',
+    location: 'Beijing',
+  },
+  {
+    name: '2025 National College Student Mathematical Modeling Competition',
+    description: 'Shanghai Second Prize',
+    date: '2025',
+    location: 'Shanghai',
+  },
+  {
     name: '2024 National Scholarship',
     description: '￥10000 prize',
     date: '2024',
@@ -56,7 +68,7 @@ export const awards: Array<ActivityItemType> = [
     location: 'Shanghai',
   },
   {
-    name: 'National College Student Mathematical Modeling Competition',
+    name: '2024 National College Student Mathematical Modeling Competition',
     description: 'Shanghai Third Prize',
     date: '2024.9.5',
     location: 'Shanghai',
@@ -78,7 +90,7 @@ export const projects: Array<ProjectItemType> = [
   {
     name: 'Research and development of intelligent passenger flow sensing and optimized carriage allocation system for subway trains',
     description: 'Shanghai Municipal University Student Innovation and Entrepreneurship Project',
-    link: { href: 'yys806.github.io/', label: 'View Course' },
+    link: { href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/SITP%E7%BB%93%E9%A2%98%E8%AF%81%E4%B9%A6.pdf', label: 'View Course' },
     tags: ['Civil Engineering', 'Computer Vision', 'Raspberry Pi']
   },
   {
@@ -102,7 +114,7 @@ export const projects: Array<ProjectItemType> = [
   {
     name: 'Text recognizer based on STM32G0 and infrared sensors',
     description: 'A project focused on developing a text recognition system using STM32G0 microcontroller and infrared sensors.',
-    link: { href: 'git.tongji.edu.cn/cdpa/doc', label: 'View Course' },
+    link: { href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E9%A1%B9%E7%9B%AE/2352396-%E7%A6%B9%E5%B0%A7%E7%8F%85-%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E5%99%A8-%E8%AE%BE%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf', label: 'View Course' },
     tags: ['Embedded Systems', 'STM32', 'Infrared Sensors', 'AI', 'Computer Vision']
   },
 ]
