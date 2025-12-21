@@ -4,6 +4,7 @@ export type ProjectItemType = {
   description: string
   link: { href: string; label: string }
   tags: string[]
+  icon?: string
 }
 
 export type ActivityItemType = {
@@ -91,31 +92,85 @@ export const projects: Array<ProjectItemType> = [
     name: 'Research and development of intelligent passenger flow sensing and optimized carriage allocation system for subway trains',
     description: 'Shanghai Municipal University Student Innovation and Entrepreneurship Project',
     link: { href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/SITP%E7%BB%93%E9%A2%98%E8%AF%81%E4%B9%A6.pdf', label: 'View Course' },
-    tags: ['Civil Engineering', 'Computer Vision', 'Raspberry Pi']
+    tags: ['Civil Engineering', 'Computer Vision', 'Raspberry Pi'],
+    icon: '/images/icon/shen.png'
   },
   {
     name: 'Tongji University Quality Control Office Agent Development',
     description: 'An intelligent agent to assist the Quality Control Office in managing and analyzing quality data.',
     link: { href: 'agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg', label: 'View Course' },
-    tags: ['Workflow', 'Automation','Python', 'AI', 'Deepseek']
+    tags: ['Workflow', 'Automation','Python', 'AI', 'Deepseek'],
+    icon: '/images/icon/tongji.jpg'
   },
   {
     name: 'Little Wang Robot Dog v1.0',
     description: 'A robotic dog designed for companionship and assistance.',
     link: { href: 'oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban', label: 'View Course' },
-    tags: ['PCB Design', 'Welding','TianWen', 'AI', 'Servo']
+    tags: ['PCB Design', 'Welding','TianWen', 'AI', 'Servo'],
+    icon: '/images/icon/shen.png'
   },
   {
     name: 'Xiao Zhi AI Chatbot',
     description: 'An AI chatbot designed for natural language understanding and conversation.',
     link: { href: 'github.com/78/xiaozhi-esp32', label: 'View Course' },
-    tags: ['PCB Design', '3D Printing','MCP', 'Python', 'AI Chat', 'LLM']
+    tags: ['PCB Design', '3D Printing','MCP', 'Python', 'AI Chat', 'LLM'],
+    icon: '/images/icon/github.png'
   },
   {
     name: 'Text recognizer based on STM32G0 and infrared sensors',
     description: 'A project focused on developing a text recognition system using STM32G0 microcontroller and infrared sensors.',
     link: { href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E9%A1%B9%E7%9B%AE/2352396-%E7%A6%B9%E5%B0%A7%E7%8F%85-%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E5%99%A8-%E8%AE%BE%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf', label: 'View Course' },
-    tags: ['Embedded Systems', 'STM32', 'Infrared Sensors', 'AI', 'Computer Vision']
+    tags: ['Embedded Systems', 'STM32', 'Infrared Sensors', 'AI', 'Computer Vision'],
+    icon: '/images/icon/shen.png'
+  },
+  {
+    name: 'e203-htmi-fpga',
+    description: 'A character terminal system mounted on a Hummingbird e203',
+    link: { href: 'github.com/yys806/e203-htmi-fpga.git', label: 'View Course' },
+    tags: ['Embedded Systems',"e203","Hummingbird"],
+    icon: '/images/icon/github.png'
+  },
+  {
+    name: 'e203-RISC-V-counter',
+    description: 'A RISCV counter mounted on a Hummingbird e203',
+    link: { href: 'github.com/yys806/e203-RISCV-counter.git', label: 'View Course' },
+    tags: ['Embedded Systems',"e203","Hummingbird",'counter'],
+    icon: '/images/icon/github.png'
+  },
+  {
+    name: 'Distributed parallel computing system',
+    description: '2025 Algorithm Major Project',
+    link: { href: 'github.com/yys806/shen-kai.git', label: 'View Course' },
+    tags: ['Algorithm','OpenMp','SSE','Distributed'],
+    icon: '/images/icon/github.png'
+  },
+  {
+    name: 'Image removal tool',
+    description: 'A tool to remove black borders from images',
+    link: { href: 'github.com/yys806/Picture-process.git', label: 'View Course' },
+    tags: ['Gemini','Photo-processer'],
+    icon: '/images/icon/github.png'
+  },
+  {
+    name: 'Fortress',
+    description: 'A tool to restore local important data',
+    link: { href: 'github.com/yys806/Fortress.git', label: 'View Course' },
+    tags: ['Gemini','storage'],
+    icon: '/images/icon/Fortress.png'
+  },
+  {
+    name: 'Homepage',
+    description: 'my recent plan and some of my website',
+    link: { href: 'github.com/yys806/Homepage.git', label: 'View Course' },
+    tags: ['Gemini','Netlify','Supbase','Front-end and back-end'],
+    icon: '/images/icon/homepage.jpg'
+  },
+  {
+    name: '428806QR-tool',
+    description: 'A tool to generate Unique QR code',
+    link: { href: 'github.com/yys806/QR-tool.git', label: 'View Course' },
+    tags: ['Gemini','Netlify','Adsence','Front-end and back-end'],
+    icon: '/images/icon/QR-tool.png'
   },
 ]
 
