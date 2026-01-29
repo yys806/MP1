@@ -1,7 +1,9 @@
 // career
+import { LocalizedString } from '@/lib/i18n'
+
 export type CareerItemType = {
-    company: string
-    title: string
+    company: LocalizedString
+    title: LocalizedString
     image?: string
     logo: string
     start: string
@@ -10,8 +12,8 @@ export type CareerItemType = {
   
 export const careerList: Array<CareerItemType> = [
     {
-      company: 'Tongji University Quality Control Office',
-      title: 'Developer',
+      company: { en: 'Tongji University Quality Control Office', zh: '同济大学质控办' },
+      title: { en: 'Developer', zh: '开发者' },
       logo: 'college',
       start: '2025.07',
       end: 'Present'

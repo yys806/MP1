@@ -12,8 +12,11 @@ import avatarImage from '@/images/avatar.jpg'
 import { navItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { GithubRepo } from '@/components/shared/GithubRepo'
+import { LanguageToggle } from '@/components/shared/LanguageToggle'
 import { name } from '@/config/infoConfig'
 import { ChevronDownIcon, XIcon } from 'lucide-react'
+import { useLanguage } from '@/app/providers'
+import { selectText } from '@/lib/i18n'
 
 import TypingAnimation from "@/components/ui/typing-animation";
 
@@ -36,6 +39,7 @@ function MobileNavItem({
 function MobileNavigation(
   props: React.ComponentPropsWithoutRef<typeof Popover>,
 ) {
+  const { locale } = useLanguage()
   return (
     <Popover {...props}>
       <Popover.Button className="group flex items-center rounded-full px-4 py-2 text-sm font-medium shadow-lg ring-1 ring-muted backdrop-blur ">
@@ -78,7 +82,7 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base dark:divide-zinc-100/5">
                 {navItems.map((item) => (
-                  <MobileNavItem key={item.name} href={item.href}>{item.name}</MobileNavItem>
+                  <MobileNavItem key={item.href} href={item.href}>{selectText(item.name, locale)}</MobileNavItem>
                 ))}
               </ul>
             </nav>
@@ -119,17 +123,18 @@ function NavItem({
 }
 
 function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
+  const { locale } = useLanguage()
   return (
     <nav {...props}>
       <ul className="flex rounded-full px-3 text-sm font-medium bg-card ring-1 ring-muted shadow-md backdrop-blur">
         {navItems.map((item, index) => (
-          <Fragment key={item.name}>
+          <Fragment key={item.href}>
             {index > 0 && (
               <li className="flex items-center">
                 <div className="h-4 w-px bg-muted-foreground/30" />
               </li>
             )}
-            <NavItem href={item.href}>{item.name}</NavItem>
+            <NavItem href={item.href}>{selectText(item.name, locale)}</NavItem>
           </Fragment>
         ))}
       </ul>
@@ -410,6 +415,7 @@ export function Header() {
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto flex flex-row items-center gap-2 md:mr-2">
+                  <LanguageToggle />
                   <ThemeToggle />
                   <GithubRepo />
                 </div>

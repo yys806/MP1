@@ -12,9 +12,13 @@ import { projectHeadLine, projectIntro, projectSections, blogHeadLine, blogIntro
 import { awards, awardsHeadLine, awardsIntro, activities, activitiesHeadLine, activitiesIntro } from '@/config/projects'
 import IconCloud from "@/components/ui/icon-cloud"
 import { Award, Briefcase, Heart } from 'lucide-react'
+import { cookies } from 'next/headers'
+import { Locale, defaultLocale, selectText } from '@/lib/i18n'
 
 export default async function Home() {
   let blogList = (await getAllBlogs()).slice(0, 4)
+  const cookieLocale = cookies().get('lang')?.value as Locale | undefined
+  const locale: Locale = cookieLocale === 'zh' ? 'zh' : defaultLocale
 
   return (
     <>
@@ -23,10 +27,10 @@ export default async function Home() {
         <div className="mb-10 grid grid-cols-1 md:grid-cols-2">
           <div className='md:mt-20'>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl opacity-80">
-              {headline}
+              {selectText(headline, locale)}
             </h2>
             <p className="mt-6 text-xl text-muted-foreground">
-              {introduction}
+              {selectText(introduction, locale)}
             </p>
             <SocialLinks className='md:mt-24'/>
           </div>
@@ -39,14 +43,17 @@ export default async function Home() {
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
             <Award size={28}/>
-            {awardsHeadLine}
+            {selectText(awardsHeadLine, locale)}
           </h2>
+          <p className="text-base text-muted-foreground max-w-2xl">
+            {selectText(awardsIntro, locale)}
+          </p>
           <ul
             role="list"
             className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
           >
             {awards.map((award) => (
-              <ActivityCard key={award.name} activity={award} titleAs='h3'/>
+              <ActivityCard key={award.name.en} activity={award} titleAs='h3'/>
             ))}
           </ul>
         </div>
@@ -55,23 +62,23 @@ export default async function Home() {
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
             <Briefcase size={28}/>
-            {projectHeadLine}
+            {selectText(projectHeadLine, locale)}
           </h2>
           <p className="text-base text-muted-foreground max-w-2xl mb-8">
-            {projectIntro}
+            {selectText(projectIntro, locale)}
           </p>
           <div className="space-y-10">
             {projectSections.map((section) => (
-              <div key={section.title}>
+              <div key={section.title.en}>
                 <h3 className="text-lg font-semibold tracking-tight md:text-xl opacity-80 mb-4">
-                  {section.title}
+                  {selectText(section.title, locale)}
                 </h3>
                 <ul
                   role="list"
                   className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
                 >
                   {section.items.map((project) => (
-                    <ProjectCard key={project.name} project={project} titleAs='h4'/>
+                    <ProjectCard key={project.name.en} project={project} titleAs='h4'/>
                   ))}
                 </ul>
               </div>
@@ -83,17 +90,17 @@ export default async function Home() {
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
             <Heart size={28}/>
-            {activitiesHeadLine}
+            {selectText(activitiesHeadLine, locale)}
           </h2>
           <p className="text-base text-muted-foreground max-w-2xl mb-8">
-            {activitiesIntro}
+            {selectText(activitiesIntro, locale)}
           </p>
           <ul
             role="list"
             className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
           >
             {activities.map((activity) => (
-              <ActivityCard key={activity.name} activity={activity} titleAs='h3'/>
+              <ActivityCard key={activity.name.en} activity={activity} titleAs='h3'/>
             ))}
           </ul>
         </div>
@@ -101,10 +108,10 @@ export default async function Home() {
         {/* Blog Section */}
         <div className="mx-auto flex flex-col max-w-xl gap-6 py-8 my-8 lg:max-w-none border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            {blogHeadLine}
+            {selectText(blogHeadLine, locale)}
           </h2>
           <p className="text-base text-muted-foreground max-w-2xl mb-8">
-            {blogIntro}
+            {selectText(blogIntro, locale)}
           </p>
         </div>
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">

@@ -7,8 +7,11 @@ import { ProjectItemType } from '@/config/infoConfig'
 import { utm_source } from '@/config/siteConfig'
 import Link from 'next/link'
 import { Favicon } from "favicon-stealer";
+import { useLanguage } from '@/app/providers'
+import { selectText } from '@/lib/i18n'
 
 export function ProjectCard({ project, titleAs }: { project: ProjectItemType, titleAs?: keyof JSX.IntrinsicElements }) {
+  const { locale } = useLanguage()
   const utmLink = `https://${project.link.href}?utm_source=${utm_source}`
   const siteLink = project.website
     ? project.website.startsWith('http')
@@ -35,11 +38,11 @@ export function ProjectCard({ project, titleAs }: { project: ProjectItemType, ti
               )}
             </div>
             <Component className="text-base font-semibold">
-              {project.name}
+              {selectText(project.name, locale)}
             </Component>
           </div>
           <p className="relative z-10 mt-2 text-sm text-muted-foreground ml-2">
-            {project.description}
+            {selectText(project.description, locale)}
           </p>
         </div>
 
@@ -53,7 +56,7 @@ export function ProjectCard({ project, titleAs }: { project: ProjectItemType, ti
                 >
                   <HashIcon className="w-3 h-3 text-muted-foreground icon-scale" />
                   <span className="text-xs text-muted-foreground tracking-tighter">
-                    {tag}
+                    {selectText(tag, locale)}
                   </span>
                 </div>
               ))}

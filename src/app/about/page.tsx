@@ -4,6 +4,8 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { aboutMeHeadline, aboutParagraphs } from '@/config/infoConfig'
 import { Container } from '@/components/layout/Container'
+import { cookies } from 'next/headers'
+import { Locale, defaultLocale, selectText } from '@/lib/i18n'
 
 import portraitImage from '@/images/portrait.jpg'
 import SocialLinks from '@/components/about/SocialLinks'
@@ -11,10 +13,12 @@ import SocialLinks from '@/components/about/SocialLinks'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    selectText(aboutMeHeadline, 'en'),
 }
 
 export default function About() {
+  const cookieLocale = cookies().get('lang')?.value as Locale | undefined
+  const locale: Locale = cookieLocale === 'zh' ? 'zh' : defaultLocale
   return (
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -30,11 +34,11 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-            {aboutMeHeadline}
+            {selectText(aboutMeHeadline, locale)}
           </h1>
           <div className="mt-6 space-y-7 text-xl text-zinc-700 dark:text-zinc-300">
             {aboutParagraphs.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index}>{selectText(paragraph, locale)}</p>
             ))}
           </div>
         </div>

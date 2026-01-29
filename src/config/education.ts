@@ -1,34 +1,34 @@
 
 // education 
+import { LocalizedString } from '@/lib/i18n'
+
 export type EducationItemType = {
-    school: string
-    major: string
+    school: LocalizedString
+    major: LocalizedString
     image?: string
     logo: string
     start: string
     end: string
   }
   
-  
-  
   export const educationList: Array<EducationItemType> = [
     {
-      school: 'Tongji University',
-      major: 'artificial intelligence',
+      school: { en: 'Tongji University', zh: '同济大学' },
+      major: { en: 'Artificial Intelligence', zh: '人工智能' },
       logo: 'college',
       start: '2023',
       end: 'now'
     },
     {
-      school: 'Baoshan Tianli Senior High School',
-      major: 'Study',
+      school: { en: 'Baoshan Tianli Senior High School', zh: '保山天立高级中学' },
+      major: { en: 'Study', zh: '学习' },
       logo: 'coffee',
       start: '2020',
       end: '2023'
     },
     {
-      school: 'Mangshui Middle School',
-      major: 'Study',
+      school: { en: 'Mangshui Middle School', zh: '芒市中学' },
+      major: { en: 'Study', zh: '学习' },
       logo: 'bank',
       start: '2018',
       end: '2020'

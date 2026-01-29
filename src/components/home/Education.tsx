@@ -4,11 +4,14 @@
 import { Student } from '@phosphor-icons/react'
 import { EducationItemType, educationList } from '@/config/infoConfig'
 import { CustomIcon } from '@/components/shared/CustomIcon'
+import { useLanguage } from '@/app/providers'
+import { selectText } from '@/lib/i18n'
 
 
 
 
 function EducationItem({ educationItem }: { educationItem: EducationItemType }) {
+  const { locale } = useLanguage()
   return (
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md border border-muted bg-background">
@@ -17,11 +20,11 @@ function EducationItem({ educationItem }: { educationItem: EducationItemType }) 
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
         <dd className="w-full flex-none text-sm font-medium">
-          {educationItem.school}
+          {selectText(educationItem.school, locale)}
         </dd>
         <dt className="sr-only">Title</dt>
         <dd className="text-xs text-muted-foreground">
-          {educationItem.major}
+          {selectText(educationItem.major, locale)}
         </dd>
         <dt className="sr-only">Date</dt>
         <dd
@@ -36,13 +39,14 @@ function EducationItem({ educationItem }: { educationItem: EducationItemType }) 
 }
 
 export default function Education() {
+  const { locale } = useLanguage()
 
 
   return (
     <div className="rounded-2xl border border-muted shadow-sm p-6">
       <h2 className="flex text-sm font-semibold">
         <Student size={24} weight="duotone" />
-        <span className="ml-3">Education</span>
+        <span className="ml-3">{locale === 'en' ? 'Education' : '教育'}</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {educationList.map((educationItem, educationItemIndex) => (

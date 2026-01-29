@@ -1,47 +1,53 @@
 // site config
+import { LocalizedString } from '@/lib/i18n'
+
 export const utm_source = 'derek-portfolio'
 
-
 // navigation config
-type NavItemType = {
-  name: string
+export type NavItemType = {
+  name: LocalizedString
   href: string
 }
 
+const navHome: LocalizedString = { en: 'Home', zh: '主页' }
+const navAbout: LocalizedString = { en: 'About', zh: '关于' }
+const navProjects: LocalizedString = { en: 'Projects', zh: '项目' }
+const navBlogs: LocalizedString = { en: 'Blogs', zh: '博客' }
+
 export const footerItems: Array<NavItemType> = [
   {
-    name: 'Home',
+    name: navHome,
     href: '/'
   },
   {
-    name: 'About',
+    name: navAbout,
     href: '/about'
   },
   {
-    name: 'Projects',
+    name: navProjects,
     href: '/projects'
   },
   {
-    name: 'Blogs',
+    name: navBlogs,
     href: '/blogs'
   }
 ]
 
 export const navItems: Array<NavItemType> = [
   {
-    name: 'Home',
+    name: navHome,
     href: '/'
   },
   {
-    name: 'About',
+    name: navAbout,
     href: '/about'
   },
   {
-    name: 'Projects',
+    name: navProjects,
     href: '/projects'
   },
   {
-    name: 'Blogs',
+    name: navBlogs,
     href: '/blogs'
   }
 ]

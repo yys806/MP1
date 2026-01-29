@@ -5,6 +5,8 @@ import { footerItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { name } from '@/config/infoConfig'
 import SocialLinks from '@/components/home/SocialLinks'
+import { cookies } from 'next/headers'
+import { Locale, defaultLocale, selectText } from '@/lib/i18n'
 
 
 function NavLink({
@@ -25,6 +27,8 @@ function NavLink({
 }
 
 export function Footer() {
+  const cookieLocale = cookies().get('lang')?.value as Locale | undefined
+  const locale: Locale = cookieLocale === 'zh' ? 'zh' : defaultLocale
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>
@@ -33,13 +37,13 @@ export function Footer() {
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-start">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium">
                 {footerItems.map((item) => (
-                  <NavLink key={item.name} href={item.href}>{item.name}</NavLink>
+                  <NavLink key={item.href} href={item.href}>{selectText(item.name, locale)}</NavLink>
                 ))}
               </div>
               <div className='flex flex-col justify-center items-start'>
                 <div className='flex flex-row justify-end items-center gap-2'>
                   <p className="text-sm text-muted-foreground">
-                    &copy; {new Date().getFullYear()} {name}. All rights reserved.
+                    &copy; {new Date().getFullYear()} {name}. {locale === 'en' ? 'All rights reserved.' : '保留所有权利。'}
                   </p>
                   <ThemeToggle />
                 </div>
