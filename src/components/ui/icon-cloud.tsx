@@ -69,7 +69,30 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { theme } = useTheme();
 
   useEffect(() => {
-    fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
+    const primaryUrl =
+      "https://raw.githubusercontent.com/simple-icons/simple-icons/master/_data/simple-icons.json";
+    const fallbackUrl =
+      "https://cdn.jsdelivr.net/npm/simple-icons@latest/_data/simple-icons.json";
+
+    const load = async () => {
+      try {
+        // `dataUrl` is supported by react-icon-cloud runtime; ignore missing type.
+        // @ts-expect-error dataUrl exists at runtime
+        const res = await fetchSimpleIcons({ slugs: iconSlugs, dataUrl: primaryUrl });
+        setData(res);
+      } catch (e) {
+        try {
+          // @ts-expect-error dataUrl exists at runtime
+          const res = await fetchSimpleIcons({ slugs: iconSlugs, dataUrl: fallbackUrl });
+          setData(res);
+        } catch (err) {
+          console.error("Failed to load simple-icons data", err);
+          setData(null);
+        }
+      }
+    };
+
+    load();
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
