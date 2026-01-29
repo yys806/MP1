@@ -8,7 +8,7 @@ import {
   renderSimpleIcon,
   SimpleIcon,
 } from "react-icon-cloud";
-import { simpleIconsSubset } from "@/lib/simple-icons-subset";
+import { getIcon } from "simple-icons";
 
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
@@ -73,10 +73,8 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   useEffect(() => {
     const mapped: Record<string, SimpleIcon> = {};
     iconSlugs.forEach((slug) => {
-      const icon = simpleIconsSubset[slug];
-      if (icon) {
-        mapped[slug] = icon;
-      }
+      const icon = getIcon(slug);
+      if (icon) mapped[slug] = icon;
     });
     setData({ simpleIcons: mapped });
   }, [iconSlugs]);
