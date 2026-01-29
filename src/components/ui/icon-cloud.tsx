@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import {
   Cloud,
-  fetchSimpleIcons,
   ICloud,
   renderSimpleIcon,
   SimpleIcon,
@@ -62,33 +61,34 @@ export type DynamicCloudProps = {
   iconSlugs: string[];
 };
 
-type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
+type IconData = {
+  simpleIcons: Record<string, SimpleIcon>;
+};
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null);
   const { theme } = useTheme();
 
   useEffect(() => {
-    const primaryUrl =
-      "https://raw.githubusercontent.com/simple-icons/simple-icons/master/_data/simple-icons.json";
-    const fallbackUrl =
+    const dataUrl =
       "https://cdn.jsdelivr.net/npm/simple-icons@latest/_data/simple-icons.json";
 
     const load = async () => {
       try {
-        // `dataUrl` is supported by react-icon-cloud runtime; ignore missing type.
-        // @ts-expect-error dataUrl exists at runtime
-        const res = await fetchSimpleIcons({ slugs: iconSlugs, dataUrl: primaryUrl });
-        setData(res);
-      } catch (e) {
-        try {
-          // @ts-expect-error dataUrl exists at runtime
-          const res = await fetchSimpleIcons({ slugs: iconSlugs, dataUrl: fallbackUrl });
-          setData(res);
-        } catch (err) {
-          console.error("Failed to load simple-icons data", err);
-          setData(null);
-        }
+        const res = await fetch(dataUrl);
+        if (!res.ok) throw new Error(`fetch simple-icons ${res.status}`);
+        const json = await res.json();
+        const filtered = (json.icons as SimpleIcon[]).filter((icon) =>
+          iconSlugs.includes(icon.slug),
+        );
+        const mapped: Record<string, SimpleIcon> = {};
+        filtered.forEach((icon) => {
+          mapped[icon.slug] = icon;
+        });
+        setData({ simpleIcons: mapped });
+      } catch (err) {
+        console.error("Failed to load simple-icons data", err);
+        setData(null);
       }
     };
 
