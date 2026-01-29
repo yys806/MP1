@@ -37,27 +37,33 @@ export type DynamicCloudProps = {
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { theme } = useTheme();
-  const color = theme === "light" ? "1f2937" : "e5e7eb";
 
   const icons = useMemo(() => {
     return iconSlugs.map((slug) => {
       const url = `/icons/${slug}.svg`;
       return (
-        <img
+        <a
           key={slug}
-          src={url}
-          alt={slug}
-          loading="lazy"
-          className="h-10 w-10"
-          style={{ filter: theme === "dark" ? "invert(0)" : "invert(0.1)" }}
-          onError={(e) => {
-            e.currentTarget.onerror = null;
-            e.currentTarget.style.display = "none";
-          }}
-        />
+          href="#"
+          aria-label={slug}
+          className="inline-flex"
+          onClick={(e) => e.preventDefault()}
+        >
+          <img
+            src={url}
+            alt={slug}
+            loading="lazy"
+            className="h-10 w-10"
+            style={{ filter: theme === "dark" ? "invert(0)" : "invert(0.1)" }}
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.style.display = "none";
+            }}
+          />
+        </a>
       );
     });
-  }, [iconSlugs, color]);
+  }, [iconSlugs, theme]);
 
   if (icons.length === 0) {
     return <div className="h-32 flex items-center justify-center text-sm text-muted-foreground">No icons</div>;
