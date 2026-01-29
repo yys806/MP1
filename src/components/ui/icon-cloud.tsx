@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo } from "react";
 import { useTheme } from "next-themes";
@@ -18,7 +18,7 @@ export const cloudProps: Omit<ICloud, "children"> = {
     reverse: true,
     depth: 1,
     wheelZoom: false,
-    imageScale: 2,
+    imageScale: 1,
     activeCursor: "default",
     tooltip: "native",
     initial: [0.1, -0.1],
@@ -27,7 +27,6 @@ export const cloudProps: Omit<ICloud, "children"> = {
     outlineColour: "#0000",
     maxSpeed: 0.04,
     minSpeed: 0.02,
-    // dragControl: false,
   },
 };
 
@@ -37,6 +36,7 @@ export type DynamicCloudProps = {
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { theme } = useTheme();
+  const isDark = (theme || "light") === "dark";
 
   const icons = useMemo(() => {
     return iconSlugs.map((slug) => {
@@ -53,8 +53,8 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
             src={url}
             alt={slug}
             loading="lazy"
-            className="h-10 w-10"
-            style={{ filter: theme === "dark" ? "invert(0)" : "invert(0.1)" }}
+            className="h-8 w-8"
+            style={{ filter: isDark ? "invert(1) brightness(1.8)" : "invert(0) brightness(0.05)" }}
             onError={(e) => {
               e.currentTarget.onerror = null;
               e.currentTarget.style.display = "none";
@@ -63,7 +63,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
         </a>
       );
     });
-  }, [iconSlugs, theme]);
+  }, [iconSlugs, isDark]);
 
   if (icons.length === 0) {
     return <div className="h-32 flex items-center justify-center text-sm text-muted-foreground">No icons</div>;
