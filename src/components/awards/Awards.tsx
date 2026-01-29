@@ -16,22 +16,13 @@ export function Awards() {
               ? rawHref
               : `https://${rawHref}`
             : undefined
-          const Component: any = resolvedHref ? 'a' : 'div'
 
           return (
             <Card
-              as={Component}
-              href={resolvedHref}
-              target={resolvedHref ? '_blank' : undefined}
-              rel={resolvedHref ? 'noopener noreferrer' : undefined}
               key={award.name.en ?? index}
-              className={
-                resolvedHref
-                  ? 'group cursor-pointer transition no-underline'
-                  : undefined
-              }
+              className="group transition"
             >
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-3">
                 <div className="flex items-center justify-between">
                   <h3 className="font-medium">{selectText(award.name, locale)}</h3>
                   <span className="text-sm text-muted-foreground">
@@ -42,10 +33,15 @@ export function Awards() {
                   {selectText(award.description, locale)}
                 </p>
                 {resolvedHref && (
-                  <span className="text-sm text-primary hover:underline inline-flex items-center gap-1">
+                  <a
+                    href={resolvedHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-fit items-center gap-1 rounded-md border border-primary/60 px-3 py-1 text-sm text-primary hover:bg-primary/10"
+                  >
                     {selectText(award.link?.label ?? { en: 'View detail', zh: '查看详情' }, locale)}
                     <span aria-hidden>→</span>
-                  </span>
+                  </a>
                 )}
               </div>
             </Card>
