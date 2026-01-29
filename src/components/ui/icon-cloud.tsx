@@ -3,7 +3,6 @@
 import { useMemo } from "react";
 import { useTheme } from "next-themes";
 import { Cloud, ICloud } from "react-icon-cloud";
-import { simpleIconsSubset } from "@/lib/simple-icons-subset";
 
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
@@ -41,23 +40,23 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const color = theme === "light" ? "1f2937" : "e5e7eb";
 
   const icons = useMemo(() => {
-    const mapped = iconSlugs
-      .map((slug) => simpleIconsSubset[slug])
-      .filter(Boolean)
-      .map((icon) => {
-        const svg = `<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>${icon.title}</title><path fill="#${color}" d="${icon.path}"/></svg>`;
-        const dataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
-        return (
-          <img
-            key={icon.slug}
-            src={dataUrl}
-            alt={icon.title}
-            loading="lazy"
-            className="h-10 w-10"
-          />
-        );
-      });
-    return mapped;
+    return iconSlugs.map((slug) => {
+      const url = `/icons/${slug}.svg`;
+      return (
+        <img
+          key={slug}
+          src={url}
+          alt={slug}
+          loading="lazy"
+          className="h-10 w-10"
+          style={{ filter: theme === "dark" ? "invert(0)" : "invert(0.1)" }}
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.style.display = "none";
+          }}
+        />
+      );
+    });
   }, [iconSlugs, color]);
 
   if (icons.length === 0) {
