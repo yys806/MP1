@@ -8,6 +8,7 @@ import {
   renderSimpleIcon,
   SimpleIcon,
 } from "react-icon-cloud";
+import { simpleIconsSubset } from "@/lib/simple-icons-subset";
 
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
@@ -70,29 +71,14 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { theme } = useTheme();
 
   useEffect(() => {
-    const dataUrl =
-      "https://cdn.jsdelivr.net/npm/simple-icons@latest/_data/simple-icons.json";
-
-    const load = async () => {
-      try {
-        const res = await fetch(dataUrl);
-        if (!res.ok) throw new Error(`fetch simple-icons ${res.status}`);
-        const json = await res.json();
-        const filtered = (json.icons as SimpleIcon[]).filter((icon) =>
-          iconSlugs.includes(icon.slug),
-        );
-        const mapped: Record<string, SimpleIcon> = {};
-        filtered.forEach((icon) => {
-          mapped[icon.slug] = icon;
-        });
-        setData({ simpleIcons: mapped });
-      } catch (err) {
-        console.error("Failed to load simple-icons data", err);
-        setData(null);
+    const mapped: Record<string, SimpleIcon> = {};
+    iconSlugs.forEach((slug) => {
+      const icon = simpleIconsSubset[slug];
+      if (icon) {
+        mapped[slug] = icon;
       }
-    };
-
-    load();
+    });
+    setData({ simpleIcons: mapped });
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
