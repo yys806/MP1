@@ -37,10 +37,10 @@ export function Awards() {
                     href={resolvedHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex w-fit items-center gap-1 rounded-md border border-primary/60 px-3 py-1 text-sm text-primary hover:bg-primary/10"
+                    className="inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground shadow-sm transition hover:brightness-110"
                   >
                     {selectText(award.link?.label ?? { en: 'View detail', zh: '查看详情' }, locale)}
-                    <span aria-hidden>→</span>
+                    <span aria-hidden className="text-base leading-none">→</span>
                   </a>
                 )}
               </div>
