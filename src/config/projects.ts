@@ -105,7 +105,7 @@ const researchProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Tongji University Quality Control Office Agent Development', zh: '同济大学质管办智能体开发' },
     description: { en: 'Agent to help Quality Control Office manage and analyze quality data.', zh: '帮助质管办管理与分析质量数据的智能体。' },
-    link: { href: 'agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg', label: { en: 'View', zh: '查看' } },
     tags: [
       { en: 'Workflow', zh: '工作流' },
       { en: 'Automation', zh: '自动化' },
@@ -119,7 +119,7 @@ const researchProjects: Array<ProjectItemType> = [
     name: { en: 'Intelligent passenger flow sensing & optimized carriage allocation for subway', zh: '地铁智能客流感知与车厢优化分配系统' },
     description: { en: 'Shanghai Municipal University Student Innovation and Entrepreneurship Project', zh: '上海市大学生创新创业项目' },
     link: {
-      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/SITP%E7%BB%93%E9%A2%98%E8%AF%81%E4%B9%A6.pdf',
+      href: 'https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/SITP%E7%BB%93%E9%A2%98%E8%AF%81%E4%B9%A6.pdf',
       label: { en: 'View', zh: '查看' },
     },
     tags: [
@@ -135,7 +135,7 @@ const replicaProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Voice-controlled Lights (ASRpro + TianWen Block)', zh: '语音开关灯（ASRpro + 天问 Block）' },
     description: { en: 'Turn lights on/off via voice using ASRpro dev board and TianWen Block.', zh: '基于 ASRpro 开发板和天问 Block 的语音控制开关灯项目。' },
-    link: { href: 'www.bilibili.com/video/BV1ADmbYEEGp/?spm_id_from=333.1387.favlist.content.click&vd_source=b328f81ac0f998e0c6c3cac579e6edfb', label: { en: 'Watch', zh: '观看' } },
+    link: { href: 'https://www.bilibili.com/video/BV1ADmbYEEGp/?spm_id_from=333.1387.favlist.content.click&vd_source=b328f81ac0f998e0c6c3cac579e6edfb', label: { en: 'Watch', zh: '观看' } },
     tags: [
       { en: 'Voice Control', zh: '语音控制' },
       { en: 'ASR', zh: '语音识别' },
@@ -148,7 +148,7 @@ const replicaProjects: Array<ProjectItemType> = [
     name: { en: 'Little Wang Robot Dog v1.0', zh: '小汪机器人狗 v1.0' },
     description: { en: 'Robotic dog for companionship and assistance.', zh: '用于陪伴与辅助的机器人狗。' },
     link: {
-      href: 'oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban',
+      href: 'https://oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban',
       label: { en: 'View', zh: '查看' },
     },
     tags: [
@@ -163,7 +163,7 @@ const replicaProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Xiao Zhi AI Chatbot', zh: '小智 AI 聊天机器人' },
     description: { en: 'AI chatbot for natural language conversation.', zh: '用于自然语言对话的 AI 聊天机器人。' },
-    link: { href: 'github.com/78/xiaozhi-esp32', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/78/xiaozhi-esp32', label: { en: 'View', zh: '查看' } },
     tags: [
       { en: 'PCB Design', zh: 'PCB 设计' },
       { en: '3D Printing', zh: '3D 打印' },
@@ -180,7 +180,7 @@ const courseworkProjects: Array<ProjectItemType> = [
   {
     name: { en: 'e203-htmi-fpga', zh: 'e203-htmi-fpga 字符终端系统' },
     description: { en: 'Character terminal system on Hummingbird e203', zh: '基于蜂鸟 e203 的字符终端系统' },
-    link: { href: 'github.com/yys806/e203-htmi-fpga.git', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/e203-htmi-fpga.git', label: { en: 'View', zh: '查看' } },
     tags: [
       { en: 'Embedded Systems', zh: '嵌入式' },
       { en: 'e203', zh: 'e203' },
@@ -191,7 +191,7 @@ const courseworkProjects: Array<ProjectItemType> = [
   {
     name: { en: 'e203-RISC-V-counter', zh: 'e203 RISC-V 计数器' },
     description: { en: 'RISC-V counter on Hummingbird e203', zh: '基于蜂鸟 e203 的 RISC-V 计数器' },
-    link: { href: 'github.com/yys806/e203-RISCV-counter.git', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/e203-RISCV-counter.git', label: { en: 'View', zh: '查看' } },
     tags: [
       { en: 'Embedded Systems', zh: '嵌入式' },
       { en: 'e203', zh: 'e203' },
@@ -203,7 +203,7 @@ const courseworkProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Distributed parallel computing system', zh: '分布式并行计算系统' },
     description: { en: '2025 Algorithm Major Project', zh: '2025 算法课程大作业' },
-    link: { href: 'github.com/yys806/shen-kai.git', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/shen-kai.git', label: { en: 'View', zh: '查看' } },
     tags: [
       { en: 'Algorithm', zh: '算法' },
       { en: 'OpenMp', zh: 'OpenMP' },
@@ -216,7 +216,7 @@ const courseworkProjects: Array<ProjectItemType> = [
     name: { en: 'Text recognizer based on STM32G0 and infrared sensors', zh: '基于 STM32G0 与红外传感器的文字识别器' },
     description: { en: 'Text recognition using STM32G0 microcontroller and infrared sensors.', zh: '使用 STM32G0 微控制器与红外传感器的文字识别系统。' },
     link: {
-      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E9%A1%B9%E7%9B%AE/2352396-%E7%A6%B9%E5%B0%A7%E7%8F%85-%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E5%99%A8-%E8%AE%BE%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf',
+      href: 'https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E9%A1%B9%E7%9B%AE/2352396-%E7%A6%B9%E5%B0%A7%E7%8F%85-%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E5%99%A8-%E8%AE%BE%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf',
       label: { en: 'View', zh: '查看' },
     },
     tags: [
@@ -234,7 +234,7 @@ const webDevProjects: Array<ProjectItemType> = [
   {
     name: { en: 'MathSnap', zh: 'MathSnap' },
     description: { en: 'Website for paper reading, LaTeX converting, and image processing.', zh: '用于论文阅读、LaTeX 转换及图像处理的网站。' },
-    link: { href: 'github.com/yys806/research-helper', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/research-helper', label: { en: 'View', zh: '查看' } },
     website: '2352396.de5.net',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
@@ -249,7 +249,7 @@ const webDevProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Shen’s tools', zh: 'Shen 的工具箱' },
     description: { en: 'A site collecting all tools I use for study and life.', zh: '汇总学习与生活常用工具的网站。' },
-    link: { href: 'github.com/yys806/AI-tool', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/AI-tool', label: { en: 'View', zh: '查看' } },
     website: 'riscv.de5.net',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
@@ -263,7 +263,7 @@ const webDevProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Cyber AI Divination', zh: '赛博 AI 占卜' },
     description: { en: 'Cyber AI Fortune-telling Website', zh: '赛博风格 AI 算卦网站' },
-    link: { href: 'github.com/yys806/Divination', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/Divination', label: { en: 'View', zh: '查看' } },
     website: 'fpga.de5.net',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
@@ -277,7 +277,7 @@ const webDevProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Nexus Terminal', zh: 'Nexus 终端' },
     description: { en: 'A Jarvis-like web terminal inspired by Ironman.', zh: '受钢铁侠启发的 Jarvis 风格网页终端。' },
-    link: { href: 'github.com/yys806/shenge-gpt', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/shenge-gpt', label: { en: 'View', zh: '查看' } },
     website: 'shen-play.de5.net',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
@@ -290,7 +290,7 @@ const webDevProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Homepage', zh: '个人主页' },
     description: { en: 'My recent plan and some of my websites', zh: '近期计划与个人网站集合' },
-    link: { href: 'github.com/yys806/Homepage.git', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/Homepage.git', label: { en: 'View', zh: '查看' } },
     website: 'shen806.dpdns.org',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
@@ -303,7 +303,7 @@ const webDevProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Fortress', zh: 'Fortress 数据守护' },
     description: { en: 'A tool to restore local important data', zh: '恢复本地重要数据的工具' },
-    link: { href: 'github.com/yys806/Fortress.git', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/Fortress.git', label: { en: 'View', zh: '查看' } },
     website: 'shentv.dpdns.org',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
@@ -314,7 +314,7 @@ const webDevProjects: Array<ProjectItemType> = [
   {
     name: { en: '428806QR-tool', zh: '428806 二维码工具' },
     description: { en: 'A tool to generate unique QR codes', zh: '生成唯一二维码的工具' },
-    link: { href: 'github.com/yys806/QR-tool.git', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/QR-tool.git', label: { en: 'View', zh: '查看' } },
     website: '428806.xyz',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
@@ -327,7 +327,7 @@ const webDevProjects: Array<ProjectItemType> = [
   {
     name: { en: 'Image removal tool', zh: '图片去黑边工具' },
     description: { en: 'A tool to remove black borders from images', zh: '去除图片黑边的小工具' },
-    link: { href: 'github.com/yys806/Picture-process.git', label: { en: 'View', zh: '查看' } },
+    link: { href: 'https://github.com/yys806/Picture-process.git', label: { en: 'View', zh: '查看' } },
     website: 'shen-photo.de5.net',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
