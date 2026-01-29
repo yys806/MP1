@@ -357,7 +357,7 @@ export const activities: Array<ActivityItemType> = [
       { en: "Restore 2nd to 6th order Rubik's Cube, as well as Pyramid Cube, Mirror Cube, and Dodecahedron Cube", zh: '复原二到六阶、金字塔、镜面、五魔方等多种魔方' },
     date: { en: '2018-Present', zh: '2018 至今' },
     location: { en: 'Yunnan', zh: '云南' },
-    link: 'https://space.bilibili.com/199555828',
+    link: { href: 'https://space.bilibili.com/199555828' },
   },
   {
     name: { en: 'Running', zh: '跑步' },
@@ -365,7 +365,7 @@ export const activities: Array<ActivityItemType> = [
       { en: 'Participating in local running events and promoting fitness in the community.', zh: '参加本地跑步赛事，推广健身。' },
     date: { en: 'Always', zh: '一直在跑' },
     location: { en: 'Yunnan & Shanghai', zh: '云南 & 上海' },
-    link: 'https://example.com/running',
+    link: { href: 'https://example.com/running' },
   },
   {
     name: { en: 'Watching Movies', zh: '观影' },
@@ -373,6 +373,6 @@ export const activities: Array<ActivityItemType> = [
       { en: 'Enjoying and analyzing films from various genres and directors.', zh: '欣赏并分析各类型影片与导演作品。' },
     date: { en: 'Always', zh: '一直在看' },
     location: { en: 'Yunnan & Shanghai', zh: '云南 & 上海' },
-    link: 'https://shen806.de5.net/',
+    link: { href: 'https://shen806.de5.net/' },
   },
 ]
