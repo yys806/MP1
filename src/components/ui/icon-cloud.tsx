@@ -7,6 +7,7 @@ import {
   ICloud,
   renderSimpleIcon,
   SimpleIcon,
+  fetchSimpleIcons,
 } from "react-icon-cloud";
 
 export const cloudProps: Omit<ICloud, "children"> = {
@@ -78,49 +79,13 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
 
     const load = async () => {
       try {
-        const res = await fetch(primaryUrl);
-        if (!res.ok) throw new Error(`fetch simple-icons ${res.status}`);
-        const json = (await res.json()) as { icons: Array<{
-          title: string;
-          slug: string;
-          hex: string;
-          path: string;
-        }> };
-        const mapped: Record<string, SimpleIcon> = {};
-        json.icons.forEach((icon) => {
-          if (iconSlugs.includes(icon.slug)) {
-            mapped[icon.slug] = {
-              title: icon.title,
-              slug: icon.slug,
-              hex: icon.hex,
-              path: icon.path,
-            };
-          }
-        });
-        setData({ simpleIcons: mapped });
+        const res = await fetchSimpleIcons({ slugs: iconSlugs, dataUrl: primaryUrl });
+        setData(res as IconData);
         setLoadFailed(false);
       } catch (err) {
         try {
-          const res = await fetch(fallbackUrl);
-          if (!res.ok) throw new Error(`fallback simple-icons ${res.status}`);
-          const json = (await res.json()) as { icons: Array<{
-            title: string;
-            slug: string;
-            hex: string;
-            path: string;
-          }> };
-          const mapped: Record<string, SimpleIcon> = {};
-          json.icons.forEach((icon) => {
-            if (iconSlugs.includes(icon.slug)) {
-              mapped[icon.slug] = {
-                title: icon.title,
-                slug: icon.slug,
-                hex: icon.hex,
-                path: icon.path,
-              };
-            }
-          });
-          setData({ simpleIcons: mapped });
+          const res = await fetchSimpleIcons({ slugs: iconSlugs, dataUrl: fallbackUrl });
+          setData(res as IconData);
           setLoadFailed(false);
         } catch (e2) {
           console.error("Failed to load simple-icons data", e2);
