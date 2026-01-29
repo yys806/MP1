@@ -35,10 +35,13 @@ export type DynamicCloudProps = {
 };
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
-  const { theme } = useTheme();
-  const isDark = (theme || "light") === "dark";
+  const { resolvedTheme } = useTheme();
+  const isDark = (resolvedTheme || "light") === "dark";
 
   const icons = useMemo(() => {
+    const filter = isDark
+      ? "invert(1) grayscale(1) brightness(3) contrast(1.3)"
+      : "invert(0) grayscale(1) brightness(0.2) contrast(1)";
     return iconSlugs.map((slug) => {
       const url = `/icons/${slug}.svg`;
       return (
@@ -53,8 +56,8 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
             src={url}
             alt={slug}
             loading="lazy"
-            className="h-8 w-8"
-            style={{ filter: isDark ? "invert(1) brightness(1.8)" : "invert(0) brightness(0.05)" }}
+            className="h-8 w-8 transition-[filter]"
+            style={{ filter }}
             onError={(e) => {
               e.currentTarget.onerror = null;
               e.currentTarget.style.display = "none";
