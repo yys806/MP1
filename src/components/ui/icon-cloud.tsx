@@ -1,13 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useTheme } from "next-themes";
-import {
-  Cloud,
-  ICloud,
-  renderSimpleIcon,
-  SimpleIcon,
-} from "react-icon-cloud";
+import { Cloud, ICloud } from "react-icon-cloud";
 import { simpleIconsSubset } from "@/lib/simple-icons-subset";
 
 export const cloudProps: Omit<ICloud, "children"> = {
@@ -37,90 +32,42 @@ export const cloudProps: Omit<ICloud, "children"> = {
   },
 };
 
-export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
-  // Use transparent background and stronger fallback color so logos stay visible on light theme.
-  const bgHex = "transparent";
-  const fallbackHex = theme === "light" ? "#1f2937" : "#f8fafc"; // slate-800 vs almost-white
-  const minContrastRatio = theme === "dark" ? 2 : 2.5;
-
-  return renderSimpleIcon({
-    icon,
-    bgHex,
-    fallbackHex,
-    minContrastRatio,
-    size: 42,
-    aProps: {
-      href: undefined,
-      target: undefined,
-      rel: undefined,
-      onClick: (e: any) => e.preventDefault(),
-    },
-  });
-};
-
 export type DynamicCloudProps = {
   iconSlugs: string[];
 };
 
-type IconData = {
-  simpleIcons: Record<string, SimpleIcon>;
-};
-
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
-  const [data, setData] = useState<IconData | null>(null);
-  const [loadFailed, setLoadFailed] = useState(false);
   const { theme } = useTheme();
+  const color = theme === "light" ? "1f2937" : "e5e7eb";
 
-  useEffect(() => {
-    const mapped: Record<string, SimpleIcon> = {};
-    iconSlugs.forEach((slug) => {
-      const icon = simpleIconsSubset[slug];
-      if (icon) mapped[slug] = icon;
-    });
-    if (Object.keys(mapped).length === 0) {
-      setLoadFailed(true);
-      setData(null);
-    } else {
-      setData({ simpleIcons: mapped });
-      setLoadFailed(false);
-    }
-  }, [iconSlugs]);
-
-  const renderedIcons = useMemo(() => {
-    if (!data) return null;
-
-    return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"),
-    );
-  }, [data, theme]);
-
-  const fallbackColor = theme === "light" ? "1f2937" : "e5e7eb"; // hex without #
-
-  if (loadFailed) {
-    return (
-      <div className="grid grid-cols-4 sm:grid-cols-6 gap-4 justify-items-center">
-        {iconSlugs.map((slug) => (
-          // eslint-disable-next-line @next/next/no-img-element
+  const icons = useMemo(() => {
+    const mapped = iconSlugs
+      .map((slug) => simpleIconsSubset[slug])
+      .filter(Boolean)
+      .map((icon) => {
+        const svg = `<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>${icon.title}</title><path fill="#${color}" d="${icon.path}"/></svg>`;
+        const dataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+        return (
           <img
-            key={slug}
-            src={`https://cdn.simpleicons.org/${slug}/${fallbackColor}`}
-            alt={slug}
-            className="h-10 w-10"
+            key={icon.slug}
+            src={dataUrl}
+            alt={icon.title}
             loading="lazy"
+            className="h-10 w-10"
           />
-        ))}
-      </div>
-    );
-  }
+        );
+      });
+    return mapped;
+  }, [iconSlugs, color]);
 
-  if (!data || !renderedIcons) {
-    return <div className="h-32 flex items-center justify-center text-sm text-muted-foreground">Loading icons...</div>
+  if (icons.length === 0) {
+    return <div className="h-32 flex items-center justify-center text-sm text-muted-foreground">No icons</div>;
   }
 
   return (
     // @ts-ignore
     <Cloud {...cloudProps}>
-      <>{renderedIcons}</>
+      <>{icons}</>
     </Cloud>
   );
 }
