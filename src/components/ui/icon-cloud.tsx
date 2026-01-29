@@ -71,12 +71,14 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { theme } = useTheme();
 
   useEffect(() => {
-    const dataUrl =
+    const primaryUrl =
+      "https://unpkg.com/simple-icons@latest/_data/simple-icons.json";
+    const fallbackUrl =
       "https://cdn.jsdelivr.net/npm/simple-icons@latest/_data/simple-icons.json";
 
     const load = async () => {
       try {
-        const res = await fetch(dataUrl);
+        const res = await fetch(primaryUrl);
         if (!res.ok) throw new Error(`fetch simple-icons ${res.status}`);
         const json = (await res.json()) as { icons: Array<{
           title: string;
@@ -96,10 +98,35 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
           }
         });
         setData({ simpleIcons: mapped });
+        setLoadFailed(false);
       } catch (err) {
-        console.error("Failed to load simple-icons data", err);
-        setData(null);
-        setLoadFailed(true);
+        try {
+          const res = await fetch(fallbackUrl);
+          if (!res.ok) throw new Error(`fallback simple-icons ${res.status}`);
+          const json = (await res.json()) as { icons: Array<{
+            title: string;
+            slug: string;
+            hex: string;
+            path: string;
+          }> };
+          const mapped: Record<string, SimpleIcon> = {};
+          json.icons.forEach((icon) => {
+            if (iconSlugs.includes(icon.slug)) {
+              mapped[icon.slug] = {
+                title: icon.title,
+                slug: icon.slug,
+                hex: icon.hex,
+                path: icon.path,
+              };
+            }
+          });
+          setData({ simpleIcons: mapped });
+          setLoadFailed(false);
+        } catch (e2) {
+          console.error("Failed to load simple-icons data", e2);
+          setData(null);
+          setLoadFailed(true);
+        }
       }
     };
 
@@ -114,9 +141,9 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     );
   }, [data, theme]);
 
-  const fallbackColor = theme === "light" ? "1f2937" : "e5e7eb";
+  const fallbackColor = theme === "light" ? "1f2937" : "e5e7eb"; // hex without #
 
-  if (!data || !renderedIcons || loadFailed) {
+  if (loadFailed) {
     return (
       <div className="grid grid-cols-4 sm:grid-cols-6 gap-4 justify-items-center">
         {iconSlugs.map((slug) => (
@@ -130,6 +157,10 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
         ))}
       </div>
     );
+  }
+
+  if (!data || !renderedIcons) {
+    return <div className="h-32 flex items-center justify-center text-sm text-muted-foreground">Loading icons...</div>
   }
 
   return (
