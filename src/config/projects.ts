@@ -14,7 +14,7 @@ export type ActivityItemType = {
   description: LocalizedString
   date: LocalizedString
   location: LocalizedString
-  link?: string
+  link?: { href: string; label?: LocalizedString }
 }
 
 export type ProjectSectionType = {
@@ -32,6 +32,10 @@ export const awards: Array<ActivityItemType> = [
     description: { en: 'National First Prize', zh: '全国一等奖' },
     date: { en: '2025.12', zh: '2025.12' },
     location: { en: 'Beijing', zh: '北京' },
+    link: {
+      href: 'https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2025-2026/AIC-%E5%9B%BD%E4%B8%80.pdf',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: '2025 National College Student Mathematical Modeling Competition', zh: '2025 全国大学生数学建模竞赛' },
@@ -44,6 +48,10 @@ export const awards: Array<ActivityItemType> = [
     description: { en: '¥10000 prize', zh: '奖金 10000 元' },
     date: { en: '2024', zh: '2024' },
     location: { en: 'Shanghai', zh: '上海' },
+    link: {
+      href: 'https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2023-2024/%E5%9B%BD%E5%A5%96.jpg',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: 'The 6th Huashu Cup Mathematical Modeling Competition', zh: '第六届华数杯数学建模竞赛' },
