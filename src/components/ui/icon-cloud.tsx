@@ -7,7 +7,6 @@ import {
   ICloud,
   renderSimpleIcon,
   SimpleIcon,
-  fetchSimpleIcons,
 } from "react-icon-cloud";
 
 export const cloudProps: Omit<ICloud, "children"> = {
@@ -79,13 +78,49 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
 
     const load = async () => {
       try {
-        const res = await fetchSimpleIcons({ slugs: iconSlugs, dataUrl: primaryUrl });
-        setData(res as IconData);
+        const res = await fetch(primaryUrl);
+        if (!res.ok) throw new Error(`fetch simple-icons ${res.status}`);
+        const json = (await res.json()) as { icons: Array<{
+          title: string;
+          slug: string;
+          hex: string;
+          path: string;
+        }> };
+        const mapped: Record<string, SimpleIcon> = {};
+        json.icons.forEach((icon) => {
+          if (iconSlugs.includes(icon.slug)) {
+            mapped[icon.slug] = {
+              title: icon.title,
+              slug: icon.slug,
+              hex: icon.hex,
+              path: icon.path,
+            };
+          }
+        });
+        setData({ simpleIcons: mapped });
         setLoadFailed(false);
       } catch (err) {
         try {
-          const res = await fetchSimpleIcons({ slugs: iconSlugs, dataUrl: fallbackUrl });
-          setData(res as IconData);
+          const res = await fetch(fallbackUrl);
+          if (!res.ok) throw new Error(`fallback simple-icons ${res.status}`);
+          const json = (await res.json()) as { icons: Array<{
+            title: string;
+            slug: string;
+            hex: string;
+            path: string;
+          }> };
+          const mapped: Record<string, SimpleIcon> = {};
+          json.icons.forEach((icon) => {
+            if (iconSlugs.includes(icon.slug)) {
+              mapped[icon.slug] = {
+                title: icon.title,
+                slug: icon.slug,
+                hex: icon.hex,
+                path: icon.path,
+              };
+            }
+          });
+          setData({ simpleIcons: mapped });
           setLoadFailed(false);
         } catch (e2) {
           console.error("Failed to load simple-icons data", e2);
@@ -112,6 +147,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     return (
       <div className="grid grid-cols-4 sm:grid-cols-6 gap-4 justify-items-center">
         {iconSlugs.map((slug) => (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             key={slug}
             src={`https://cdn.simpleicons.org/${slug}/${fallbackColor}`}
