@@ -8,6 +8,7 @@ import {
   renderSimpleIcon,
   SimpleIcon,
 } from "react-icon-cloud";
+import { simpleIconsSubset } from "@/lib/simple-icons-subset";
 
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
@@ -71,66 +72,18 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { theme } = useTheme();
 
   useEffect(() => {
-    const primaryUrl =
-      "https://unpkg.com/simple-icons@latest/_data/simple-icons.json";
-    const fallbackUrl =
-      "https://cdn.jsdelivr.net/npm/simple-icons@latest/_data/simple-icons.json";
-
-    const load = async () => {
-      try {
-        const res = await fetch(primaryUrl);
-        if (!res.ok) throw new Error(`fetch simple-icons ${res.status}`);
-        const json = (await res.json()) as { icons: Array<{
-          title: string;
-          slug: string;
-          hex: string;
-          path: string;
-        }> };
-        const mapped: Record<string, SimpleIcon> = {};
-        json.icons.forEach((icon) => {
-          if (iconSlugs.includes(icon.slug)) {
-            mapped[icon.slug] = {
-              title: icon.title,
-              slug: icon.slug,
-              hex: icon.hex,
-              path: icon.path,
-            };
-          }
-        });
-        setData({ simpleIcons: mapped });
-        setLoadFailed(false);
-      } catch (err) {
-        try {
-          const res = await fetch(fallbackUrl);
-          if (!res.ok) throw new Error(`fallback simple-icons ${res.status}`);
-          const json = (await res.json()) as { icons: Array<{
-            title: string;
-            slug: string;
-            hex: string;
-            path: string;
-          }> };
-          const mapped: Record<string, SimpleIcon> = {};
-          json.icons.forEach((icon) => {
-            if (iconSlugs.includes(icon.slug)) {
-              mapped[icon.slug] = {
-                title: icon.title,
-                slug: icon.slug,
-                hex: icon.hex,
-                path: icon.path,
-              };
-            }
-          });
-          setData({ simpleIcons: mapped });
-          setLoadFailed(false);
-        } catch (e2) {
-          console.error("Failed to load simple-icons data", e2);
-          setData(null);
-          setLoadFailed(true);
-        }
-      }
-    };
-
-    load();
+    const mapped: Record<string, SimpleIcon> = {};
+    iconSlugs.forEach((slug) => {
+      const icon = simpleIconsSubset[slug];
+      if (icon) mapped[slug] = icon;
+    });
+    if (Object.keys(mapped).length === 0) {
+      setLoadFailed(true);
+      setData(null);
+    } else {
+      setData({ simpleIcons: mapped });
+      setLoadFailed(false);
+    }
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
