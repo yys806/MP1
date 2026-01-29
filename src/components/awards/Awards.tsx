@@ -1,4 +1,4 @@
-import Link from "next/link"
+ï»¿import Link from "next/link"
 import { awards, awardsHeadLine } from "@/config/projects"
 import { Card } from "@/components/shared/Card"
 import { Section } from "@/components/layout/Section"
@@ -27,13 +27,32 @@ export function Awards() {
               </p>
               {award.link && (
                 <Link
-                  href={award.link.href}
+                  href={
+                    /^https?:\/\//.test(award.link.href)
+                      ? award.link.href
+                      : `https://${award.link.href}`
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-primary hover:underline inline-flex items-center gap-1"
                 >
-                  {selectText(award.link.label ?? { en: "View detail", zh: "²é¿´ÏêÇé" }, locale)}
-                  <span aria-hidden>¡ú</span>
+                  {selectText(award.link.label ?? { en: "View detail", zh: "æŸ¥çœ‹è¯¦æƒ…" }, locale)}
+                  <span aria-hidden>â†’</span>
+                </Link>
+              )}
+              {!award.link && (award as any).href && (
+                <Link
+                  href={
+                    /^https?:\/\//.test((award as any).href)
+                      ? (award as any).href
+                      : `https://${(award as any).href}`
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline inline-flex items-center gap-1"
+                >
+                  {selectText({ en: "View detail", zh: "æŸ¥çœ‹è¯¦æƒ…" }, locale)}
+                  <span aria-hidden>â†’</span>
                 </Link>
               )}
             </div>
