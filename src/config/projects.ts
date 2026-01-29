@@ -52,13 +52,13 @@ export const awards: Array<ActivityItemType> = [
     location: { en: 'Shanghai', zh: '上海' },
   },
   {
-    name: { en: 'The 9th IC-Innovation Challenge - JYD Cup', zh: '第九届 IC-Innovation 挑战赛 - JYD 杯' },
+    name: { en: 'The 9th IC-Innovation Challenge - JYD Cup', zh: '第九届 IC-Innovation 挑战赛 - 竞业达杯' },
     description: { en: 'East China Division Third Prize', zh: '华东赛区三等奖' },
     date: { en: '2025.7.31', zh: '2025.7.31' },
     location: { en: 'Shanghai', zh: '上海' },
   },
   {
-    name: { en: 'MothorCup Mathematical Modeling Competition', zh: '摩托杯数学建模竞赛' },
+    name: { en: 'MothorCup Mathematical Modeling Competition', zh: '妈妈杯数学建模竞赛' },
     description: { en: 'Shanghai Third Prize', zh: '上海赛区三等奖' },
     date: { en: '2025.4.18', zh: '2025.4.18' },
     location: { en: 'Shanghai', zh: '上海' },
