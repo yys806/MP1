@@ -365,6 +365,6 @@ export const activities: Array<ActivityItemType> = [
       { en: 'Enjoying and analyzing films from various genres and directors.', zh: '欣赏并分析各类型影片与导演作品。' },
     date: { en: 'Always', zh: '一直在看' },
     location: { en: 'Yunnan & Shanghai', zh: '云南 & 上海' },
-    link: 'https://tv-ten-chi.vercel.app/',
+    link: 'https://shen806.de5.net/',
   },
 ]
