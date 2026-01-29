@@ -8,6 +8,12 @@ import { selectText } from '@/lib/i18n'
 
 export function ActivityCard({ activity, titleAs }: { activity: ActivityItemType, titleAs?: keyof JSX.IntrinsicElements }) {
   const { locale } = useLanguage()
+  const rawHref = activity.link?.href ?? (activity as any).href
+  const resolvedHref = rawHref
+    ? /^https?:\/\//.test(rawHref)
+      ? rawHref
+      : `https://${rawHref}`
+    : undefined
   let Component = titleAs ?? 'h2'
   return (
     <li className='group relative flex flex-col items-start h-full'>
@@ -35,16 +41,19 @@ export function ActivityCard({ activity, titleAs }: { activity: ActivityItemType
               {selectText(activity.location, locale)}
             </div>
           </div>
+          {resolvedHref && (
+            <Link
+              href={resolvedHref}
+              target='_blank'
+              rel='noopener noreferrer'
+              className="mt-3 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
+            >
+              {selectText(activity.link?.label ?? { en: 'View detail', zh: '查看详情' }, locale)}
+              <span aria-hidden className="text-sm leading-none">→</span>
+            </Link>
+          )}
         </div>
       </div>
-      {activity.link && (
-        <Link
-          href={activity.link}
-          target='_blank'
-          rel='noopener noreferrer'
-          className='absolute inset-0 z-20'
-        />
-      )}
     </li>
   )
 }
