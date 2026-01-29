@@ -53,42 +53,70 @@ export const awards: Array<ActivityItemType> = [
     description: { en: 'National Third Prize', zh: '全国三等奖' },
     date: { en: '2025.8.10', zh: '2025.8.10' },
     location: { en: 'Shanghai', zh: '上海' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/2025%E5%8D%8E%E6%95%B0%E6%9D%AF.pdf',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: 'The 9th IC-Innovation Challenge - JYD Cup', zh: '第九届 IC-Innovation 挑战赛 - 竞业达杯' },
     description: { en: 'East China Division Third Prize', zh: '华东赛区三等奖' },
     date: { en: '2025.7.31', zh: '2025.7.31' },
     location: { en: 'Shanghai', zh: '上海' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/2025%E9%9B%86%E5%88%9B%E8%B5%9B.jpg',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: 'MothorCup Mathematical Modeling Competition', zh: '妈妈杯数学建模竞赛' },
     description: { en: 'Shanghai Third Prize', zh: '上海赛区三等奖' },
     date: { en: '2025.4.18', zh: '2025.4.18' },
     location: { en: 'Shanghai', zh: '上海' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/2025%20%E5%A6%88%E5%A6%88%E6%9D%AF.jpg',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: 'Mathematical Contest In Modeling', zh: '美国大学生数学建模竞赛 (MCM/ICM)' },
     description: { en: 'Successful Participant', zh: 'Successful Participant' },
     date: { en: '2025.1.24', zh: '2025.1.24' },
     location: { en: 'Shanghai', zh: '上海' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/2025%E6%95%B0%E6%A8%A1%E7%BE%8E%E8%B5%9B.pdf',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: '2024 National College English Translation Competition', zh: '2024 全国大学生英语翻译大赛' },
     description: { en: 'Third Prize', zh: '三等奖' },
     date: { en: '2024.11.1', zh: '2024.11.1' },
     location: { en: 'Shanghai', zh: '上海' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2023-2024/%E5%A4%A7%E8%8B%B1%E7%BF%BB%E8%AF%91.jpg',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: '2024 National College Student Mathematical Modeling Competition', zh: '2024 全国大学生数学建模竞赛' },
     description: { en: 'Shanghai Third Prize', zh: '上海赛区三等奖' },
     date: { en: '2024.9.5', zh: '2024.9.5' },
     location: { en: 'Shanghai', zh: '上海' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/2024%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B.jpg',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: 'Tongji University Freshman Structure Competition', zh: '同济大学新生结构设计大赛' },
     description: { en: 'Third Prize', zh: '三等奖' },
     date: { en: '2023.12.5', zh: '2023.12.5' },
     location: { en: 'Tongji, Shanghai', zh: '同济·上海' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2023-2024/%E6%96%B0%E7%94%9F%E7%BB%93%E6%9E%84%E8%B5%9B.jpg',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
 ]
 // Research & Projects
