@@ -27,7 +27,7 @@ export type EducationItemType = {
       end: '2023'
     },
     {
-      school: { en: 'Mangshui Middle School', zh: '芒市中学' },
+      school: { en: 'Mangshui Middle School', zh: '漭水中学' },
       major: { en: 'Study', zh: '学习' },
       logo: 'bank',
       start: '2018',

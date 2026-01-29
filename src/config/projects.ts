@@ -93,6 +93,81 @@ export const awards: Array<ActivityItemType> = [
 export const projectHeadLine: LocalizedString = { en: 'Research & Projects', zh: '科研与项目' }
 export const projectIntro: LocalizedString = { en: "Academic research and technical projects I've worked on.", zh: '我参与的科研与技术项目。' }
 
+const researchProjects: Array<ProjectItemType> = [
+  {
+    name: { en: 'Tongji University Quality Control Office Agent Development', zh: '同济大学质管办智能体开发' },
+    description: { en: 'Agent to help Quality Control Office manage and analyze quality data.', zh: '帮助质管办管理与分析质量数据的智能体。' },
+    link: { href: 'agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg', label: { en: 'View', zh: '查看' } },
+    tags: [
+      { en: 'Workflow', zh: '工作流' },
+      { en: 'Automation', zh: '自动化' },
+      { en: 'Python', zh: 'Python' },
+      { en: 'AI', zh: 'AI' },
+      { en: 'Deepseek', zh: 'Deepseek' },
+    ],
+    icon: '/images/icon/tongji.jpg',
+  },
+  {
+    name: { en: 'Intelligent passenger flow sensing & optimized carriage allocation for subway', zh: '地铁智能客流感知与车厢优化分配系统' },
+    description: { en: 'Shanghai Municipal University Student Innovation and Entrepreneurship Project', zh: '上海市大学生创新创业项目' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/SITP%E7%BB%93%E9%A2%98%E8%AF%81%E4%B9%A6.pdf',
+      label: { en: 'View', zh: '查看' },
+    },
+    tags: [
+      { en: 'Civil Engineering', zh: '土木工程' },
+      { en: 'Computer Vision', zh: '计算机视觉' },
+      { en: 'Raspberry Pi', zh: '树莓派' },
+    ],
+    icon: '/images/icon/shen.png',
+  },
+]
+
+const replicaProjects: Array<ProjectItemType> = [
+  {
+    name: { en: 'Voice-controlled Lights (ASRpro + TianWen Block)', zh: '语音开关灯（ASRpro + 天问 Block）' },
+    description: { en: 'Turn lights on/off via voice using ASRpro dev board and TianWen Block.', zh: '基于 ASRpro 开发板和天问 Block 的语音控制开关灯项目。' },
+    link: { href: 'www.bilibili.com/video/BV1ADmbYEEGp/?spm_id_from=333.1387.favlist.content.click&vd_source=b328f81ac0f998e0c6c3cac579e6edfb', label: { en: 'Watch', zh: '观看' } },
+    tags: [
+      { en: 'Voice Control', zh: '语音控制' },
+      { en: 'ASR', zh: '语音识别' },
+      { en: 'Embedded', zh: '嵌入式' },
+      { en: 'TianWen', zh: '天问' },
+    ],
+    icon: '/images/icon/shen.png',
+  },
+  {
+    name: { en: 'Little Wang Robot Dog v1.0', zh: '小汪机器人狗 v1.0' },
+    description: { en: 'Robotic dog for companionship and assistance.', zh: '用于陪伴与辅助的机器人狗。' },
+    link: {
+      href: 'oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban',
+      label: { en: 'View', zh: '查看' },
+    },
+    tags: [
+      { en: 'PCB Design', zh: 'PCB 设计' },
+      { en: 'Welding', zh: '焊接' },
+      { en: 'TianWen', zh: '天问' },
+      { en: 'AI', zh: 'AI' },
+      { en: 'Servo', zh: '舵机' },
+    ],
+    icon: '/images/icon/shen.png',
+  },
+  {
+    name: { en: 'Xiao Zhi AI Chatbot', zh: '小智 AI 聊天机器人' },
+    description: { en: 'AI chatbot for natural language conversation.', zh: '用于自然语言对话的 AI 聊天机器人。' },
+    link: { href: 'github.com/78/xiaozhi-esp32', label: { en: 'View', zh: '查看' } },
+    tags: [
+      { en: 'PCB Design', zh: 'PCB 设计' },
+      { en: '3D Printing', zh: '3D 打印' },
+      { en: 'MCP', zh: 'MCP' },
+      { en: 'Python', zh: 'Python' },
+      { en: 'AI Chat', zh: 'AI 聊天' },
+      { en: 'LLM', zh: '大模型' },
+    ],
+    icon: '/images/icon/github.png',
+  },
+]
+
 const courseworkProjects: Array<ProjectItemType> = [
   {
     name: { en: 'e203-htmi-fpga', zh: 'e203-htmi-fpga 字符终端系统' },
@@ -254,70 +329,11 @@ const webDevProjects: Array<ProjectItemType> = [
   },
 ]
 
-const researchProjects: Array<ProjectItemType> = [
-  {
-    name: { en: 'Tongji University Quality Control Office Agent Development', zh: '同济大学质控办智能体开发' },
-    description: { en: 'Agent to help Quality Control Office manage and analyze quality data.', zh: '帮助质控办管理与分析质量数据的智能体。' },
-    link: { href: 'agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg', label: { en: 'View', zh: '查看' } },
-    tags: [
-      { en: 'Workflow', zh: '工作流' },
-      { en: 'Automation', zh: '自动化' },
-      { en: 'Python', zh: 'Python' },
-      { en: 'AI', zh: 'AI' },
-      { en: 'Deepseek', zh: 'Deepseek' },
-    ],
-    icon: '/images/icon/tongji.jpg',
-  },
-  {
-    name: { en: 'Intelligent passenger flow sensing & optimized carriage allocation for subway', zh: '地铁智能客流感知与车厢优化分配系统' },
-    description: { en: 'Shanghai Municipal University Student Innovation and Entrepreneurship Project', zh: '上海市大学生创新创业项目' },
-    link: {
-      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/SITP%E7%BB%93%E9%A2%98%E8%AF%81%E4%B9%A6.pdf',
-      label: { en: 'View', zh: '查看' },
-    },
-    tags: [
-      { en: 'Civil Engineering', zh: '土木工程' },
-      { en: 'Computer Vision', zh: '计算机视觉' },
-      { en: 'Raspberry Pi', zh: '树莓派' },
-    ],
-    icon: '/images/icon/shen.png',
-  },
-  {
-    name: { en: 'Little Wang Robot Dog v1.0', zh: '小汪机器人狗 v1.0' },
-    description: { en: 'Robotic dog for companionship and assistance.', zh: '用于陪伴与辅助的机器人狗。' },
-    link: {
-      href: 'oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban',
-      label: { en: 'View', zh: '查看' },
-    },
-    tags: [
-      { en: 'PCB Design', zh: 'PCB 设计' },
-      { en: 'Welding', zh: '焊接' },
-      { en: 'TianWen', zh: '天问' },
-      { en: 'AI', zh: 'AI' },
-      { en: 'Servo', zh: '舵机' },
-    ],
-    icon: '/images/icon/shen.png',
-  },
-  {
-    name: { en: 'Xiao Zhi AI Chatbot', zh: '小智 AI 聊天机器人' },
-    description: { en: 'AI chatbot for natural language conversation.', zh: '用于自然语言对话的 AI 聊天机器人。' },
-    link: { href: 'github.com/78/xiaozhi-esp32', label: { en: 'View', zh: '查看' } },
-    tags: [
-      { en: 'PCB Design', zh: 'PCB 设计' },
-      { en: '3D Printing', zh: '3D 打印' },
-      { en: 'MCP', zh: 'MCP' },
-      { en: 'Python', zh: 'Python' },
-      { en: 'AI Chat', zh: 'AI 聊天' },
-      { en: 'LLM', zh: '大模型' },
-    ],
-    icon: '/images/icon/github.png',
-  },
-]
-
 export const projectSections: Array<ProjectSectionType> = [
+  { title: { en: 'Research & Projects', zh: '科研研究与项目' }, items: researchProjects },
   { title: { en: 'Course Projects', zh: '校内大作业' }, items: courseworkProjects },
   { title: { en: 'Web Development', zh: '网站开发' }, items: webDevProjects },
-  { title: { en: 'Research & Projects', zh: '科研研究与项目' }, items: researchProjects },
+  { title: { en: 'Replica & Hobby Builds', zh: '复刻与小项目' }, items: replicaProjects },
 ]
 
 export const projects: Array<ProjectItemType> = projectSections.flatMap((section) => section.items)
