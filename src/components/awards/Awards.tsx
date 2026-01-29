@@ -1,5 +1,4 @@
-﻿import Link from "next/link"
-import { awards, awardsHeadLine } from "@/config/projects"
+﻿import { awards, awardsHeadLine } from "@/config/projects"
 import { Card } from "@/components/shared/Card"
 import { Section } from "@/components/layout/Section"
 import { useLanguage } from "@/app/providers"
@@ -25,36 +24,23 @@ export function Awards() {
               <p className="text-sm text-muted-foreground">
                 {selectText(award.description, locale)}
               </p>
-              {award.link && (
-                <Link
-                  href={
-                    /^https?:\/\//.test(award.link.href)
-                      ? award.link.href
-                      : `https://${award.link.href}`
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline inline-flex items-center gap-1"
-                >
-                  {selectText(award.link.label ?? { en: "View detail", zh: "查看详情" }, locale)}
-                  <span aria-hidden>→</span>
-                </Link>
-              )}
-              {!award.link && (award as any).href && (
-                <Link
-                  href={
-                    /^https?:\/\//.test((award as any).href)
-                      ? (award as any).href
-                      : `https://${(award as any).href}`
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline inline-flex items-center gap-1"
-                >
-                  {selectText({ en: "View detail", zh: "查看详情" }, locale)}
-                  <span aria-hidden>→</span>
-                </Link>
-              )}
+              {(() => {
+                const rawHref = award.link?.href ?? (award as any).href
+                if (!rawHref) return null
+                const resolvedHref = /^https?:\/\//.test(rawHref) ? rawHref : `https://${rawHref}`
+                const label = award.link?.label ?? { en: "View detail", zh: "查看详情" }
+                return (
+                  <a
+                    href={resolvedHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-primary hover:underline inline-flex items-center gap-1"
+                  >
+                    {selectText(label, locale)}
+                    <span aria-hidden>→</span>
+                  </a>
+                )
+              })()}
             </div>
           </Card>
         ))}
