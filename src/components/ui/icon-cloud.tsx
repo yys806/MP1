@@ -59,7 +59,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
             alt={slug}
             loading="lazy"
             className="h-8 w-8 transition-[filter]"
-            style={{ filter }}
+            style={{ filter, opacity: isDark ? 1 : 0.9 }}
             onError={(e) => {
               e.currentTarget.onerror = null;
               e.currentTarget.style.display = "none";
@@ -76,7 +76,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
 
   return (
     // @ts-ignore
-    <Cloud {...cloudProps}>
+    <Cloud key={isDark ? "cloud-dark" : "cloud-light"} {...cloudProps}>
       <>{icons}</>
     </Cloud>
   );
