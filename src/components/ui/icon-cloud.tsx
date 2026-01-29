@@ -36,12 +36,14 @@ export type DynamicCloudProps = {
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { resolvedTheme } = useTheme();
-  const isDark = (resolvedTheme || "light") === "dark";
+  const isDark =
+    (resolvedTheme || "light") === "dark" ||
+    (typeof document !== "undefined" && document.documentElement.classList.contains("dark"));
 
   const icons = useMemo(() => {
     const filter = isDark
-      ? "invert(1) grayscale(1) brightness(3) contrast(1.3)"
-      : "invert(0) grayscale(1) brightness(0.2) contrast(1)";
+      ? "brightness(0) saturate(100%) invert(1)"
+      : "brightness(0) saturate(100%) invert(0)";
     return iconSlugs.map((slug) => {
       const url = `/icons/${slug}.svg`;
       return (
