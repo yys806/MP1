@@ -17,7 +17,7 @@ export const aboutMeHeadline: LocalizedString = { en: 'Who Are You and Why Shoul
 export const aboutParagraphs: LocalizedString[] = [
   {
     en: "My name is Yu Yaoshen, an undergraduate student majoring in Artificial Intelligence at Tongji University. My current GPA is 4.78/5, equivalent to 92.77 points out of 100. My major ranking is 1/47, which puts me in the top 2.13%.",
-    zh: "我叫禹尧珅，同济大学人工智能专业本科生，绩点 4.78/5（92.77/100），专业排名 1/47。",
+    zh: "我叫禹尧珅，同济大学人工智能专业本科生，绩点 4.78/5（92.77/100），专业排名 1/47，前2.13%。",
   },
   {
     en: 'Currently I am studying courses such as Embedded systems, data structures, PCB design, machine learning, deep learning, Python, computer vision. I have a solid foundation in embedded systems and programming.',
