@@ -13,7 +13,7 @@ export const githubUsername = 'yys806'
 // about page
 export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
 export const aboutParagraphs = [
-  "My name is Yu Yaoshen, an undergraduate student majoring in Artificial Intelligence at Tongji University. My current GPA is 4.73/5, equivalent to 92.34 points out of 100. My major ranking is 2/47, which puts me in the top 4.26%.",
+  "My name is Yu Yaoshen, an undergraduate student majoring in Artificial Intelligence at Tongji University. My current GPA is 4.78/5, equivalent to 92.77 points out of 100. My major ranking is 1/47, which puts me in the top 2.13%.",
   'Currently I am studying courses such as Embedded systems, data structures, PCB design, machine learning, deep learning, Python, computer vision. I have a solid foundation in embedded systems and programming.',
   "I started this blog to share the insights I learn every day. Most blogs focus on education in Artificial Intelligence and general computer science, while others share the important lessons I've learned.",
 ]

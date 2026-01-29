@@ -8,7 +8,7 @@ import { BlogCard } from '@/components/home/BlogCard'
 import { getAllBlogs, type BlogType } from '@/lib/blogs'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { ActivityCard } from '@/components/home/ActivityCard'
-import { projectHeadLine, projectIntro, projects, blogHeadLine, blogIntro, techIcons } from '@/config/infoConfig'
+import { projectHeadLine, projectIntro, projectSections, blogHeadLine, blogIntro, techIcons } from '@/config/infoConfig'
 import { awards, awardsHeadLine, awardsIntro, activities, activitiesHeadLine, activitiesIntro } from '@/config/projects'
 import IconCloud from "@/components/ui/icon-cloud"
 import { Award, Briefcase, Heart } from 'lucide-react'
@@ -60,14 +60,23 @@ export default async function Home() {
           <p className="text-base text-muted-foreground max-w-2xl mb-8">
             {projectIntro}
           </p>
-          <ul
-            role="list"
-            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
-          >
-            {projects.map((project) => (
-              <ProjectCard key={project.name} project={project} titleAs='h3'/>
+          <div className="space-y-10">
+            {projectSections.map((section) => (
+              <div key={section.title}>
+                <h3 className="text-lg font-semibold tracking-tight md:text-xl opacity-80 mb-4">
+                  {section.title}
+                </h3>
+                <ul
+                  role="list"
+                  className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
+                >
+                  {section.items.map((project) => (
+                    <ProjectCard key={project.name} project={project} titleAs='h4'/>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
 
         {/* Hobbies & Volunteer */}

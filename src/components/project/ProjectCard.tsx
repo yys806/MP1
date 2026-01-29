@@ -10,6 +10,11 @@ import { Favicon } from "favicon-stealer";
 
 export function ProjectCard({ project, titleAs }: { project: ProjectItemType, titleAs?: keyof JSX.IntrinsicElements }) {
   const utmLink = `https://${project.link.href}?utm_source=${utm_source}`
+  const siteLink = project.website
+    ? project.website.startsWith('http')
+      ? project.website
+      : `https://${project.website}`
+    : null
   let Component = titleAs ?? 'h2'
   return (
     <li className='group relative flex flex-col items-start h-full'>
@@ -55,6 +60,20 @@ export function ProjectCard({ project, titleAs }: { project: ProjectItemType, ti
             </div>
           )}
         </div>
+        {siteLink && (
+          <div className="relative z-30 mt-4 ml-1 flex gap-3">
+            <Link
+              href={siteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 rounded-lg border border-primary/30 px-3 py-1 text-sm font-semibold text-primary transition-colors hover:border-primary hover:bg-primary/10"
+              onClick={(e) => e.stopPropagation()}
+            >
+              访问网站
+              <ArrowUpRight size={16} weight="duotone" />
+            </Link>
+          </div>
+        )}
         <Link
           href={utmLink}
           target='_blank'

@@ -1,6 +1,6 @@
 import { type Metadata } from 'next'
 import { SimpleLayout } from '@/components/layout/SimpleLayout'
-import { projectHeadLine, projectIntro, projects } from '@/config/infoConfig'
+import { projectHeadLine, projectIntro, projectSections } from '@/config/infoConfig'
 import { activities } from '@/config/projects'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { ActivityCard } from '@/components/home/ActivityCard'
@@ -8,7 +8,7 @@ import { Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: projectHeadLine,
+  description: projectIntro,
 }
 
 export default function Projects() {
@@ -17,14 +17,23 @@ export default function Projects() {
       title={projectHeadLine}
       intro={projectIntro}
     >
-      <ul
-        role="list"
-        className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 pb-10"
-      >
-        {projects.map((project) => (
-          <ProjectCard key={project.name} project={project} />
+      <div className="space-y-12 pb-10">
+        {projectSections.map((section) => (
+          <section key={section.title} className="space-y-6">
+            <h2 className="text-lg font-semibold tracking-tight md:text-xl opacity-80">
+              {section.title}
+            </h2>
+            <ul
+              role="list"
+              className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              {section.items.map((project) => (
+                <ProjectCard key={project.name} project={project} />
+              ))}
+            </ul>
+          </section>
         ))}
-      </ul>
+      </div>
       <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
             <Calendar size={28}/>
