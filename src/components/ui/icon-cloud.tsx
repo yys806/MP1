@@ -67,6 +67,7 @@ type IconData = {
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null);
+  const [loadFailed, setLoadFailed] = useState(false);
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -98,6 +99,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
       } catch (err) {
         console.error("Failed to load simple-icons data", err);
         setData(null);
+        setLoadFailed(true);
       }
     };
 
@@ -111,6 +113,24 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
       renderCustomIcon(icon, theme || "light"),
     );
   }, [data, theme]);
+
+  const fallbackColor = theme === "light" ? "1f2937" : "e5e7eb";
+
+  if (!data || !renderedIcons || loadFailed) {
+    return (
+      <div className="grid grid-cols-4 sm:grid-cols-6 gap-4 justify-items-center">
+        {iconSlugs.map((slug) => (
+          <img
+            key={slug}
+            src={`https://cdn.simpleicons.org/${slug}/${fallbackColor}`}
+            alt={slug}
+            className="h-10 w-10"
+            loading="lazy"
+          />
+        ))}
+      </div>
+    );
+  }
 
   return (
     // @ts-ignore
