@@ -59,7 +59,13 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
             alt={slug}
             loading="lazy"
             className="h-8 w-8 transition-[filter]"
-            style={{ filter, opacity: isDark ? 1 : 0.9 }}
+            style={{
+              filter,
+              WebkitFilter: filter,
+              opacity: isDark ? 1 : 0.9,
+              color: isDark ? "#fff" : "#000",
+              mixBlendMode: isDark ? "screen" : "normal",
+            }}
             onError={(e) => {
               e.currentTarget.onerror = null;
               e.currentTarget.style.display = "none";
