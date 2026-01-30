@@ -61,9 +61,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   }, [resolvedTheme]);
 
   const icons = useMemo(() => {
-    const filter = isDark
-      ? "invert(1) brightness(2.4) contrast(1.2)"
-      : "none";
+    const filter = isDark ? "none" : "none";
     return iconSlugs.map((slug) => {
       const url = `/icons/${slug}.svg`;
       return (
@@ -100,10 +98,15 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     return <div className="h-32 flex items-center justify-center text-sm text-muted-foreground">No icons</div>;
   }
 
+  const cloudKey = isDark ? "cloud-dark" : "cloud-light";
+  const containerFilter = isDark ? "invert(1) brightness(2.4) contrast(1.2)" : "none";
+
   return (
-    // @ts-ignore
-    <Cloud key={isDark ? "cloud-dark" : "cloud-light"} {...cloudProps}>
-      <>{icons}</>
-    </Cloud>
+    <div className="transition-[filter]" style={{ filter: containerFilter }}>
+      {/* @ts-ignore */}
+      <Cloud key={cloudKey} {...cloudProps}>
+        <>{icons}</>
+      </Cloud>
+    </div>
   );
 }
