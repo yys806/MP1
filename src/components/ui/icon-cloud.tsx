@@ -36,32 +36,14 @@ export type DynamicCloudProps = {
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-  const [isDark, setIsDark] = useState<boolean>(false);
+  useEffect(() => setMounted(true), []);
 
-  useEffect(() => {
-    if (typeof document === "undefined") return;
-    const docEl = document.documentElement;
-    const mq = window.matchMedia?.("(prefers-color-scheme: dark)");
-
-    const compute = () => {
-      if (docEl.classList.contains("dark")) return true;
-      if (docEl.dataset.theme === "dark") return true;
-      if (docEl.dataset.theme === "light") return false;
-      if (resolvedTheme === "dark") return true;
-      if (resolvedTheme === "light") return false;
-      if (mq?.matches) return true;
-      return false;
-    };
-
-    setIsDark(compute());
-    const listener = () => setIsDark(compute());
-    mq?.addEventListener?.("change", listener);
-    return () => mq?.removeEventListener?.("change", listener);
-  }, [resolvedTheme]);
+  const isDark = mounted && resolvedTheme === "dark";
 
   const icons = useMemo(() => {
-    const filter = isDark ? "none" : "none";
+    const filter = "none";
     return iconSlugs.map((slug) => {
       const url = `/icons/${slug}.svg`;
       return (
