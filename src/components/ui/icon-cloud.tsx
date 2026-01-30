@@ -55,7 +55,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
       if (resolvedTheme === "light") return false;
       // 3) background luminance fallback
       const color = getComputedStyle(body).backgroundColor || getComputedStyle(docEl).backgroundColor;
-      const m = color.match(/rgba?\\((\\d+),\\s*(\\d+),\\s*(\\d+)/);
+      const m = color.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
       if (m) {
         const [r, g, b] = m.slice(1).map(Number);
         const lum = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
