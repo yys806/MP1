@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import { Cloud, ICloud } from "react-icon-cloud";
 
@@ -37,22 +37,45 @@ export type DynamicCloudProps = {
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const { resolvedTheme } = useTheme();
 
-  const isDark = useMemo(() => {
-    if (typeof document !== "undefined") {
-      const docEl = document.documentElement;
+  const [isDark, setIsDark] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    const docEl = document.documentElement;
+    const body = document.body;
+    const mq = window.matchMedia?.("(prefers-color-scheme: dark)");
+
+    const compute = () => {
+      // 1) explicit class / data-theme
       if (docEl.classList.contains("dark")) return true;
       if (docEl.dataset.theme === "dark") return true;
-      if (!resolvedTheme || resolvedTheme === "system") {
-        const mq = window.matchMedia?.("(prefers-color-scheme: dark)");
-        if (mq?.matches) return true;
+      if (docEl.dataset.theme === "light") return false;
+      // 2) resolvedTheme from next-themes
+      if (resolvedTheme === "dark") return true;
+      if (resolvedTheme === "light") return false;
+      // 3) background luminance fallback
+      const color = getComputedStyle(body).backgroundColor || getComputedStyle(docEl).backgroundColor;
+      const m = color.match(/rgba?\\((\\d+),\\s*(\\d+),\\s*(\\d+)/);
+      if (m) {
+        const [r, g, b] = m.slice(1).map(Number);
+        const lum = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+        if (lum < 0.5) return true;
       }
-    }
-    return (resolvedTheme || "light") === "dark";
+      // 4) prefers-color-scheme
+      if (mq?.matches) return true;
+      return false;
+    };
+
+    setIsDark(compute());
+
+    const listener = () => setIsDark(compute());
+    mq?.addEventListener?.("change", listener);
+    return () => mq?.removeEventListener?.("change", listener);
   }, [resolvedTheme]);
 
   const icons = useMemo(() => {
     const filter = isDark
-      ? "invert(1) brightness(2) contrast(1.1)"
+      ? "invert(1) brightness(2.5) contrast(1.3)"
       : "invert(0) brightness(0.1) contrast(1)";
     return iconSlugs.map((slug) => {
       const url = `/icons/${slug}.svg`;
