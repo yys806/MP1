@@ -91,9 +91,14 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   }
 
   return (
-    // @ts-ignore
-    <Cloud key={isDark ? "cloud-dark" : "cloud-light"} {...cloudProps}>
-      <>{icons}</>
-    </Cloud>
+    <div
+      className="transition-[filter]"
+      style={{ filter: isDark ? "invert(1) brightness(2.2) contrast(1.2)" : "none" }}
+    >
+      {/* @ts-ignore */}
+      <Cloud key={isDark ? "cloud-dark" : "cloud-light"} {...cloudProps}>
+        <>{icons}</>
+      </Cloud>
+    </div>
   );
 }
