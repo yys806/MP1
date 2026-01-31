@@ -158,9 +158,9 @@ const researchProjects: Array<ProjectItemType> = [
       label: { en: 'View', zh: '查看' },
     },
     tags: [
-      { en: 'Civil Engineering', zh: '土木工程' },
-      { en: 'Computer Vision', zh: '计算机视觉' },
-      { en: 'Raspberry Pi', zh: '树莓派' },
+      { en: 'Google', zh: '谷歌' },
+      { en: 'Gemini', zh: 'Gemini' },
+      { en: 'Plugin', zh: '插件' },
     ],
     icon: '/images/icon/shen.png',
   },
