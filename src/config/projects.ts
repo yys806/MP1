@@ -150,6 +150,20 @@ const researchProjects: Array<ProjectItemType> = [
     ],
     icon: '/images/icon/shen.png',
   },
+  {
+    name: { en: 'Gemini History Query Plugin', zh: 'Gemini对话历史查询插件' },
+    description: { en: 'A plugin for querying conversation history in Gemini.', zh: '用于快速查询Gemini对话历史的插件。' },
+    link: {
+      href: 'pan.baidu.com/s/1Qe9SzUnthsM5x78hzk5QBQ?pwd=8qie',
+      label: { en: 'View', zh: '查看' },
+    },
+    tags: [
+      { en: 'Civil Engineering', zh: '土木工程' },
+      { en: 'Computer Vision', zh: '计算机视觉' },
+      { en: 'Raspberry Pi', zh: '树莓派' },
+    ],
+    icon: '/images/icon/shen.png',
+  },
 ]
 const replicaProjects: Array<ProjectItemType> = [
   {
