@@ -13,6 +13,7 @@ export type ActivityItemType = {
   date: LocalizedString
   location: LocalizedString
   link?: { href: string; label?: LocalizedString }
+  website?: string
 }
 export type ProjectSectionType = {
   title: LocalizedString
@@ -386,6 +387,7 @@ export const activities: Array<ActivityItemType> = [
     date: { en: '2018-Present', zh: '2018 至今' },
     location: { en: 'Yunnan', zh: '云南' },
     link: { href: 'space.bilibili.com/199555828' },
+    website: 'https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93',
   },
   {
     name: { en: 'Running', zh: '跑步' },

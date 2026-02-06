@@ -1,6 +1,7 @@
 "use client"
 
 import { Calendar, Clock, MapPin } from 'lucide-react'
+import { ArrowUpRight } from '@phosphor-icons/react'
 import { ActivityItemType } from '@/config/projects'
 import Link from 'next/link'
 import { useLanguage } from '@/app/providers'
@@ -14,6 +15,11 @@ export function ActivityCard({ activity, titleAs }: { activity: ActivityItemType
       ? rawHref
       : `https://${rawHref}`
     : undefined
+  const siteLink = activity.website
+    ? activity.website.startsWith('http')
+      ? activity.website
+      : `https://${activity.website}`
+    : null
   let Component = titleAs ?? 'h2'
   return (
     <li className='group relative flex flex-col items-start h-full'>
@@ -41,6 +47,20 @@ export function ActivityCard({ activity, titleAs }: { activity: ActivityItemType
               {selectText(activity.location, locale)}
             </div>
           </div>
+          {siteLink && (
+            <div className="relative z-30 mt-3 flex gap-3">
+              <Link
+                href={siteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 rounded-lg border border-primary/30 px-3 py-1 text-sm font-semibold text-primary transition-colors hover:border-primary hover:bg-primary/10"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {locale === 'zh' ? '魔方公式' : 'Cube Formulas'}
+                <ArrowUpRight size={16} weight="duotone" />
+              </Link>
+            </div>
+          )}
           {resolvedHref && (
             <Link
               href={resolvedHref}
