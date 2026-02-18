@@ -1,8 +1,9 @@
-﻿import { LocalizedString } from '@/lib/i18n'
+import { LocalizedString } from '@/lib/i18n'
 export type ProjectItemType = {
   name: LocalizedString
   description: LocalizedString
   link: { href: string; label: LocalizedString }
+  extraLinks?: Array<{ href: string; label: LocalizedString }>
   tags: LocalizedString[]
   website?: string
   icon?: string
@@ -158,10 +159,30 @@ const researchProjects: Array<ProjectItemType> = [
       href: 'pan.baidu.com/s/1Qe9SzUnthsM5x78hzk5QBQ?pwd=8qie',
       label: { en: 'View', zh: '查看' },
     },
+    extraLinks: [
+      {
+        href: 'yys806.github.io/2026/01/16/gemini%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E5%8E%86%E7%A8%8B/',
+        label: { en: 'Tutorial', zh: '教程' },
+      },
+    ],
     tags: [
       { en: 'Google', zh: '谷歌' },
       { en: 'Gemini', zh: 'Gemini' },
       { en: 'Plugin', zh: '插件' },
+    ],
+    icon: '/images/icon/shen.png',
+  },
+  {
+    name: { en: 'Discord Bot Development', zh: 'Discord 机器人开发' },
+    description: { en: 'A Discord bot with various features.', zh: '功能丰富的 Discord 机器人。' },
+    link: {
+      href: 'yys806.github.io/2026/02/18/discord%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E5%8E%86%E7%A8%8B/',
+      label: { en: 'View', zh: '查看' },
+    },
+    tags: [
+      { en: 'Discord', zh: 'Discord' },
+      { en: 'Bot', zh: '机器人' },
+      { en: 'Python', zh: 'Python' },
     ],
     icon: '/images/icon/shen.png',
   },

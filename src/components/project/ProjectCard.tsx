@@ -63,18 +63,36 @@ export function ProjectCard({ project, titleAs }: { project: ProjectItemType, ti
             </div>
           )}
         </div>
-        {siteLink && (
-          <div className="relative z-30 mt-4 ml-1 flex gap-3">
-            <Link
-              href={siteLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 rounded-lg border border-primary/30 px-3 py-1 text-sm font-semibold text-primary transition-colors hover:border-primary hover:bg-primary/10"
-              onClick={(e) => e.stopPropagation()}
-            >
-              访问网站
-              <ArrowUpRight size={16} weight="duotone" />
-            </Link>
+        {(siteLink || (project.extraLinks && project.extraLinks.length > 0)) && (
+          <div className="relative z-30 mt-4 ml-1 flex flex-wrap gap-3">
+            {siteLink && (
+              <Link
+                href={siteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 rounded-lg border border-primary/30 px-3 py-1 text-sm font-semibold text-primary transition-colors hover:border-primary hover:bg-primary/10"
+                onClick={(e) => e.stopPropagation()}
+              >
+                访问网站
+                <ArrowUpRight size={16} weight="duotone" />
+              </Link>
+            )}
+            {project.extraLinks && project.extraLinks.map((extraLink, index) => {
+              const extraUtmLink = `https://${extraLink.href}?utm_source=${utm_source}`
+              return (
+                <Link
+                  key={index}
+                  href={extraUtmLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 rounded-lg border border-primary/30 px-3 py-1 text-sm font-semibold text-primary transition-colors hover:border-primary hover:bg-primary/10"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {selectText(extraLink.label, locale)}
+                  <ArrowUpRight size={16} weight="duotone" />
+                </Link>
+              )
+            })}
           </div>
         )}
         <Link
