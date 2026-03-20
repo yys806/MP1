@@ -39,6 +39,10 @@ export const awards: Array<ActivityItemType> = [
     description: { en: 'Shanghai Second Prize', zh: '上海赛区二等奖' },
     date: { en: '2025', zh: '2025' },
     location: { en: 'Shanghai', zh: '上海' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2025-2026/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B%E7%9C%81%E4%BA%8C.jpg',
+      label: { en: 'View certificate', zh: '查看证书' },
+    },
   },
   {
     name: { en: '2024 National Scholarship', zh: '2024 国家奖学金' },
