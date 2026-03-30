@@ -359,6 +359,24 @@ const webDevProjects: Array<ProjectItemType> = [
     icon: '/images/icon/homepage.jpg',
   },
   {
+    name: { en: 'Shenyu Custom App', zh: '珅玉定制APP' },
+    description: {
+      en: 'An AI-powered jade customization app with image generation, jade gallery, quota approval, and announcement management across frontend and backend.',
+      zh: '一个 AI 驱动的玉石定制应用，支持需求生图、玉苑图库、额度申请审批与公告发布等前后端打通功能。',
+    },
+    link: { href: 'github.com/yys806/yushi2', label: { en: 'View', zh: '查看' } },
+    website: 'shen806.us.ci',
+    tags: [
+      { en: 'AI', zh: 'AI' },
+      { en: 'Netlify', zh: 'Netlify' },
+      { en: 'Supabase', zh: 'Supabase' },
+      { en: 'Jade Customization', zh: '玉石定制' },
+      { en: 'Workflow', zh: '审批流' },
+      { en: 'Full-stack', zh: '全栈' },
+    ],
+    icon: '/images/icon/shenyu.png',
+  },
+  {
     name: { en: 'Fortress', zh: 'Fortress 数据守护' },
     description: { en: 'A tool to restore local important data', zh: '恢复本地重要数据的工具' },
     link: { href: 'github.com/yys806/Fortress.git', label: { en: 'View', zh: '查看' } },
