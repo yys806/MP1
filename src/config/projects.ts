@@ -25,6 +25,32 @@ export const awardsHeadLine: LocalizedString = { en: 'Awards & Honors', zh: '奖
 export const awardsIntro: LocalizedString = { en: 'Recognition for academic and professional achievements.', zh: '学术与专业成就所获荣誉。' }
 export const awards: Array<ActivityItemType> = [
   {
+    name: { en: 'MathSnap Software Copyright', zh: 'MathSnap 软件著作权' },
+    description: {
+      en: 'MathSnap - an academic paper close-reading and deep analysis platform based on multimodal large models.',
+      zh: 'MathSnap - 基于多模态大模型的学术文献精读与深度分析平台，支持论文精读笔记生成与截图公式识别。',
+    },
+    date: { en: '2026', zh: '2026' },
+    location: { en: 'China', zh: '中国' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/%E8%BD%AF%E8%91%97/mathsnap.pdf',
+      label: { en: 'View copyright', zh: '查看软著' },
+    },
+  },
+  {
+    name: { en: 'CYBERORACLE Software Copyright', zh: 'CYBERORACLE 软件著作权' },
+    description: {
+      en: 'CYBERORACLE - an AI fortune simulation and psychological counseling assistant for multidimensional data.',
+      zh: 'CYBERORACLE - 面向多维数据的智能化运势模拟与心理咨询辅助软件，支持小六壬、八字、运势、解梦等功能。',
+    },
+    date: { en: '2026', zh: '2026' },
+    location: { en: 'China', zh: '中国' },
+    link: {
+      href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/%E8%BD%AF%E8%91%97/CYBERORACLE.pdf',
+      label: { en: 'View copyright', zh: '查看软著' },
+    },
+  },
+  {
     name: { en: 'The 7th Global Campus Artificial Intelligence Algorithm Elite Competition in 2025', zh: '2025 第七届全球校园人工智能算法精英赛' },
     description: { en: 'National First Prize', zh: '全国一等奖' },
     date: { en: '2025.12', zh: '2025.12' },
@@ -293,6 +319,12 @@ const webDevProjects: Array<ProjectItemType> = [
     name: { en: 'MathSnap', zh: 'MathSnap' },
     description: { en: 'Website for paper reading, LaTeX converting, and image processing.', zh: '用于论文阅读、LaTeX 转换及图像处理的网站。' },
     link: { href: 'github.com/yys806/research-helper', label: { en: 'View', zh: '查看' } },
+    extraLinks: [
+      {
+        href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/%E8%BD%AF%E8%91%97/mathsnap.pdf',
+        label: { en: 'Software Copyright', zh: '软件著作权' },
+      },
+    ],
     website: '2352396.de5.net',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
@@ -322,6 +354,12 @@ const webDevProjects: Array<ProjectItemType> = [
     name: { en: 'Cyber AI Divination', zh: '赛博 AI 占卜' },
     description: { en: 'Cyber AI Fortune-telling Website', zh: '赛博风格 AI 算卦网站' },
     link: { href: 'github.com/yys806/Divination', label: { en: 'View', zh: '查看' } },
+    extraLinks: [
+      {
+        href: 'pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/%E8%BD%AF%E8%91%97/CYBERORACLE.pdf',
+        label: { en: 'Software Copyright', zh: '软件著作权' },
+      },
+    ],
     website: 'fpga.de5.net',
     tags: [
       { en: 'Gemini', zh: 'Gemini' },
