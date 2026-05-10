@@ -316,6 +316,19 @@ const courseworkProjects: Array<ProjectItemType> = [
 ]
 const webDevProjects: Array<ProjectItemType> = [
   {
+    name: { en: 'Mirror Room', zh: '镜室' },
+    description: { en: 'A skill-based conversation website for chatting directly with different personality skills.', zh: '一个可以直接和各种人格 Skill 对话的网站。' },
+    link: { href: 'github.com/yys806/shen.skill', label: { en: 'View', zh: '查看' } },
+    website: 'skill-chat.cn',
+    tags: [
+      { en: 'Skill', zh: 'Skill' },
+      { en: 'AI Chat', zh: 'AI 对话' },
+      { en: 'Persona', zh: '人格' },
+      { en: 'Web App', zh: 'Web 应用' },
+    ],
+    icon: '/images/icon/shen-skill.png',
+  },
+  {
     name: { en: 'MathSnap', zh: 'MathSnap' },
     description: { en: 'Website for paper reading, LaTeX converting, and image processing.', zh: '用于论文阅读、LaTeX 转换及图像处理的网站。' },
     link: { href: 'github.com/yys806/research-helper', label: { en: 'View', zh: '查看' } },
