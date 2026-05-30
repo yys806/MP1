@@ -319,7 +319,7 @@ const webDevProjects: Array<ProjectItemType> = [
     name: { en: 'Mirror Room', zh: '镜室' },
     description: { en: 'A skill-based conversation website for chatting directly with different personality skills.', zh: '一个可以直接和各种人格 Skill 对话的网站。' },
     link: { href: 'github.com/yys806/shen.skill', label: { en: 'View', zh: '查看' } },
-    website: 'skill-chat.cn',
+    website: 'yly113.de5.net',
     tags: [
       { en: 'Skill', zh: 'Skill' },
       { en: 'AI Chat', zh: 'AI 对话' },
