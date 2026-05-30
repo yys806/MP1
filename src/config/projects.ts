@@ -342,25 +342,35 @@ const courseworkProjects: Array<ProjectItemType> = [
 ]
 const webDevProjects: Array<ProjectItemType> = [
   {
-    name: { en: 'Gemini History Query Plugin', zh: 'Gemini 对话历史查询插件' },
-    description: { en: 'A web/plugin project for querying and organizing conversation history in Gemini.', zh: '用于快速查询和整理 Gemini 对话历史的网页/插件项目。' },
-    link: {
-      href: 'pan.baidu.com/s/1Qe9SzUnthsM5x78hzk5QBQ?pwd=8qie',
-      label: { en: 'View', zh: '查看' },
-    },
-    extraLinks: [
-      {
-        href: 'yys806.github.io/2026/01/16/gemini%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E5%8E%86%E7%A8%8B/',
-        label: { en: 'Tutorial', zh: '教程' },
-      },
-    ],
+    name: { en: 'Mirror Room', zh: '镜室' },
+    description: { en: 'A skill-based conversation website for chatting directly with different personality skills.', zh: '一个可以直接和各种人格 Skill 对话的网站。' },
+    link: { href: 'github.com/yys806/shen.skill', label: { en: 'View', zh: '查看' } },
+    website: 'yly113.de5.net',
     tags: [
-      { en: 'Google', zh: '谷歌' },
-      { en: 'Gemini', zh: 'Gemini' },
-      { en: 'Plugin', zh: '插件' },
-      { en: 'Web Tool', zh: '网页工具' },
+      { en: 'Skill', zh: 'Skill' },
+      { en: 'AI Chat', zh: 'AI 对话' },
+      { en: 'Persona', zh: '人格' },
+      { en: 'Web App', zh: 'Web 应用' },
     ],
-    icon: '/images/icon/shen.png',
+    icon: '/images/icon/shen-skill.png',
+  },
+  {
+    name: { en: 'Shenyu Custom App', zh: '珅玉定制APP' },
+    description: {
+      en: 'An AI-powered jade customization app with image generation, jade gallery, quota approval, and announcement management across frontend and backend.',
+      zh: '一个 AI 驱动的玉石定制应用，支持需求生图、玉苑图库、额度申请审批与公告发布等前后端打通功能。',
+    },
+    link: { href: 'github.com/yys806/yushi2', label: { en: 'View', zh: '查看' } },
+    website: 'shen806.us.ci',
+    tags: [
+      { en: 'AI', zh: 'AI' },
+      { en: 'Netlify', zh: 'Netlify' },
+      { en: 'Supabase', zh: 'Supabase' },
+      { en: 'Jade Customization', zh: '玉石定制' },
+      { en: 'Workflow', zh: '审批流' },
+      { en: 'Full-stack', zh: '全栈' },
+    ],
+    icon: '/images/icon/shenyu.png',
   },
   {
     name: { en: 'Discord Bot Development', zh: 'Discord 机器人开发' },
@@ -384,17 +394,25 @@ const webDevProjects: Array<ProjectItemType> = [
     icon: '/images/icon/github.png',
   },
   {
-    name: { en: 'Mirror Room', zh: '镜室' },
-    description: { en: 'A skill-based conversation website for chatting directly with different personality skills.', zh: '一个可以直接和各种人格 Skill 对话的网站。' },
-    link: { href: 'github.com/yys806/shen.skill', label: { en: 'View', zh: '查看' } },
-    website: 'yly113.de5.net',
-    tags: [
-      { en: 'Skill', zh: 'Skill' },
-      { en: 'AI Chat', zh: 'AI 对话' },
-      { en: 'Persona', zh: '人格' },
-      { en: 'Web App', zh: 'Web 应用' },
+    name: { en: 'Gemini History Query Plugin', zh: 'Gemini 对话历史查询插件' },
+    description: { en: 'A web/plugin project for querying and organizing conversation history in Gemini.', zh: '用于快速查询和整理 Gemini 对话历史的网页/插件项目。' },
+    link: {
+      href: 'pan.baidu.com/s/1Qe9SzUnthsM5x78hzk5QBQ?pwd=8qie',
+      label: { en: 'View', zh: '查看' },
+    },
+    extraLinks: [
+      {
+        href: 'yys806.github.io/2026/01/16/gemini%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E5%8E%86%E7%A8%8B/',
+        label: { en: 'Tutorial', zh: '教程' },
+      },
     ],
-    icon: '/images/icon/shen-skill.png',
+    tags: [
+      { en: 'Google', zh: '谷歌' },
+      { en: 'Gemini', zh: 'Gemini' },
+      { en: 'Plugin', zh: '插件' },
+      { en: 'Web Tool', zh: '网页工具' },
+    ],
+    icon: '/images/icon/shen.png',
   },
   {
     name: { en: 'MathSnap', zh: 'MathSnap' },
@@ -476,24 +494,6 @@ const webDevProjects: Array<ProjectItemType> = [
       { en: 'Full-stack', zh: '全栈' },
     ],
     icon: '/images/icon/homepage.jpg',
-  },
-  {
-    name: { en: 'Shenyu Custom App', zh: '珅玉定制APP' },
-    description: {
-      en: 'An AI-powered jade customization app with image generation, jade gallery, quota approval, and announcement management across frontend and backend.',
-      zh: '一个 AI 驱动的玉石定制应用，支持需求生图、玉苑图库、额度申请审批与公告发布等前后端打通功能。',
-    },
-    link: { href: 'github.com/yys806/yushi2', label: { en: 'View', zh: '查看' } },
-    website: 'shen806.us.ci',
-    tags: [
-      { en: 'AI', zh: 'AI' },
-      { en: 'Netlify', zh: 'Netlify' },
-      { en: 'Supabase', zh: 'Supabase' },
-      { en: 'Jade Customization', zh: '玉石定制' },
-      { en: 'Workflow', zh: '审批流' },
-      { en: 'Full-stack', zh: '全栈' },
-    ],
-    icon: '/images/icon/shenyu.png',
   },
   {
     name: { en: 'Fortress', zh: 'Fortress 数据守护' },
