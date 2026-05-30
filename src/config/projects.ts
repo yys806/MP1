@@ -156,6 +156,51 @@ export const projectHeadLine: LocalizedString = { en: 'Research & Projects', zh:
 export const projectIntro: LocalizedString = { en: "Academic research and technical projects I've worked on.", zh: '我参与的科研与技术项目。' }
 const researchProjects: Array<ProjectItemType> = [
   {
+    name: { en: 'DRIFT Paper Code', zh: 'DRIFT 论文代码' },
+    description: {
+      en: 'Code and experiment workspace for my DRIFT paper, covering mixed-autonomy traffic experiments, runnable configs, scripts, and manuscript materials.',
+      zh: '我的 DRIFT 论文代码与实验仓库，包含混合自主交通实验、可运行配置、脚本、论文材料与实验过程记录。',
+    },
+    link: { href: 'github.com/yys806/drift-paper-code', label: { en: 'View', zh: '查看' } },
+    tags: [
+      { en: 'Paper Code', zh: '论文代码' },
+      { en: 'Traffic', zh: '交通' },
+      { en: 'Mixed Autonomy', zh: '混合自主' },
+      { en: 'Experiment', zh: '实验' },
+    ],
+    icon: '/images/icon/github.png',
+  },
+  {
+    name: { en: 'Traffic VLM Evaluation & Bias Analysis', zh: '交通 VLM 评测与偏差分析' },
+    description: {
+      en: 'Internship research at Tsinghua Shenzhen International Graduate School: building traffic-scene VQA data, evaluating VLMs, and diagnosing visual bias with question-only controls, GroundingDINO, Grad-CAM, occlusion, and counterfactual cases.',
+      zh: '清华深圳研究院实习项目：构建交通场景问答数据，评测视觉语言模型，并结合 question-only 对照、GroundingDINO、Grad-CAM、遮挡和反事实案例分析模型视觉偏差来源。',
+    },
+    link: { href: 'github.com/yys806/traffic-vlm-eval-bias-analysis', label: { en: 'View', zh: '查看' } },
+    tags: [
+      { en: 'Internship', zh: '实习' },
+      { en: 'VLM', zh: 'VLM' },
+      { en: 'Traffic QA', zh: '交通问答' },
+      { en: 'Bias Analysis', zh: '偏差分析' },
+    ],
+    icon: '/images/icon/github.png',
+  },
+  {
+    name: { en: 'Network-State World Model', zh: '网络状态世界模型' },
+    description: {
+      en: 'Internship research at Peking University School of Electronics: organizing AirFogSim logs into joint node/link/task time-series datasets, evaluating prediction baselines, robustness, uncertainty, and action-conditioned world-model training signals.',
+      zh: '北京大学电子学院实习项目：将 AirFogSim 空地协同网络日志整理为节点、链路、任务联合时间序列数据集，评估预测基线、鲁棒性、不确定性与动作条件世界模型训练信号。',
+    },
+    link: { href: 'github.com/yys806/network-state-world-model', label: { en: 'View', zh: '查看' } },
+    tags: [
+      { en: 'Internship', zh: '实习' },
+      { en: 'World Model', zh: '世界模型' },
+      { en: 'AirFogSim', zh: 'AirFogSim' },
+      { en: 'Networks', zh: '网络' },
+    ],
+    icon: '/images/icon/github.png',
+  },
+  {
     name: { en: 'Tongji University Quality Control Office Agent Development', zh: '同济大学质管办智能体开发' },
     description: { en: 'Agent to help Quality Control Office manage and analyze quality data.', zh: '帮助质管办管理与分析质量数据的智能体。' },
     link: { href: 'agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg', label: { en: 'View', zh: '查看' } },
@@ -179,40 +224,6 @@ const researchProjects: Array<ProjectItemType> = [
       { en: 'Civil Engineering', zh: '土木工程' },
       { en: 'Computer Vision', zh: '计算机视觉' },
       { en: 'Raspberry Pi', zh: '树莓派' },
-    ],
-    icon: '/images/icon/shen.png',
-  },
-  {
-    name: { en: 'Gemini History Query Plugin', zh: 'Gemini对话历史查询插件' },
-    description: { en: 'A plugin for querying conversation history in Gemini.', zh: '用于快速查询Gemini对话历史的插件。' },
-    link: {
-      href: 'pan.baidu.com/s/1Qe9SzUnthsM5x78hzk5QBQ?pwd=8qie',
-      label: { en: 'View', zh: '查看' },
-    },
-    extraLinks: [
-      {
-        href: 'yys806.github.io/2026/01/16/gemini%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E5%8E%86%E7%A8%8B/',
-        label: { en: 'Tutorial', zh: '教程' },
-      },
-    ],
-    tags: [
-      { en: 'Google', zh: '谷歌' },
-      { en: 'Gemini', zh: 'Gemini' },
-      { en: 'Plugin', zh: '插件' },
-    ],
-    icon: '/images/icon/shen.png',
-  },
-  {
-    name: { en: 'Discord Bot Development', zh: 'Discord 机器人开发' },
-    description: { en: 'A Discord bot with various features.', zh: '功能丰富的 Discord 机器人。' },
-    link: {
-      href: 'yys806.github.io/2026/02/18/discord%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E5%8E%86%E7%A8%8B/',
-      label: { en: 'View', zh: '查看' },
-    },
-    tags: [
-      { en: 'Discord', zh: 'Discord' },
-      { en: 'Bot', zh: '机器人' },
-      { en: 'Python', zh: 'Python' },
     ],
     icon: '/images/icon/shen.png',
   },
@@ -262,6 +273,21 @@ const replicaProjects: Array<ProjectItemType> = [
   },
 ]
 const courseworkProjects: Array<ProjectItemType> = [
+  {
+    name: { en: 'OrangePi Dual-Axis Gimbal Target Tracking System', zh: 'OrangePi 双自由度云台目标跟踪系统' },
+    description: {
+      en: 'Course project for target detection and tracking on an OrangePi-controlled dual-axis gimbal.',
+      zh: '基于 OrangePi 和双自由度云台的目标检测与跟踪系统课程项目。',
+    },
+    link: { href: 'github.com/yys806/zb_tracker_project', label: { en: 'View', zh: '查看' } },
+    tags: [
+      { en: 'OrangePi', zh: 'OrangePi' },
+      { en: 'Target Tracking', zh: '目标跟踪' },
+      { en: 'Gimbal', zh: '云台' },
+      { en: 'Computer Vision', zh: '计算机视觉' },
+    ],
+    icon: '/images/icon/github.png',
+  },
   {
     name: { en: 'e203-htmi-fpga', zh: 'e203-htmi-fpga 字符终端系统' },
     description: { en: 'Character terminal system on Hummingbird e203', zh: '基于蜂鸟 e203 的字符终端系统' },
@@ -315,6 +341,48 @@ const courseworkProjects: Array<ProjectItemType> = [
   },
 ]
 const webDevProjects: Array<ProjectItemType> = [
+  {
+    name: { en: 'Gemini History Query Plugin', zh: 'Gemini 对话历史查询插件' },
+    description: { en: 'A web/plugin project for querying and organizing conversation history in Gemini.', zh: '用于快速查询和整理 Gemini 对话历史的网页/插件项目。' },
+    link: {
+      href: 'pan.baidu.com/s/1Qe9SzUnthsM5x78hzk5QBQ?pwd=8qie',
+      label: { en: 'View', zh: '查看' },
+    },
+    extraLinks: [
+      {
+        href: 'yys806.github.io/2026/01/16/gemini%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E5%8E%86%E7%A8%8B/',
+        label: { en: 'Tutorial', zh: '教程' },
+      },
+    ],
+    tags: [
+      { en: 'Google', zh: '谷歌' },
+      { en: 'Gemini', zh: 'Gemini' },
+      { en: 'Plugin', zh: '插件' },
+      { en: 'Web Tool', zh: '网页工具' },
+    ],
+    icon: '/images/icon/shen.png',
+  },
+  {
+    name: { en: 'Discord Bot Development', zh: 'Discord 机器人开发' },
+    description: { en: 'A Discord bot project with multiple automation and interaction features.', zh: '具备多种自动化与交互功能的 Discord 机器人项目。' },
+    link: {
+      href: 'github.com/yys806/discord-bot',
+      label: { en: 'View', zh: '查看' },
+    },
+    extraLinks: [
+      {
+        href: 'yys806.github.io/2026/02/18/discord%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%BC%80%E5%8F%91%E5%8E%86%E7%A8%8B/',
+        label: { en: 'Tutorial', zh: '教程' },
+      },
+    ],
+    tags: [
+      { en: 'Discord', zh: 'Discord' },
+      { en: 'Bot', zh: '机器人' },
+      { en: 'Python', zh: 'Python' },
+      { en: 'Automation', zh: '自动化' },
+    ],
+    icon: '/images/icon/github.png',
+  },
   {
     name: { en: 'Mirror Room', zh: '镜室' },
     description: { en: 'A skill-based conversation website for chatting directly with different personality skills.', zh: '一个可以直接和各种人格 Skill 对话的网站。' },
