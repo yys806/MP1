@@ -7,7 +7,7 @@ project_group: web
 date: 2025-12-20
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 **Module:** Web Projects
 
@@ -21,7 +21,7 @@ This page records the product intention, implementation focus, and public entry 
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 **模块：** 网页项目
 

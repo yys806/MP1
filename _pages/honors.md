@@ -4,7 +4,7 @@ title: "Honors, Awards, and Software Copyrights"
 author_profile: true
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 - **2026** - **MathSnap Software Copyright**. MathSnap - an academic paper close-reading and deep analysis platform based on multimodal large models.. [View](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/%E8%BD%AF%E8%91%97/mathsnap.pdf)
 - **2026** - **CYBERORACLE Software Copyright**. CYBERORACLE - an AI fortune simulation and psychological counseling assistant for multidimensional data.. [View](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/%E8%BD%AF%E8%91%97/CYBERORACLE.pdf)
@@ -21,7 +21,7 @@ author_profile: true
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 - **2026** - **MathSnap 软件著作权**。基于多模态大模型的学术文献精读与深度分析平台。 [查看](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/%E8%BD%AF%E8%91%97/mathsnap.pdf)
 - **2026** - **CYBERORACLE 软件著作权**。面向多维数据的智能化运势模拟与心理咨询辅助软件。 [查看](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/%E8%BD%AF%E8%91%97/CYBERORACLE.pdf)

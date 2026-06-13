@@ -7,7 +7,7 @@ project_group: other
 date: 2025-07-01
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 **Module:** Other Projects
 
@@ -21,7 +21,7 @@ This page records the product intention, implementation focus, and public entry 
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 **模块：** 其他项目
 

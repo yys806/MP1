@@ -7,7 +7,7 @@ project_group: campus
 date: 2025-06-30
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 **Module:** Campus Projects
 
@@ -21,7 +21,7 @@ The work emphasized an applied engineering path: understand the station and carr
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 **模块：** 校内项目
 

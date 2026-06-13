@@ -7,7 +7,7 @@ project_group: campus
 date: 2026-05-31
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 **Module:** Campus Projects
 
@@ -21,7 +21,7 @@ My work focused on turning fragmented office needs into a usable assistant: defi
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 **模块：** 校内项目
 

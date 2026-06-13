@@ -9,7 +9,7 @@ order: 2
 venue: "Research internship, Tsinghua Shenzhen International Graduate School"
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 This project investigates how vision-language models behave on traffic-scene question answering tasks. The work covers dataset construction, evaluation protocol design, and bias analysis for multimodal models in road-scene understanding.
 
@@ -19,7 +19,7 @@ The repository centers on traffic VQA data processing, question-only control exp
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 该项目来自清华大学深圳国际研究生院陈鑫磊老师课题组实习，研究视觉语言模型在交通场景问答任务中的表现、偏差与可解释性。
 

@@ -4,7 +4,7 @@ title: "CV"
 author_profile: true
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 # Curriculum Vitae
 
@@ -17,7 +17,7 @@ GitHub: [yys806](https://github.com/yys806)
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 # 简历
 

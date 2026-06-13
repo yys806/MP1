@@ -9,7 +9,7 @@ order: 3
 venue: "Research internship, PCNI Group, School of Electronics, Peking University"
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 This internship project explores world-model construction for dynamic network systems. It organizes simulation logs into joint node, link, and task time-series datasets, then studies predictive modeling under robustness, uncertainty, and action-conditioned settings.
 
@@ -19,7 +19,7 @@ The project uses AirFogSim-style network environments as the experimental settin
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 该项目来自北京大学电子学院 PCNI 课题组实习，关注动态网络系统中的状态预测与世界模型构建。
 

@@ -12,24 +12,41 @@ html[data-lang="zh"] .lang-en { display: none !important; }
 </style>
 <script>
 (function () {
+  var navLabels = {
+    '/': ['About', '\u5173\u4e8e'],
+    '/publications/': ['Research', '\u79d1\u7814'],
+    '/portfolio/': ['Projects', '\u9879\u76ee'],
+    '/honors/': ['Honors', '\u8363\u8a89'],
+    '/cv/': ['CV', '\u7b80\u5386']
+  };
+
   function apply(lang) {
     document.documentElement.setAttribute('data-lang', lang);
     localStorage.setItem('site-lang', lang);
     document.querySelectorAll('[data-lang-toggle-label]').forEach(function (el) {
-      el.textContent = lang === 'zh' ? 'EN' : '中文';
+      el.textContent = lang === 'zh' ? 'EN' : '\u4e2d\u6587';
     });
-    var labels = {
-      '/': ['About', '关于'],
-      '/publications/': ['Research', '科研'],
-      '/portfolio/': ['Projects', '项目'],
-      '/honors/': ['Honors', '荣誉'],
-      '/cv/': ['CV', '简历']
-    };
-    document.querySelectorAll('.masthead__menu-item:not(.masthead__menu-item--lg) > a[href]').forEach(function (a) {
+    document.querySelectorAll('.masthead__menu-item:not(.masthead__menu-item--lg) > a[href]:not([data-lang-toggle])').forEach(function (a) {
       var path = new URL(a.getAttribute('href'), window.location.origin).pathname;
-      if (labels[path]) a.textContent = labels[path][lang === 'zh' ? 1 : 0];
+      if (navLabels[path]) a.textContent = navLabels[path][lang === 'zh' ? 1 : 0];
     });
   }
+
+  function updateExternalLinks() {
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (!href || href.charAt(0) === '#' || href.indexOf('mailto:') === 0 || href.indexOf('javascript:') === 0) return;
+      var url = new URL(href, window.location.href);
+      if (url.origin !== window.location.origin) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+      } else {
+        a.removeAttribute('target');
+        a.removeAttribute('rel');
+      }
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     apply(localStorage.getItem('site-lang') || 'en');
     document.querySelectorAll('[data-lang-toggle]').forEach(function (el) {
@@ -38,12 +55,7 @@ html[data-lang="zh"] .lang-en { display: none !important; }
         apply(document.documentElement.getAttribute('data-lang') === 'zh' ? 'en' : 'zh');
       });
     });
-    document.querySelectorAll('a[href]').forEach(function (a) {
-      var href = a.getAttribute('href');
-      if (!href || href.charAt(0) === '#' || href.indexOf('mailto:') === 0 || href.indexOf('javascript:') === 0) return;
-      a.setAttribute('target', '_blank');
-      a.setAttribute('rel', 'noopener noreferrer');
-    });
+    updateExternalLinks();
   });
 })();
 </script>

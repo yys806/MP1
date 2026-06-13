@@ -7,7 +7,7 @@ project_group: course
 date: 2025-12-01
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 **Module:** Course Projects
 
@@ -21,7 +21,7 @@ The project records a complete course-build workflow: requirement interpretation
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 **模块：** 课程项目
 

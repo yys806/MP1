@@ -6,7 +6,7 @@ redirect_from:
   - /about/
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 # Yaoshen Yu
 
@@ -31,7 +31,7 @@ Outside research and engineering, I enjoy speedcubing, running, films, and build
 
 </div>
 
-<div class="lang-zh">
+<div class="lang-zh" markdown="1">
 
 # 禹尧珅
 
