@@ -1,10 +1,15 @@
 ---
 title: "Fortress"
+title_zh: "Fortress"
 excerpt: "A web utility for restoring and organizing important local data."
+excerpt_zh: "面向本地重要数据恢复和整理的小工具，让恢复流程更清晰可控。"
 collection: portfolio
 permalink: /portfolio/fortress/
 project_group: web
 date: 2025-11-10
+header:
+  teaser: projects/fortress.png
+logo: projects/fortress.png
 ---
 
 <div class="lang-en" markdown="1">
@@ -13,9 +18,7 @@ date: 2025-11-10
 
 A web utility for restoring and organizing important local data.
 
-This page records the product intention, implementation focus, and public entry points for the project. The project is presented here as part of a broader portfolio of practical builds: small enough to move fast, but concrete enough to exercise deployment, interaction design, and real user workflows.
-
-**Keywords:** Data restore, storage utility, web tool
+This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Fortress">Repository</a> <a class="btn" href="https://shentv.dpdns.org">Website</a></p>
 
@@ -25,11 +28,9 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 网页项目
 
-Fortress 是一个面向本地重要数据恢复和整理的小工具，强调把恢复流程做得更清晰可控。
+面向本地重要数据恢复和整理的小工具，让恢复流程更清晰可控。
 
-这个页面记录项目的产品意图、实现重点和公开入口。它属于偏实践型的作品：规模不一定大，但需要从需求、界面、部署到可用链接形成完整闭环。
-
-**关键词：** Data restore, storage utility, web tool
+本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Fortress">代码仓库</a> <a class="btn" href="https://shentv.dpdns.org">网站</a></p>
 

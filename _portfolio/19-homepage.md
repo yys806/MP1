@@ -1,10 +1,15 @@
 ---
 title: "Homepage"
+title_zh: "Homepage"
 excerpt: "A personal homepage for recent plans, links, and website navigation."
+excerpt_zh: "个人主页和链接入口，用于集中展示近期计划、站点链接和个人项目。"
 collection: portfolio
 permalink: /portfolio/homepage/
 project_group: web
 date: 2025-11-20
+header:
+  teaser: projects/homepage.png
+logo: projects/homepage.png
 ---
 
 <div class="lang-en" markdown="1">
@@ -13,9 +18,7 @@ date: 2025-11-20
 
 A personal homepage for recent plans, links, and website navigation.
 
-This page records the product intention, implementation focus, and public entry points for the project. The project is presented here as part of a broader portfolio of practical builds: small enough to move fast, but concrete enough to exercise deployment, interaction design, and real user workflows.
-
-**Keywords:** Personal homepage, link hub, Supabase, full-stack
+This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Homepage">Repository</a> <a class="btn" href="https://shen806.dpdns.org">Website</a></p>
 
@@ -25,11 +28,9 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 网页项目
 
-Homepage 是一个个人主页和链接入口，用来集中展示近期计划、站点链接和个人项目。
+个人主页和链接入口，用于集中展示近期计划、站点链接和个人项目。
 
-这个页面记录项目的产品意图、实现重点和公开入口。它属于偏实践型的作品：规模不一定大，但需要从需求、界面、部署到可用链接形成完整闭环。
-
-**关键词：** Personal homepage, link hub, Supabase, full-stack
+本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Homepage">代码仓库</a> <a class="btn" href="https://shen806.dpdns.org">网站</a></p>
 

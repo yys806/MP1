@@ -1,10 +1,15 @@
 ---
 title: "e203 HTMI FPGA Character Terminal"
+title_zh: "e203 HTMI FPGA 字符终端"
 excerpt: "A Hummingbird e203 FPGA course project for a character terminal system on a RISC-V platform."
+excerpt_zh: "蜂鸟 e203 RISC-V 平台上的 FPGA 字符终端课程项目。"
 collection: portfolio
 permalink: /portfolio/e203-htmi-fpga/
 project_group: course
 date: 2025-12-18
+header:
+  teaser: projects/e203-htmi-fpga.png
+logo: projects/e203-htmi-fpga.png
 ---
 
 <div class="lang-en" markdown="1">
@@ -13,9 +18,7 @@ date: 2025-12-18
 
 A Hummingbird e203 FPGA course project for a character terminal system on a RISC-V platform.
 
-The project records a complete course-build workflow: requirement interpretation, implementation, debugging, and final documentation. Its main value is not only the result itself, but the engineering path from classroom concepts to a working artifact.
-
-**Keywords:** RISC-V, Hummingbird e203, FPGA, embedded systems, terminal
+This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/e203-htmi-fpga">Repository</a></p>
 
@@ -25,11 +28,9 @@ The project records a complete course-build workflow: requirement interpretation
 
 **模块：** 课程项目
 
-该项目是在蜂鸟 e203 RISC-V 平台上实现字符终端系统，涉及 FPGA 侧开发、底层接口理解，以及围绕显示或终端交互行为的调试验证。
+蜂鸟 e203 RISC-V 平台上的 FPGA 字符终端课程项目。
 
-项目记录了一次完整的课程实践流程：需求理解、实现、调试和最终文档整理。它的价值不只在结果本身，也在于把课堂概念落到可运行作品的工程过程。
-
-**关键词：** RISC-V, Hummingbird e203, FPGA, embedded systems, terminal
+本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/e203-htmi-fpga">代码仓库</a></p>
 

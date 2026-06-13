@@ -9,6 +9,13 @@ html[data-lang="zh"] .lang-en { display: none !important; }
 .project-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
 .project-actions a { margin-right: 0; }
 .archive__item-excerpt p { margin-bottom: .35rem; }
+.archive__item-teaser { margin-bottom: .75rem; max-width: 420px; border: 1px solid rgba(128,128,128,.22); border-radius: 8px; overflow: hidden; background: rgba(128,128,128,.06); }
+.archive__item-teaser img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.project-preview { margin: 0 0 1.2rem; border: 1px solid rgba(128,128,128,.22); border-radius: 8px; overflow: hidden; background: rgba(128,128,128,.06); }
+.project-preview img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.page__footer { position: static; }
+.page__footer footer { max-width: 820px; }
+.page__footer-follow { margin-bottom: .15rem; }
 </style>
 <script>
 (function () {
@@ -29,6 +36,9 @@ html[data-lang="zh"] .lang-en { display: none !important; }
     document.querySelectorAll('.masthead__menu-item:not(.masthead__menu-item--lg) > a[href]:not([data-lang-toggle])').forEach(function (a) {
       var path = new URL(a.getAttribute('href'), window.location.origin).pathname;
       if (navLabels[path]) a.textContent = navLabels[path][lang === 'zh' ? 1 : 0];
+    });
+    document.querySelectorAll('[data-lang-en][data-lang-zh]').forEach(function (el) {
+      el.textContent = el.getAttribute(lang === 'zh' ? 'data-lang-zh' : 'data-lang-en');
     });
   }
 

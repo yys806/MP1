@@ -1,10 +1,15 @@
 ---
 title: "e203 RISC-V Counter"
+title_zh: "e203 RISC-V 计数器"
 excerpt: "A Hummingbird e203 course project implementing and verifying a RISC-V counter design."
+excerpt_zh: "蜂鸟 e203 平台上的 RISC-V 计数器实现与验证课程项目。"
 collection: portfolio
 permalink: /portfolio/e203-risc-v-counter/
 project_group: course
 date: 2025-12-18
+header:
+  teaser: projects/e203-risc-v-counter.png
+logo: projects/e203-risc-v-counter.png
 ---
 
 <div class="lang-en" markdown="1">
@@ -13,9 +18,7 @@ date: 2025-12-18
 
 A Hummingbird e203 course project implementing and verifying a RISC-V counter design.
 
-The project records a complete course-build workflow: requirement interpretation, implementation, debugging, and final documentation. Its main value is not only the result itself, but the engineering path from classroom concepts to a working artifact.
-
-**Keywords:** RISC-V, Hummingbird e203, counter, embedded systems, FPGA
+This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/e203-RISCV-counter">Repository</a></p>
 
@@ -25,11 +28,9 @@ The project records a complete course-build workflow: requirement interpretation
 
 **模块：** 课程项目
 
-该课程项目基于蜂鸟 e203 RISC-V 平台实现计数器功能，是一个用于理解处理器相关开发、外设行为和板级验证的小型硬件软件综合练习。
+蜂鸟 e203 平台上的 RISC-V 计数器实现与验证课程项目。
 
-项目记录了一次完整的课程实践流程：需求理解、实现、调试和最终文档整理。它的价值不只在结果本身，也在于把课堂概念落到可运行作品的工程过程。
-
-**关键词：** RISC-V, Hummingbird e203, counter, embedded systems, FPGA
+本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/e203-RISCV-counter">代码仓库</a></p>
 

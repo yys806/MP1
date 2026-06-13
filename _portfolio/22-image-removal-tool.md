@@ -1,10 +1,15 @@
 ---
 title: "Image Removal Tool"
+title_zh: "Image Removal Tool"
 excerpt: "A small image-processing web tool for removing black borders from images."
+excerpt_zh: "用于快速去除图片黑边的轻量图片处理小工具。"
 collection: portfolio
 permalink: /portfolio/image-removal-tool/
 project_group: web
 date: 2025-10-25
+header:
+  teaser: projects/image-removal-tool.png
+logo: projects/image-removal-tool.png
 ---
 
 <div class="lang-en" markdown="1">
@@ -13,9 +18,7 @@ date: 2025-10-25
 
 A small image-processing web tool for removing black borders from images.
 
-This page records the product intention, implementation focus, and public entry points for the project. The project is presented here as part of a broader portfolio of practical builds: small enough to move fast, but concrete enough to exercise deployment, interaction design, and real user workflows.
-
-**Keywords:** Image processing, border removal, web utility
+This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Picture-process">Repository</a> <a class="btn" href="https://shen-photo.de5.net">Website</a></p>
 
@@ -25,11 +28,9 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 网页项目
 
-Image Removal Tool 是一个图片处理小工具，用于快速去除图片黑边，适合处理截图、扫描图和批量图片整理前的轻量修正。
+用于快速去除图片黑边的轻量图片处理小工具。
 
-这个页面记录项目的产品意图、实现重点和公开入口。它属于偏实践型的作品：规模不一定大，但需要从需求、界面、部署到可用链接形成完整闭环。
-
-**关键词：** Image processing, border removal, web utility
+本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Picture-process">代码仓库</a> <a class="btn" href="https://shen-photo.de5.net">网站</a></p>
 

@@ -1,19 +1,20 @@
 ---
 title: "Network-State World Model"
+title_zh: "网络状态世界模型"
 collection: publications
 category: manuscripts
-permalink: /publication/network-state-world-model/
+permalink: /publication/network-world-model/
 excerpt: "Research internship work at Peking University PCNI Group on action-conditioned prediction and world-model signals for network-state dynamics."
+excerpt_zh: "北京大学电子学院 PCNI 课题组科研实习项目，研究网络状态动力学中的动作条件预测与世界模型训练信号。"
 date: 2026-01-03
 order: 3
 venue: "Research internship, PCNI Group, School of Electronics, Peking University"
+venue_zh: "北京大学电子学院 PCNI 课题组科研实习项目"
 ---
 
 <div class="lang-en" markdown="1">
 
-This internship project explores world-model construction for dynamic network systems. It organizes simulation logs into joint node, link, and task time-series datasets, then studies predictive modeling under robustness, uncertainty, and action-conditioned settings.
-
-The project uses AirFogSim-style network environments as the experimental setting. Its emphasis is on building reliable state abstractions and training signals that can support future planning, prediction, and decision-making over network states.
+This research item is part of my selected research portfolio. It records the core problem, method direction, and implementation artifacts around Network-State World Model.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/network-state-world-model">Code Repository</a></p>
 
@@ -21,9 +22,7 @@ The project uses AirFogSim-style network environments as the experimental settin
 
 <div class="lang-zh" markdown="1">
 
-该项目来自北京大学电子学院 PCNI 课题组实习，关注动态网络系统中的状态预测与世界模型构建。
-
-项目将仿真日志整理为节点、链路、任务等多维时间序列数据，并围绕鲁棒性、不确定性和动作条件预测开展建模实验。实验环境以 AirFogSim 风格的网络系统为基础，目标是形成可用于后续规划、预测和决策的网络状态表征与训练信号。
+该研究项目是我科研经历中的重点工作，围绕“网络状态世界模型”展开，记录了问题定义、方法思路与代码实现。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/network-state-world-model">代码仓库</a></p>
 

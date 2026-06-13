@@ -1,10 +1,15 @@
 ---
 title: "Discord Bot Development"
+title_zh: "Discord 机器人开发"
 excerpt: "A Discord bot project for automation, interaction, and community workflow experiments."
+excerpt_zh: "用于社区自动化和交互实验的 Discord 机器人项目。"
 collection: portfolio
 permalink: /portfolio/discord-bot-development/
 project_group: web
 date: 2025-12-15
+header:
+  teaser: projects/discord-bot-development.png
+logo: projects/discord-bot-development.png
 ---
 
 <div class="lang-en" markdown="1">
@@ -13,9 +18,7 @@ date: 2025-12-15
 
 A Discord bot project for automation, interaction, and community workflow experiments.
 
-This page records the product intention, implementation focus, and public entry points for the project. The project is presented here as part of a broader portfolio of practical builds: small enough to move fast, but concrete enough to exercise deployment, interaction design, and real user workflows.
-
-**Keywords:** Discord, bot, automation, Python, interaction design
+This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/discord-bot">Repository</a></p>
 
@@ -25,11 +28,9 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 网页项目
 
-Discord 机器人项目用于尝试社区自动化和交互功能，包括指令响应、流程辅助和自动化任务。
+用于社区自动化和交互实验的 Discord 机器人项目。
 
-这个页面记录项目的产品意图、实现重点和公开入口。它属于偏实践型的作品：规模不一定大，但需要从需求、界面、部署到可用链接形成完整闭环。
-
-**关键词：** Discord, bot, automation, Python, interaction design
+本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/discord-bot">代码仓库</a></p>
 

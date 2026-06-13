@@ -1,21 +1,24 @@
 ---
 title: "Tongji University Quality Control Office Agent Development"
+title_zh: "同济大学质管办智能体开发"
 excerpt: "An internal agent workflow for quality-data management, document assistance, and analysis support at Tongji University."
+excerpt_zh: "面向同济大学质量管理办公室的智能体工作流，用于质量数据管理、文档辅助与分析支持。"
 collection: portfolio
 permalink: /portfolio/tongji-university-quality-control-office-agent-development/
 project_group: campus
 date: 2026-05-31
+header:
+  teaser: projects/tongji-agent.png
+logo: projects/tongji-agent.png
 ---
 
 <div class="lang-en" markdown="1">
 
 **Module:** Campus Projects
 
-This project supported Tongji University's Quality Control Office with an agent-assisted workflow for quality-data management and analysis. The system was designed around practical office scenarios: quickly retrieving procedural information, helping summarize materials, and reducing repetitive document-handling work.
+An internal agent workflow for quality-data management, document assistance, and analysis support at Tongji University.
 
-My work focused on turning fragmented office needs into a usable assistant: defining the knowledge scope, shaping prompts and interaction flow, and validating whether the agent could answer reliably in real use. The project connected AI capability with an administrative workflow where clarity, controllability, and response consistency matter more than novelty.
-
-**Keywords:** AI agent, workflow automation, quality management, DeepSeek, document assistance
+This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
 <p class="project-actions"><a class="btn" href="https://agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg">Project Link</a></p>
 
@@ -25,11 +28,9 @@ My work focused on turning fragmented office needs into a usable assistant: defi
 
 **模块：** 校内项目
 
-该项目服务于同济大学质量管理办公室，目标是用智能体辅助质量数据管理、资料检索、文档总结与日常办公分析。它更偏向真实办公场景中的“能不能稳定帮上忙”，而不是单纯展示模型能力。
+面向同济大学质量管理办公室的智能体工作流，用于质量数据管理、文档辅助与分析支持。
 
-我主要负责把分散的业务需求整理成可交互的智能体流程，包括知识范围设计、提示词与对话流程调优，以及在实际问题中验证回答的可靠性。这个项目的重点是把 AI 能力接入行政工作流，让信息获取和材料处理更顺滑。
-
-**关键词：** AI 智能体，工作流自动化，质量管理，DeepSeek，文档辅助
+本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
 
 <p class="project-actions"><a class="btn" href="https://agent.tongji.edu.cn/product/llm/chat/d4ksjeglmqe6v2jvltfg">项目链接</a></p>
 

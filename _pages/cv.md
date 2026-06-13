@@ -1,5 +1,6 @@
 ---
 permalink: /cv/
+title_zh: "简历"
 title: "CV"
 author_profile: true
 ---

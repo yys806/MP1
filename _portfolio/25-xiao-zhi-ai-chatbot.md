@@ -1,10 +1,15 @@
 ---
 title: "Xiao Zhi AI Chatbot"
+title_zh: "小智 AI 聊天机器人"
 excerpt: "An MCP-based AI chatbot hardware/software build for natural conversation."
+excerpt_zh: "软硬件结合的 AI 对话项目，结合嵌入式硬件、语音交互和大模型能力。"
 collection: portfolio
 permalink: /portfolio/xiao-zhi-ai-chatbot/
 project_group: other
 date: 2026-06-13
+header:
+  teaser: projects/xiao-zhi-ai-chatbot.png
+logo: projects/xiao-zhi-ai-chatbot.png
 ---
 
 <div class="lang-en" markdown="1">
@@ -13,9 +18,7 @@ date: 2026-06-13
 
 An MCP-based AI chatbot hardware/software build for natural conversation.
 
-This page records the product intention, implementation focus, and public entry points for the project. The project is presented here as part of a broader portfolio of practical builds: small enough to move fast, but concrete enough to exercise deployment, interaction design, and real user workflows.
-
-**Keywords:** AI chatbot, MCP, embedded, 3D printing, LLM
+This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
 <p class="project-actions"><a class="btn" href="https://github.com/78/xiaozhi-esp32">Repository</a> <a class="btn" href="https://xiaozhi.me">Website</a></p>
 
@@ -25,11 +28,9 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 其他项目
 
-小智 AI 聊天机器人是一个软硬件结合的 AI 对话项目，结合嵌入式硬件、语音交互和大模型能力。
+软硬件结合的 AI 对话项目，结合嵌入式硬件、语音交互和大模型能力。
 
-这个页面记录项目的产品意图、实现重点和公开入口。它属于偏实践型的作品：规模不一定大，但需要从需求、界面、部署到可用链接形成完整闭环。
-
-**关键词：** AI chatbot, MCP, embedded, 3D printing, LLM
+本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
 
 <p class="project-actions"><a class="btn" href="https://github.com/78/xiaozhi-esp32">代码仓库</a> <a class="btn" href="https://xiaozhi.me">网站</a></p>
 
