@@ -1,7 +1,16 @@
+'use client'
+
+import { usePathname } from 'next/navigation'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname()
+
+  if (pathname === '/' || pathname === '/studio') {
+    return <main className="w-full">{children}</main>
+  }
+
   return (
     <>
       <div className="fixed inset-0 flex justify-center sm:px-8">

@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/layout/Container'
@@ -5,8 +7,8 @@ import { footerItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { name } from '@/config/infoConfig'
 import SocialLinks from '@/components/home/SocialLinks'
-import { cookies } from 'next/headers'
-import { Locale, defaultLocale, selectText } from '@/lib/i18n'
+import { selectText } from '@/lib/i18n'
+import { useLanguage } from '@/app/providers'
 
 
 function NavLink({
@@ -27,8 +29,7 @@ function NavLink({
 }
 
 export function Footer() {
-  const cookieLocale = cookies().get('lang')?.value as Locale | undefined
-  const locale: Locale = cookieLocale === 'zh' ? 'zh' : defaultLocale
+  const { locale } = useLanguage()
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>

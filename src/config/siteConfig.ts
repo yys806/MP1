@@ -13,6 +13,7 @@ const navHome: LocalizedString = { en: 'Home', zh: '主页' }
 const navAbout: LocalizedString = { en: 'About', zh: '关于' }
 const navProjects: LocalizedString = { en: 'Projects', zh: '项目' }
 const navBlogs: LocalizedString = { en: 'Blogs', zh: '博客' }
+const navStudio: LocalizedString = { en: 'Studio', zh: 'Studio' }
 
 export const footerItems: Array<NavItemType> = [
   {
@@ -30,24 +31,11 @@ export const footerItems: Array<NavItemType> = [
   {
     name: navBlogs,
     href: '/blogs'
+  },
+  {
+    name: navStudio,
+    href: '/studio'
   }
 ]
 
-export const navItems: Array<NavItemType> = [
-  {
-    name: navHome,
-    href: '/'
-  },
-  {
-    name: navAbout,
-    href: '/about'
-  },
-  {
-    name: navProjects,
-    href: '/projects'
-  },
-  {
-    name: navBlogs,
-    href: '/blogs'
-  }
-]
+export const navItems: Array<NavItemType> = footerItems
