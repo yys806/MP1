@@ -1,12 +1,12 @@
 ---
 title: "Fortress"
-title_zh: "Fortress"
-excerpt: "A web utility for restoring and organizing important local data."
-excerpt_zh: "面向本地重要数据恢复和整理的小工具，让恢复流程更清晰可控。"
+title_zh: "金匮"
+excerpt: "A private web and mobile-oriented data vault project with Supabase schema files and Capacitor configuration."
+excerpt_zh: "一个面向网页与移动端的数据金匮项目，包含 Supabase 数据结构与 Capacitor 配置。"
 collection: portfolio
 permalink: /portfolio/fortress/
 project_group: web
-date: 2025-11-10
+date: 2026-03-27
 header:
   teaser: projects/fortress.png
 logo: projects/fortress.png
@@ -16,9 +16,7 @@ logo: projects/fortress.png
 
 **Module:** Web Projects
 
-A web utility for restoring and organizing important local data.
-
-This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
+Fortress is a private data-vault style project. The repository contains a web application, Android/Capacitor configuration, public assets, and Supabase schema/setup SQL, aiming to make important personal data storage and recovery more structured and controllable.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Fortress">Repository</a> <a class="btn" href="https://shentv.dpdns.org">Website</a></p>
 
@@ -28,9 +26,7 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 网页项目
 
-面向本地重要数据恢复和整理的小工具，让恢复流程更清晰可控。
-
-本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
+Fortress（金匮）是一个私有数据金匮式项目。仓库包含 Web 应用、Android/Capacitor 配置、公开资源，以及 Supabase 数据表结构和初始化 SQL，目标是让重要个人数据的存储、恢复与整理流程更清晰可控。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Fortress">代码仓库</a> <a class="btn" href="https://shentv.dpdns.org">网站</a></p>
 
