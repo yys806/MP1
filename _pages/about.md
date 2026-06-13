@@ -28,7 +28,7 @@ My current GPA is **4.78/5**, equivalent to **92.77/100**. My major ranking is *
 
 ## Interests
 
-Outside research and engineering, I enjoy [speedcubing](https://space.bilibili.com/199555828) ([notes](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93)), running, [films](https://shen806.de5.net/), and building small tools that make daily life slightly more elegant.
+Outside research and engineering, I enjoy [speedcubing notes](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93), running, [films](https://shen806.de5.net/), and building small tools that make daily life slightly more elegant.
 
 </div>
 
@@ -53,6 +53,6 @@ Outside research and engineering, I enjoy [speedcubing](https://space.bilibili.c
 
 ## 兴趣
 
-科研与工程之外，我喜欢[速魔](https://space.bilibili.com/199555828)（[公式笔记](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93)）、跑步、[电影](https://shen806.de5.net/)，也喜欢做一些能让日常生活更顺手的小工具。
+科研与工程之外，我喜欢[魔方公式](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93)、跑步、[电影](https://shen806.de5.net/)，也喜欢做一些能让日常生活更顺手的小工具。
 
 </div>
