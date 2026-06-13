@@ -19,3 +19,6 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Local Netlify folder
+.netlify

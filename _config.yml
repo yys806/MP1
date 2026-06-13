@@ -4,8 +4,8 @@ title                    : "Yaoshen Yu"
 title_separator          : "-"
 name                     : &name "Yaoshen Yu"
 description              : &description "Academic portfolio of Yaoshen Yu, AI undergraduate at Tongji University."
-url                      : "https://yys806.github.io"
-baseurl                  : "/MP1"
+url                      : "https://shen-intro.de5.net"
+baseurl                  : ""
 repository               : "yys806/MP1"
 
 author:
