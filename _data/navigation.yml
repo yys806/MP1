@@ -1,0 +1,15 @@
+main:
+  - title: "About"
+    url: /
+  - title: "Research"
+    url: /publications/
+  - title: "Projects"
+    url: /portfolio/
+  - title: "Honors"
+    url: /honors/
+  - title: "Interests"
+    url: /interests/
+  - title: "Blog"
+    url: /year-archive/
+  - title: "CV"
+    url: /cv/
