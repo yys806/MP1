@@ -9,7 +9,6 @@ project_group: web
 date: 2025-10-01
 header:
   teaser: projects/gemini-history-query-plugin.png
-logo: projects/gemini-history-query-plugin.png
 ---
 
 <div class="lang-en" markdown="1">

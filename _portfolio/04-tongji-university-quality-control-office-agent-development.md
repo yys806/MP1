@@ -9,7 +9,6 @@ project_group: campus
 date: 2026-05-31
 header:
   teaser: projects/tongji-agent.png
-logo: projects/tongji-agent.png
 ---
 
 <div class="lang-en" markdown="1">

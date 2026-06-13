@@ -9,7 +9,6 @@ project_group: course
 date: 2025-12-18
 header:
   teaser: projects/e203-htmi-fpga.png
-logo: projects/e203-htmi-fpga.png
 ---
 
 <div class="lang-en" markdown="1">

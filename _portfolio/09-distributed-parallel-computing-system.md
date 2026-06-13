@@ -9,7 +9,6 @@ project_group: course
 date: 2026-01-04
 header:
   teaser: projects/distributed-parallel-computing-system.png
-logo: projects/distributed-parallel-computing-system.png
 ---
 
 <div class="lang-en" markdown="1">

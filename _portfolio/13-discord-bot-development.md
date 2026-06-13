@@ -9,7 +9,6 @@ project_group: web
 date: 2026-05-28
 header:
   teaser: projects/discord-bot-development.png
-logo: projects/discord-bot-development.png
 ---
 
 <div class="lang-en" markdown="1">

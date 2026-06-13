@@ -9,7 +9,6 @@ project_group: other
 date: 2025-07-01
 header:
   teaser: projects/voice-controlled-lights-asrpro-tianwen-block.png
-logo: projects/voice-controlled-lights-asrpro-tianwen-block.png
 ---
 
 <div class="lang-en" markdown="1">
