@@ -1,12 +1,17 @@
 ---
-layout: archive
-title: "Interests"
 permalink: /interests/
+title: "Interests"
 author_profile: true
 ---
 
-{% include base_path %}
+<div class="lang-en">
 
-{% for post in site.teaching %}
-  {% include archive-single.html %}
-{% endfor %}
+Interests are now summarized on the [About](/) page.
+
+</div>
+
+<div class="lang-zh">
+
+兴趣爱好已经整合到 [About](/) 页面中。
+
+</div>

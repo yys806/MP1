@@ -11,11 +11,12 @@ repository               : "yys806/MP1"
 author:
   avatar           : "profile.jpg"
   name             : "Yaoshen Yu"
-  bio              : "AI undergraduate at Tongji University. Research, traffic intelligence, embedded systems, and web products."
+  bio              : "AI undergraduate at Tongji University. Mixed-autonomy traffic, VLM evaluation, world models, and full-stack products."
   location         : "Shanghai / Yunnan, China"
   employer         : "Tongji University"
-  email            : "3492675568@qq.com"
+  email            : "2352396@tongji.edu.cn"
   github           : "yys806"
+  blog             : "https://yys806.github.io/"
 
 publication_category:
   manuscripts:

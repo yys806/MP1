@@ -7,6 +7,24 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+<div class="lang-en">
+<p>Selected campus, coursework, web, and hardware projects. Items with public GitHub repositories are dated by their latest repository update where available.</p>
+</div>
+<div class="lang-zh">
+<p>精选校内项目、课程项目、网页项目与硬件实践。拥有公开 GitHub 仓库的项目优先使用仓库最新更新时间作为 Published 时间。</p>
+</div>
+
+{% assign groups = "campus|Campus Projects|校内项目,course|Course Projects|课程项目,web|Web Projects|网页项目,other|Other Projects|其他项目" | split: "," %}
+{% for group in groups %}
+  {% assign parts = group | split: "|" %}
+  {% assign key = parts[0] %}
+  {% assign label_en = parts[1] %}
+  {% assign label_zh = parts[2] %}
+  {% assign posts = site.portfolio | where: "project_group", key | sort: "date" | reverse %}
+  {% if posts.size > 0 %}
+    <h2><span class="lang-en">{{ label_en }}</span><span class="lang-zh">{{ label_zh }}</span></h2>
+    {% for post in posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}

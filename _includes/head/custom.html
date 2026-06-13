@@ -1,2 +1,7 @@
-<link rel="icon" type="image/png" href="{{ base_path }}/images/shenkey.png" />
-<link rel="apple-touch-icon" href="{{ base_path }}/images/shenkey.png" />
+<link rel="icon" type="image/png" href="{{ '/images/shenkey.png' | relative_url }}">
+<script>
+(function () {
+  var saved = localStorage.getItem('site-lang') || 'en';
+  document.documentElement.setAttribute('data-lang', saved);
+})();
+</script>

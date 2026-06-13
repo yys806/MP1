@@ -7,9 +7,5 @@ main:
     url: /portfolio/
   - title: "Honors"
     url: /honors/
-  - title: "Interests"
-    url: /interests/
-  - title: "Blog"
-    url: /year-archive/
   - title: "CV"
     url: /cv/
