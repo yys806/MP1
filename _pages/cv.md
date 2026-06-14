@@ -15,7 +15,6 @@ author_profile: true
   <a class="btn" href="https://github.com/yys806">GitHub</a>
 </div>
 
-<p class="cv-note">Email: [2352396@tongji.edu.cn](mailto:2352396@tongji.edu.cn) · GitHub: [yys806](https://github.com/yys806)</p>
 
 <iframe class="cv-frame" src="/files/yaoshen-yu-cv.pdf" title="Yaoshen Yu CV"></iframe>
 
@@ -31,7 +30,6 @@ author_profile: true
   <a class="btn" href="https://github.com/yys806">GitHub</a>
 </div>
 
-<p class="cv-note">&#37038;&#31665;&#65306;[2352396@tongji.edu.cn](mailto:2352396@tongji.edu.cn) · GitHub&#65306;[yys806](https://github.com/yys806)</p>
 
 <iframe class="cv-frame" src="/files/yaoshen-yu-cv.pdf" title="&#31161;&#23591;&#29653;&#31616;&#21382;"></iframe>
 

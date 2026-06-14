@@ -11,16 +11,6 @@ redirect_from:
 
 # Yaoshen Yu
 
-<section class="profile-brief" markdown="1">
-AI Undergraduate @ Tongji | Mixed-Autonomy Traffic | VLM Evaluation | World Models
-
-<div class="profile-metrics">
-  <span><strong>GPA 4.78/5</strong><small>92.77/100</small></span>
-  <span><strong>Rank 1/47</strong><small>Top 2.13%</small></span>
-  <span><strong>DRIFT</strong><small>First-author manuscript</small></span>
-</div>
-</section>
-
 I am Yaoshen Yu, an undergraduate student majoring in Artificial Intelligence at Tongji University. My work sits at the intersection of mixed-autonomy traffic generation, vision-language model evaluation, network-state world models, embedded systems, and product-oriented software engineering.
 
 ## Education
@@ -43,16 +33,6 @@ Outside research and engineering, I enjoy [cubing](https://yys806.github.io/2026
 <div class="lang-zh" markdown="1">
 
 # &#31161;&#23591;&#29653;
-
-<section class="profile-brief" markdown="1">
-&#21516;&#27982;&#22823;&#23398;&#20154;&#24037;&#26234;&#33021;&#26412;&#31185;&#29983; | &#28151;&#21512;&#33258;&#20027;&#20132;&#36890; | VLM &#35780;&#27979; | &#19990;&#30028;&#27169;&#22411;
-
-<div class="profile-metrics">
-  <span><strong>GPA 4.78/5</strong><small>92.77/100</small></span>
-  <span><strong>&#25490;&#21517; 1/47</strong><small>&#21069; 2.13%</small></span>
-  <span><strong>DRIFT</strong><small>&#31532;&#19968;&#20316;&#32773;&#35770;&#25991;</small></span>
-</div>
-</section>
 
 &#25105;&#26159;&#31161;&#23591;&#29653;&#65292;&#21516;&#27982;&#22823;&#23398;&#20154;&#24037;&#26234;&#33021;&#19987;&#19994;&#26412;&#31185;&#29983;&#12290;&#25105;&#30340;&#24037;&#20316;&#26041;&#21521;&#20132;&#21449;&#20110;&#28151;&#21512;&#33258;&#20027;&#20132;&#36890;&#29983;&#25104;&#12289;&#35270;&#35273;&#35821;&#35328;&#27169;&#22411;&#35780;&#27979;&#12289;&#32593;&#32476;&#29366;&#24577;&#19990;&#30028;&#27169;&#22411;&#12289;&#23884;&#20837;&#24335;&#31995;&#32479;&#21644;&#20135;&#21697;&#21270;&#36719;&#20214;&#24037;&#31243;&#12290;
 
