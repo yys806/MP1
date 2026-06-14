@@ -1,17 +1,49 @@
 {% include base_path %}
+{% assign share_url = base_path | append: page.url %}
+{% assign share_title = page.title | markdownify | strip_html | strip_newlines %}
+{% assign share_text = share_title | append: " - " | append: site.title %}
+{% assign encoded_url = share_url | url_encode %}
+{% assign encoded_title = share_text | url_encode %}
 
-<section class="page__share">
-  {% if site.data.ui-text[site.locale].share_on_label %}
-    <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
-  {% endif %}
+<section class="page__share" data-share-url="{{ share_url | escape }}" data-share-title="{{ share_text | escape }}">
+  <h4 class="page__share-title">
+    <span class="lang-en">Share</span><span class="lang-zh">分享</span>
+  </h4>
 
-  <a href="https://bsky.app/intent/compose?text={{ base_path }}{{ page.url }}" class="btn btn--bluesky" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
+  <div class="share-actions">
+    <button class="share-btn share-btn--wechat" type="button" data-wechat-share aria-expanded="false">
+      <i class="fab fa-weixin" aria-hidden="true"></i><span>微信</span>
+    </button>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u={{ base_path }}{{ page.url }}" class="btn btn--facebook" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+    <a class="share-btn share-btn--qq" href="https://connect.qq.com/widget/shareqq/index.html?url={{ encoded_url }}&title={{ encoded_title }}" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-qq" aria-hidden="true"></i><span>QQ</span>
+    </a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ base_path }}{{ page.url }}" class="btn btn--linkedin" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+    <a class="share-btn share-btn--qzone" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ encoded_url }}&title={{ encoded_title }}" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-star" aria-hidden="true"></i><span>QQ空间</span>
+    </a>
 
-  <a href="https://www.addtoany.com/add_to/mastodon?linkurl={{  base_path | append: page.url | url_encode }}" class="btn btn--mastodon" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Mastodon"><i class="fab fa-mastodon" aria-hidden="true"></i><span> Mastodon</span></a>
+    <a class="share-btn share-btn--weibo" href="https://service.weibo.com/share/share.php?url={{ encoded_url }}&title={{ encoded_title }}" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-weibo" aria-hidden="true"></i><span>微博</span>
+    </a>
 
-  <a href="https://x.com/intent/post?text={{ base_path }}{{ page.url }}" class="btn btn--x" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} X"><i class="fab fa-x-twitter" aria-hidden="true"></i><span> X (formerly Twitter)</span></a>
+    <a class="share-btn share-btn--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ encoded_url }}" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span>
+    </a>
+
+    <a class="share-btn share-btn--x" href="https://x.com/intent/post?url={{ encoded_url }}&text={{ encoded_title }}" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-x-twitter" aria-hidden="true"></i><span>X</span>
+    </a>
+
+    <button class="share-btn share-btn--copy" type="button" data-copy-share>
+      <i class="fas fa-link" aria-hidden="true"></i><span data-copy-label data-lang-en="Copy link" data-lang-zh="复制链接">Copy link</span>
+    </button>
+  </div>
+
+  <div class="wechat-share-panel" data-wechat-panel hidden>
+    <div class="wechat-share-panel__inner">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=176x176&margin=8&data={{ encoded_url }}" alt="WeChat QR code for this page" loading="lazy">
+      <p><span class="lang-en">Scan with WeChat to share this page.</span><span class="lang-zh">用微信扫码分享当前页面</span></p>
+    </div>
+  </div>
 </section>

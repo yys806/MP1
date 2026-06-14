@@ -16,6 +16,23 @@ html[data-lang="zh"] .lang-en { display: none !important; }
 .research-figure { margin: 1.25rem 0; border: 1px solid rgba(128,128,128,.22); border-radius: 8px; overflow: hidden; background: rgba(128,128,128,.045); }
 .research-figure img { display: block; width: 100%; height: auto; }
 .research-figure figcaption { padding: .6rem .75rem; font-size: .82em; line-height: 1.45; color: #666; border-top: 1px solid rgba(128,128,128,.16); }
+.page__share { margin-top: 2rem; padding-top: 1rem; }
+.page__share-title { margin-bottom: .65rem; letter-spacing: .04em; }
+.share-actions { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
+.share-btn { display: inline-flex; align-items: center; gap: .38rem; min-height: 2.1rem; padding: .42rem .7rem; border: 1px solid rgba(128,128,128,.24); border-radius: 999px; background: #fff; color: #3f454b; font-size: .82rem; font-weight: 600; line-height: 1; text-decoration: none !important; cursor: pointer; transition: background .18s ease, border-color .18s ease, color .18s ease, transform .18s ease; }
+.share-btn:hover { transform: translateY(-1px); border-color: rgba(70,80,90,.38); background: #f6f8fa; color: #1f2933; }
+.share-btn i { font-size: .95rem; }
+.share-btn--wechat i { color: #17b45b; }
+.share-btn--qq i, .share-btn--qzone i { color: #2f80ed; }
+.share-btn--weibo i { color: #df2029; }
+.share-btn--facebook i { color: #1877f2; }
+.share-btn--x i { color: #111; }
+.share-btn--copy i { color: #667085; }
+.wechat-share-panel { margin-top: .75rem; }
+.wechat-share-panel__inner { display: inline-flex; align-items: center; gap: .85rem; padding: .75rem .85rem; border: 1px solid rgba(128,128,128,.22); border-radius: 8px; background: rgba(128,128,128,.045); }
+.wechat-share-panel img { width: 112px; height: 112px; border-radius: 4px; }
+.wechat-share-panel p { margin: 0; color: #667085; font-size: .85rem; line-height: 1.45; }
+@media (max-width: 520px) { .share-actions { gap: .38rem; } .share-btn { min-height: 2rem; padding: .4rem .58rem; font-size: .78rem; } .wechat-share-panel__inner { display: flex; width: 100%; } }
 .page__footer { position: static; }
 .page__footer footer { max-width: 820px; }
 .page__footer-follow { margin-bottom: .15rem; }
@@ -60,6 +77,46 @@ html[data-lang="zh"] .lang-en { display: none !important; }
     });
   }
 
+  function setupShareTools() {
+    document.querySelectorAll('.page__share').forEach(function (share) {
+      var url = share.getAttribute('data-share-url') || window.location.href;
+      var wechatButton = share.querySelector('[data-wechat-share]');
+      var wechatPanel = share.querySelector('[data-wechat-panel]');
+      var copyButton = share.querySelector('[data-copy-share]');
+      var copyLabel = share.querySelector('[data-copy-label]');
+
+      if (wechatButton && wechatPanel) {
+        wechatButton.addEventListener('click', function () {
+          var isHidden = wechatPanel.hasAttribute('hidden');
+          if (isHidden) {
+            wechatPanel.removeAttribute('hidden');
+            wechatButton.setAttribute('aria-expanded', 'true');
+          } else {
+            wechatPanel.setAttribute('hidden', '');
+            wechatButton.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      if (copyButton && copyLabel) {
+        copyButton.addEventListener('click', function () {
+          function markCopied() {
+            copyLabel.textContent = document.documentElement.getAttribute('data-lang') === 'zh' ? '\u5df2\u590d\u5236' : 'Copied';
+            window.setTimeout(function () {
+              copyLabel.textContent = document.documentElement.getAttribute('data-lang') === 'zh' ? '\u590d\u5236\u94fe\u63a5' : 'Copy link';
+            }, 1600);
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(markCopied);
+          } else {
+            window.prompt('Copy this link', url);
+            markCopied();
+          }
+        });
+      }
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     apply(localStorage.getItem('site-lang') || 'en');
     document.querySelectorAll('[data-lang-toggle]').forEach(function (el) {
@@ -69,6 +126,7 @@ html[data-lang="zh"] .lang-en { display: none !important; }
       });
     });
     updateExternalLinks();
+    setupShareTools();
   });
 })();
 </script>
