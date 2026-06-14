@@ -1,15 +1,25 @@
 ---
 title: "Traffic VLM Evaluation & Bias Analysis"
-title_zh: "交通场景 VLM 评测与偏差分析"
+title_zh: "&#20132;&#36890;&#22330;&#26223; VLM &#35780;&#27979;&#19982;&#20559;&#24046;&#20998;&#26512;"
 collection: publications
 category: manuscripts
 permalink: /publication/traffic-vlm/
 excerpt: "Research internship work at Tsinghua SIGS on traffic-scene VQA construction, VLM evaluation, visual grounding, and bias diagnostics."
-excerpt_zh: "清华大学深圳国际研究生院科研实习项目，研究交通场景 VQA 构建、VLM 评测、视觉定位与偏差诊断。"
+excerpt_zh: "&#28165;&#21326;&#22823;&#23398;&#28145;&#22323;&#22269;&#38469;&#30740;&#31350;&#29983;&#38498;&#31185;&#30740;&#23454;&#20064;&#39033;&#30446;&#65292;&#30740;&#31350;&#20132;&#36890;&#22330;&#26223; VQA &#26500;&#24314;&#12289;VLM &#35780;&#27979;&#12289;&#35270;&#35273;&#23450;&#20301;&#19982;&#20559;&#24046;&#35786;&#26029;&#12290;"
 date: 2026-01-02
 order: 2
 venue: "Research internship, Tsinghua Shenzhen International Graduate School"
-venue_zh: "清华大学深圳国际研究生院科研实习项目"
+venue_zh: "&#28165;&#21326;&#22823;&#23398;&#28145;&#22323;&#22269;&#38469;&#30740;&#31350;&#29983;&#38498;&#31185;&#30740;&#23454;&#20064;&#39033;&#30446;"
+research_tags:
+  - "Research Internship"
+  - "VLM Evaluation"
+  - "Bias Diagnostics"
+  - "Code Available"
+research_tags_zh:
+  - "&#31185;&#30740;&#23454;&#20064;"
+  - "VLM &#35780;&#27979;"
+  - "&#20559;&#24046;&#35786;&#26029;"
+  - "&#20195;&#30721;&#21487;&#29992;"
 ---
 
 <div class="lang-en" markdown="1">

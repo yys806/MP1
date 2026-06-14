@@ -1,6 +1,6 @@
 ---
 layout: archive
-title_zh: "项目"
+title_zh: "&#39033;&#30446;"
 title: "Projects"
 permalink: /portfolio/
 author_profile: true
@@ -12,18 +12,26 @@ author_profile: true
 Selected campus, coursework, web, and hardware projects. Public GitHub repositories use their latest public `pushed_at` date; private or external-only items use the latest known project update date.
 </div>
 <div class="lang-zh" markdown="1">
-精选校内项目、课程项目、网页项目与硬件实践。公开 GitHub 仓库使用 GitHub API 中的最新 `pushed_at` 日期；私有仓库或外部链接项目使用当前可核实的最近项目更新时间。
+&#31934;&#36873;&#26657;&#20869;&#39033;&#30446;&#12289;&#35838;&#31243;&#39033;&#30446;&#12289;&#32593;&#39029;&#39033;&#30446;&#19982;&#30828;&#20214;&#23454;&#36341;&#12290;&#20844;&#24320; GitHub &#20179;&#24211;&#20351;&#29992; GitHub API &#20013;&#30340;&#26368;&#26032; `pushed_at` &#26085;&#26399;&#65307;&#31169;&#26377;&#20179;&#24211;&#25110;&#22806;&#37096;&#38142;&#25509;&#39033;&#30446;&#20351;&#29992;&#24403;&#21069;&#21487;&#26680;&#23454;&#30340;&#26368;&#36817;&#39033;&#30446;&#26356;&#26032;&#26102;&#38388;&#12290;
 </div>
 
-{% assign groups = "campus|Campus Projects|校内项目,course|Course Projects|课程项目,web|Web Projects|网页项目,other|Other Projects|其他项目" | split: "," %}
+<nav class="section-jump" aria-label="Project sections">
+  <a href="#campus-projects"><span class="lang-en">Campus</span><span class="lang-zh">&#26657;&#20869;</span></a>
+  <a href="#course-projects"><span class="lang-en">Coursework</span><span class="lang-zh">&#35838;&#31243;</span></a>
+  <a href="#web-projects"><span class="lang-en">Web</span><span class="lang-zh">&#32593;&#39029;</span></a>
+  <a href="#other-projects"><span class="lang-en">Other</span><span class="lang-zh">&#20854;&#20182;</span></a>
+</nav>
+
+{% assign groups = "campus|Campus Projects|&#26657;&#20869;&#39033;&#30446;|campus-projects,course|Course Projects|&#35838;&#31243;&#39033;&#30446;|course-projects,web|Web Projects|&#32593;&#39029;&#39033;&#30446;|web-projects,other|Other Projects|&#20854;&#20182;&#39033;&#30446;|other-projects" | split: "," %}
 {% for group in groups %}
   {% assign parts = group | split: "|" %}
   {% assign key = parts[0] %}
   {% assign label_en = parts[1] %}
   {% assign label_zh = parts[2] %}
+  {% assign anchor = parts[3] %}
   {% assign posts = site.portfolio | where: "project_group", key | sort: "date" | reverse %}
   {% if posts.size > 0 %}
-    <h2><span class="lang-en">{{ label_en }}</span><span class="lang-zh">{{ label_zh }}</span></h2>
+    <h2 id="{{ anchor }}"><span class="lang-en">{{ label_en }}</span><span class="lang-zh">{{ label_zh }}</span></h2>
     {% for post in posts %}
       {% include archive-single.html %}
     {% endfor %}

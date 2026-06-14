@@ -1,6 +1,6 @@
 ---
 permalink: /cv/
-title_zh: "简历"
+title_zh: "&#31616;&#21382;"
 title: "CV"
 author_profile: true
 ---
@@ -9,10 +9,13 @@ author_profile: true
 
 # Curriculum Vitae
 
-Email: [2352396@tongji.edu.cn](mailto:2352396@tongji.edu.cn)
-GitHub: [yys806](https://github.com/yys806)
+<div class="cv-actions">
+  <a class="btn" href="/files/yaoshen-yu-cv.pdf">Download CV</a>
+  <a class="btn" href="mailto:2352396@tongji.edu.cn">Email</a>
+  <a class="btn" href="https://github.com/yys806">GitHub</a>
+</div>
 
-<p><a class="btn" href="/files/yaoshen-yu-cv.pdf">Download CV</a></p>
+<p class="cv-note">Email: [2352396@tongji.edu.cn](mailto:2352396@tongji.edu.cn) · GitHub: [yys806](https://github.com/yys806)</p>
 
 <iframe class="cv-frame" src="/files/yaoshen-yu-cv.pdf" title="Yaoshen Yu CV"></iframe>
 
@@ -20,13 +23,16 @@ GitHub: [yys806](https://github.com/yys806)
 
 <div class="lang-zh" markdown="1">
 
-# 简历
+# &#31616;&#21382;
 
-邮箱：[2352396@tongji.edu.cn](mailto:2352396@tongji.edu.cn)
-GitHub：[yys806](https://github.com/yys806)
+<div class="cv-actions">
+  <a class="btn" href="/files/yaoshen-yu-cv.pdf">&#19979;&#36733;&#31616;&#21382;</a>
+  <a class="btn" href="mailto:2352396@tongji.edu.cn">&#37038;&#31665;</a>
+  <a class="btn" href="https://github.com/yys806">GitHub</a>
+</div>
 
-<p><a class="btn" href="/files/yaoshen-yu-cv.pdf">下载简历</a></p>
+<p class="cv-note">&#37038;&#31665;&#65306;[2352396@tongji.edu.cn](mailto:2352396@tongji.edu.cn) · GitHub&#65306;[yys806](https://github.com/yys806)</p>
 
-<iframe class="cv-frame" src="/files/yaoshen-yu-cv.pdf" title="禹尧珅简历"></iframe>
+<iframe class="cv-frame" src="/files/yaoshen-yu-cv.pdf" title="&#31161;&#23591;&#29653;&#31616;&#21382;"></iframe>
 
 </div>

@@ -6,6 +6,19 @@ html[data-lang="zh"] .lang-en { display: none !important; }
 .project-hero { border: 1px solid rgba(128,128,128,.22); border-radius: 8px; overflow: hidden; margin: 1rem 0; }
 .project-hero img { display: block; width: 100%; height: auto; }
 .cv-frame { width: 100%; min-height: 760px; border: 1px solid rgba(128,128,128,.25); border-radius: 8px; }
+.cv-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: .5rem 0 .75rem; }
+.cv-actions a { margin-right: 0; }
+.cv-note { color: #667085; font-size: .9rem; }
+.profile-brief { margin: .45rem 0 1.35rem; padding: .85rem 0 1rem; border-top: 1px solid rgba(128,128,128,.18); border-bottom: 1px solid rgba(128,128,128,.18); color: #3f454b; font-size: 1.02rem; line-height: 1.55; }
+.profile-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .65rem; margin-top: .85rem; }
+.profile-metrics span { display: block; padding: .62rem .7rem; border: 1px solid rgba(128,128,128,.18); border-radius: 8px; background: rgba(128,128,128,.035); }
+.profile-metrics strong { display: block; color: #1f2933; font-size: .95rem; }
+.profile-metrics small { display: block; margin-top: .12rem; color: #667085; font-size: .78rem; }
+.section-jump { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1rem 0 1.25rem; }
+.section-jump a { padding: .38rem .65rem; border: 1px solid rgba(128,128,128,.22); border-radius: 999px; color: #3f454b; font-size: .82rem; font-weight: 600; text-decoration: none; }
+.section-jump a:hover { background: #f6f8fa; color: #1f2933; text-decoration: none; }
+.research-tags { display: flex; flex-wrap: wrap; gap: .35rem; margin: -.2rem 0 .55rem; }
+.research-tags span { display: inline-flex; align-items: center; padding: .2rem .48rem; border: 1px solid rgba(64,83,107,.18); border-radius: 999px; background: rgba(64,83,107,.045); color: #536273; font-size: .72rem; font-weight: 600; line-height: 1.2; }
 .project-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
 .project-actions a { margin-right: 0; }
 .archive__item-excerpt p { margin-bottom: .35rem; }
@@ -34,6 +47,7 @@ html[data-lang="zh"] .lang-en { display: none !important; }
 .wechat-share-panel img { width: 112px; height: 112px; border-radius: 4px; }
 .wechat-share-panel p { margin: 0; color: #667085; font-size: .85rem; line-height: 1.45; }
 @media (max-width: 520px) { .share-actions { gap: .38rem; } .share-btn { min-height: 2rem; padding: .4rem .58rem; font-size: .78rem; } .wechat-share-panel__inner { display: flex; width: 100%; } }
+@media (max-width: 640px) { .profile-metrics { grid-template-columns: 1fr; } }
 .page__footer { position: static; }
 .page__footer footer { max-width: 820px; }
 .page__footer-follow { margin-bottom: .15rem; }

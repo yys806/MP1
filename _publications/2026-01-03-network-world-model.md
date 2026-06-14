@@ -1,15 +1,25 @@
 ---
 title: "Network-State World Model"
-title_zh: "网络状态世界模型"
+title_zh: "&#32593;&#32476;&#29366;&#24577;&#19990;&#30028;&#27169;&#22411;"
 collection: publications
 category: manuscripts
 permalink: /publication/network-world-model/
 excerpt: "Research internship work at Peking University PCNI Group on action-conditioned prediction and world-model signals for network-state dynamics."
-excerpt_zh: "北京大学电子学院 PCNI 课题组科研实习项目，研究网络状态动力学中的动作条件预测与世界模型训练信号。"
+excerpt_zh: "&#21271;&#20140;&#22823;&#23398;&#30005;&#23376;&#23398;&#38498; PCNI &#35838;&#39064;&#32452;&#31185;&#30740;&#23454;&#20064;&#39033;&#30446;&#65292;&#30740;&#31350;&#32593;&#32476;&#29366;&#24577;&#21160;&#21147;&#23398;&#20013;&#30340;&#21160;&#20316;&#26465;&#20214;&#39044;&#27979;&#19982;&#19990;&#30028;&#27169;&#22411;&#35757;&#32451;&#20449;&#21495;&#12290;"
 date: 2026-01-03
 order: 3
 venue: "Research internship, PCNI Group, School of Electronics, Peking University"
-venue_zh: "北京大学电子学院 PCNI 课题组科研实习项目"
+venue_zh: "&#21271;&#20140;&#22823;&#23398;&#30005;&#23376;&#23398;&#38498; PCNI &#35838;&#39064;&#32452;&#31185;&#30740;&#23454;&#20064;&#39033;&#30446;"
+research_tags:
+  - "Research Internship"
+  - "World Models"
+  - "Action-conditioned Prediction"
+  - "Code Available"
+research_tags_zh:
+  - "&#31185;&#30740;&#23454;&#20064;"
+  - "&#19990;&#30028;&#27169;&#22411;"
+  - "&#21160;&#20316;&#26465;&#20214;&#39044;&#27979;"
+  - "&#20195;&#30721;&#21487;&#29992;"
 ---
 
 <div class="lang-en" markdown="1">

@@ -1,6 +1,6 @@
 ---
 permalink: /
-title_zh: "关于"
+title_zh: "&#20851;&#20110;"
 title: "About"
 author_profile: true
 redirect_from:
@@ -11,9 +11,17 @@ redirect_from:
 
 # Yaoshen Yu
 
-I am Yaoshen Yu, an undergraduate student majoring in Artificial Intelligence at Tongji University. My work sits at the intersection of mixed-autonomy traffic generation, vision-language model evaluation, network-state world models, embedded systems, and product-oriented software engineering.
+<section class="profile-brief" markdown="1">
+AI Undergraduate @ Tongji | Mixed-Autonomy Traffic | VLM Evaluation | World Models
 
-My current GPA is **4.78/5**, equivalent to **92.77/100**. My major ranking is **1/47**, placing me in the top **2.13%** of the program.
+<div class="profile-metrics">
+  <span><strong>GPA 4.78/5</strong><small>92.77/100</small></span>
+  <span><strong>Rank 1/47</strong><small>Top 2.13%</small></span>
+  <span><strong>DRIFT</strong><small>First-author manuscript</small></span>
+</div>
+</section>
+
+I am Yaoshen Yu, an undergraduate student majoring in Artificial Intelligence at Tongji University. My work sits at the intersection of mixed-autonomy traffic generation, vision-language model evaluation, network-state world models, embedded systems, and product-oriented software engineering.
 
 ## Education
 
@@ -34,25 +42,33 @@ Outside research and engineering, I enjoy [cubing](https://yys806.github.io/2026
 
 <div class="lang-zh" markdown="1">
 
-# 禹尧珅
+# &#31161;&#23591;&#29653;
 
-我是禹尧珅，同济大学人工智能专业本科生。我的工作方向交叉于混合自主交通生成、视觉语言模型评测、网络状态世界模型、嵌入式系统和产品化软件工程。
+<section class="profile-brief" markdown="1">
+&#21516;&#27982;&#22823;&#23398;&#20154;&#24037;&#26234;&#33021;&#26412;&#31185;&#29983; | &#28151;&#21512;&#33258;&#20027;&#20132;&#36890; | VLM &#35780;&#27979; | &#19990;&#30028;&#27169;&#22411;
 
-目前 GPA 为 **4.78/5**，折合 **92.77/100**；专业排名 **1/47**，位于前 **2.13%**。
+<div class="profile-metrics">
+  <span><strong>GPA 4.78/5</strong><small>92.77/100</small></span>
+  <span><strong>&#25490;&#21517; 1/47</strong><small>&#21069; 2.13%</small></span>
+  <span><strong>DRIFT</strong><small>&#31532;&#19968;&#20316;&#32773;&#35770;&#25991;</small></span>
+</div>
+</section>
 
-## 教育经历
+&#25105;&#26159;&#31161;&#23591;&#29653;&#65292;&#21516;&#27982;&#22823;&#23398;&#20154;&#24037;&#26234;&#33021;&#19987;&#19994;&#26412;&#31185;&#29983;&#12290;&#25105;&#30340;&#24037;&#20316;&#26041;&#21521;&#20132;&#21449;&#20110;&#28151;&#21512;&#33258;&#20027;&#20132;&#36890;&#29983;&#25104;&#12289;&#35270;&#35273;&#35821;&#35328;&#27169;&#22411;&#35780;&#27979;&#12289;&#32593;&#32476;&#29366;&#24577;&#19990;&#30028;&#27169;&#22411;&#12289;&#23884;&#20837;&#24335;&#31995;&#32479;&#21644;&#20135;&#21697;&#21270;&#36719;&#20214;&#24037;&#31243;&#12290;
 
-- **同济大学**，人工智能专业工学学士，2023 - 至今
+## &#25945;&#32946;&#32463;&#21382;
 
-## 科研与经历
+- **&#21516;&#27982;&#22823;&#23398;**&#65292;&#20154;&#24037;&#26234;&#33021;&#19987;&#19994;&#24037;&#23398;&#23398;&#22763;&#65292;2023 - &#33267;&#20170;
 
-- **DRIFT: Risk-Constrained Diffusion with Imitation Priors for Mixed-Autonomy Traffic Generation**，第一作者，2025.11 - 至今。论文拟投稿 *IEEE Transactions on Intelligent Transportation Systems*。该工作在同济大学[李王明卉老师](https://faculty.tongji.edu.cn/liwangminghui/zh_CN/index.htm)指导下开展。
-- **北京大学电子学院 [PCNI 课题组](http://pcni.pku.edu.cn/homepage.html)**，科研实习，2026.03 - 至今。在[张嘉楠老师](https://ele.pku.edu.cn/info/1023/2493.htm)（[个人主页](https://jianan-z.github.io/)）指导下，研究网络状态世界模型与动作条件预测。
-- **清华大学深圳国际研究生院[陈鑫磊老师课题组](https://www.sigs.tsinghua.edu.cn/cxl/main.psp)**，科研实习，2026.03 - 至今。研究交通场景视觉语言模型评测、视觉偏差分析与反事实诊断。
-- **同济大学质量管理办公室**，开发工作，2025.07 - 2026.05。构建面向质量数据管理与分析的智能体辅助工作流。
+## &#31185;&#30740;&#19982;&#32463;&#21382;
 
-## 兴趣
+- **DRIFT: Risk-Constrained Diffusion with Imitation Priors for Mixed-Autonomy Traffic Generation**&#65292;&#31532;&#19968;&#20316;&#32773;&#65292;2025.11 - &#33267;&#20170;&#12290;&#35770;&#25991;&#25311;&#25237;&#31295; *IEEE Transactions on Intelligent Transportation Systems*&#12290;&#35813;&#24037;&#20316;&#22312;&#21516;&#27982;&#22823;&#23398;[&#26446;&#29579;&#26126;&#21321;&#32769;&#24072;](https://faculty.tongji.edu.cn/liwangminghui/zh_CN/index.htm)&#25351;&#23548;&#19979;&#24320;&#23637;&#12290;
+- **&#21271;&#20140;&#22823;&#23398;&#30005;&#23376;&#23398;&#38498; [PCNI &#35838;&#39064;&#32452;](http://pcni.pku.edu.cn/homepage.html)**&#65292;&#31185;&#30740;&#23454;&#20064;&#65292;2026.03 - &#33267;&#20170;&#12290;&#22312;[&#24352;&#22025;&#26976;&#32769;&#24072;](https://ele.pku.edu.cn/info/1023/2493.htm)&#65288;[&#20010;&#20154;&#20027;&#39029;](https://jianan-z.github.io/)&#65289;&#25351;&#23548;&#19979;&#65292;&#30740;&#31350;&#32593;&#32476;&#29366;&#24577;&#19990;&#30028;&#27169;&#22411;&#19982;&#21160;&#20316;&#26465;&#20214;&#39044;&#27979;&#12290;
+- **&#28165;&#21326;&#22823;&#23398;&#28145;&#22323;&#22269;&#38469;&#30740;&#31350;&#29983;&#38498;[&#38472;&#37995;&#30922;&#32769;&#24072;&#35838;&#39064;&#32452;](https://www.sigs.tsinghua.edu.cn/cxl/main.psp)**&#65292;&#31185;&#30740;&#23454;&#20064;&#65292;2026.03 - &#33267;&#20170;&#12290;&#30740;&#31350;&#20132;&#36890;&#22330;&#26223;&#35270;&#35273;&#35821;&#35328;&#27169;&#22411;&#35780;&#27979;&#12289;&#35270;&#35273;&#20559;&#24046;&#20998;&#26512;&#19982;&#21453;&#20107;&#23454;&#35786;&#26029;&#12290;
+- **&#21516;&#27982;&#22823;&#23398;&#36136;&#37327;&#31649;&#29702;&#21150;&#20844;&#23460;**&#65292;&#24320;&#21457;&#24037;&#20316;&#65292;2025.07 - 2026.05&#12290;&#26500;&#24314;&#38754;&#21521;&#36136;&#37327;&#25968;&#25454;&#31649;&#29702;&#19982;&#20998;&#26512;&#30340;&#26234;&#33021;&#20307;&#36741;&#21161;&#24037;&#20316;&#27969;&#12290;
 
-科研与工程之外，我喜欢[玩魔方](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93)、跑步、[电影](https://shen806.de5.net/)，也喜欢做一些能让日常生活更顺手的小工具。
+## &#20852;&#36259;
+
+&#31185;&#30740;&#19982;&#24037;&#31243;&#20043;&#22806;&#65292;&#25105;&#21916;&#27426;[&#29609;&#39764;&#26041;](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93)&#12289;&#36305;&#27493;&#12289;[&#30005;&#24433;](https://shen806.de5.net/)&#65292;&#20063;&#21916;&#27426;&#20570;&#19968;&#20123;&#33021;&#35753;&#26085;&#24120;&#29983;&#27963;&#26356;&#39034;&#25163;&#30340;&#23567;&#24037;&#20855;&#12290;
 
 </div>
