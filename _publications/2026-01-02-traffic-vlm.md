@@ -24,9 +24,53 @@ research_tags_zh:
 
 <div class="lang-en" markdown="1">
 
-This project is part of my research internship with [Prof. Xinlei Chen's Group](https://www.sigs.tsinghua.edu.cn/cxl/main.psp) at Tsinghua Shenzhen International Graduate School. The work studies how vision-language models understand traffic scenes, with emphasis on evaluation data construction, visual grounding, counterfactual perturbations, and bias-source diagnostics.
+<div class="detail-brief" markdown="1">
+Research internship work with [Prof. Xinlei Chen's Group](https://www.sigs.tsinghua.edu.cn/cxl/main.psp) at Tsinghua Shenzhen International Graduate School.
+</div>
 
-The project builds traffic-scene VQA cases from driving and aerial-view datasets, evaluates VLM responses under controlled visual changes, and compares attribution or saliency signals before and after counterfactual editing. The goal is to identify when model answers are supported by target objects and when they are driven by background, context shortcuts, or spurious visual evidence.
+<div class="detail-grid" markdown="1">
+<section markdown="1">
+
+## Problem
+
+<ul>
+<li>Traffic-scene VLM answers can be driven by shortcuts in background context rather than the queried vehicle or road element.</li>
+<li>Reliable evaluation requires controlled visual perturbations and evidence diagnostics, not only answer accuracy.</li>
+</ul>
+
+</section>
+<section markdown="1">
+
+## Method
+
+<ul>
+<li>Constructed traffic-scene VQA cases from driving and aerial-view datasets.</li>
+<li>Evaluated VLM responses under counterfactual visual edits and target-constrained occlusion.</li>
+<li>Compared saliency and attribution signals before and after controlled perturbations.</li>
+</ul>
+
+</section>
+<section markdown="1">
+
+## My Role
+
+<ul>
+<li>Research intern; responsible for data construction, evaluation scripts, perturbation experiments, and diagnostic analysis.</li>
+<li>Organized code and analysis outputs for reproducible experiment review.</li>
+</ul>
+
+</section>
+<section markdown="1">
+
+## Artifacts
+
+<ul>
+<li>Code repository for traffic VLM evaluation and bias analysis.</li>
+<li>Saliency and occlusion examples included below as representative diagnostic figures.</li>
+</ul>
+
+</section>
+</div>
 
 <figure class="research-figure">
   <img src="/images/research/traffic-vlm-attention.png" alt="Traffic VLM saliency comparison before and after counterfactual editing">
@@ -35,29 +79,74 @@ The project builds traffic-scene VQA cases from driving and aerial-view datasets
 
 <figure class="research-figure">
   <img src="/images/research/traffic-vlm-bias-case.png" alt="Traffic VLM target-constrained occlusion bias diagnostic case">
-  <figcaption>Target-constrained occlusion analysis for diagnosing whether a VLM answer relies on the queried vehicle or on surrounding contextual cues.</figcaption>
+  <figcaption>Target-constrained occlusion analysis for diagnosing whether a VLM answer relies on the queried vehicle or surrounding contextual cues.</figcaption>
 </figure>
 
-<p class="project-actions"><a class="btn" href="https://github.com/yys806/traffic-vlm-eval-bias-analysis">Code Repository</a></p>
+<p class="project-actions"><a class="btn btn--primary" href="https://github.com/yys806/traffic-vlm-eval-bias-analysis">Code Repository</a></p>
 
 </div>
 
+
 <div class="lang-zh" markdown="1">
 
-该项目是我在清华大学深圳国际研究生院[陈鑫磊老师课题组](https://www.sigs.tsinghua.edu.cn/cxl/main.psp)的科研实习工作。研究内容围绕交通场景视觉语言模型展开，重点关注评测数据构建、视觉定位、反事实扰动与偏差来源诊断。
+<div class="detail-brief" markdown="1">
+&#28165;&#21326;&#22823;&#23398;&#28145;&#22323;&#22269;&#38469;&#30740;&#31350;&#29983;&#38498;[&#38472;&#37995;&#30922;&#32769;&#24072;&#35838;&#39064;&#32452;](https://www.sigs.tsinghua.edu.cn/cxl/main.psp)&#31185;&#30740;&#23454;&#20064;&#24037;&#20316;&#12290;
+</div>
 
-项目从驾驶与空中视角交通数据中构建 VQA 评测样例，在受控视觉变化下评估 VLM 回答，并对比反事实编辑前后的归因与显著性信号。核心目标是判断模型回答是否真正由目标车辆支撑，还是受到背景、上下文捷径或其他伪相关视觉证据影响。
+<div class="detail-grid" markdown="1">
+<section markdown="1">
+
+## &#38382;&#39064;&#32972;&#26223;
+
+<ul>
+<li>&#20132;&#36890;&#22330;&#26223; VLM &#30340;&#22238;&#31572;&#21487;&#33021;&#21463;&#32972;&#26223;&#19978;&#19979;&#25991;&#25463;&#24452;&#24433;&#21709;&#65292;&#32780;&#19981;&#26159;&#30495;&#27491;&#20381;&#36182;&#34987;&#35810;&#38382;&#30340;&#36710;&#36742;&#25110;&#36947;&#36335;&#20803;&#32032;&#12290;</li>
+<li>&#21487;&#38752;&#35780;&#27979;&#19981;&#33021;&#21482;&#30475;&#31572;&#26696;&#23545;&#38169;&#65292;&#36824;&#38656;&#35201;&#21487;&#25511;&#35270;&#35273;&#25200;&#21160;&#21644;&#35777;&#25454;&#26469;&#28304;&#35786;&#26029;&#12290;</li>
+</ul>
+
+</section>
+<section markdown="1">
+
+## &#26041;&#27861;
+
+<ul>
+<li>&#20174;&#39550;&#39542;&#35270;&#35282;&#19982;&#31354;&#20013;&#35270;&#35282;&#20132;&#36890;&#25968;&#25454;&#20013;&#26500;&#24314; VQA &#35780;&#27979;&#26679;&#20363;&#12290;</li>
+<li>&#22312;&#21453;&#20107;&#23454;&#35270;&#35273;&#32534;&#36753;&#21644;&#30446;&#26631;&#32422;&#26463;&#36974;&#25377;&#19979;&#35780;&#20272; VLM &#22238;&#31572;&#12290;</li>
+<li>&#23545;&#27604;&#21487;&#25511;&#25200;&#21160;&#21069;&#21518;&#30340;&#26174;&#33879;&#24615;&#19982;&#24402;&#22240;&#20449;&#21495;&#12290;</li>
+</ul>
+
+</section>
+<section markdown="1">
+
+## &#25105;&#30340;&#24037;&#20316;
+
+<ul>
+<li>&#31185;&#30740;&#23454;&#20064;&#29983;&#65307;&#36127;&#36131;&#25968;&#25454;&#26500;&#24314;&#12289;&#35780;&#27979;&#33050;&#26412;&#12289;&#25200;&#21160;&#23454;&#39564;&#19982;&#35786;&#26029;&#20998;&#26512;&#12290;</li>
+<li>&#25972;&#29702;&#20195;&#30721;&#19982;&#20998;&#26512;&#36755;&#20986;&#65292;&#20415;&#20110;&#22797;&#29616;&#23454;&#39564;&#26816;&#26597;&#12290;</li>
+</ul>
+
+</section>
+<section markdown="1">
+
+## &#20135;&#20986;
+
+<ul>
+<li>&#20132;&#36890; VLM &#35780;&#27979;&#19982;&#20559;&#24046;&#20998;&#26512;&#20195;&#30721;&#20179;&#24211;&#12290;</li>
+<li>&#19979;&#26041;&#23637;&#31034;&#26174;&#33879;&#24615;&#19982;&#36974;&#25377;&#35786;&#26029;&#30340;&#20195;&#34920;&#24615;&#22270;&#20363;&#12290;</li>
+</ul>
+
+</section>
+</div>
 
 <figure class="research-figure">
-  <img src="/images/research/traffic-vlm-attention.png" alt="交通 VLM 反事实编辑前后的显著性对比">
-  <figcaption>交叉口样例中的梯度显著性对比，用于观察原图与反事实变体之间模型视觉证据的变化。</figcaption>
+  <img src="/images/research/traffic-vlm-attention.png" alt="&#20132;&#36890; VLM &#21453;&#20107;&#23454;&#32534;&#36753;&#21069;&#21518;&#30340;&#26174;&#33879;&#24615;&#23545;&#27604;">
+  <figcaption>&#20132;&#21449;&#21475;&#26679;&#20363;&#20013;&#30340;&#26799;&#24230;&#26174;&#33879;&#24615;&#23545;&#27604;&#65292;&#29992;&#20110;&#35266;&#23519;&#21407;&#22270;&#19982;&#21453;&#20107;&#23454;&#21464;&#20307;&#20043;&#38388;&#27169;&#22411;&#35270;&#35273;&#35777;&#25454;&#30340;&#21464;&#21270;&#12290;</figcaption>
 </figure>
 
 <figure class="research-figure">
-  <img src="/images/research/traffic-vlm-bias-case.png" alt="交通 VLM 目标约束遮挡偏差诊断样例">
-  <figcaption>目标约束遮挡分析，用于诊断 VLM 的回答是否依赖被询问车辆本身，还是依赖周围上下文线索。</figcaption>
+  <img src="/images/research/traffic-vlm-bias-case.png" alt="&#20132;&#36890; VLM &#30446;&#26631;&#32422;&#26463;&#36974;&#25377;&#20559;&#24046;&#35786;&#26029;&#26679;&#20363;">
+  <figcaption>&#30446;&#26631;&#32422;&#26463;&#36974;&#25377;&#20998;&#26512;&#65292;&#29992;&#20110;&#35786;&#26029; VLM &#30340;&#22238;&#31572;&#26159;&#21542;&#20381;&#36182;&#34987;&#35810;&#38382;&#36710;&#36742;&#26412;&#36523;&#65292;&#36824;&#26159;&#20381;&#36182;&#21608;&#22260;&#19978;&#19979;&#25991;&#32447;&#32034;&#12290;</figcaption>
 </figure>
 
-<p class="project-actions"><a class="btn" href="https://github.com/yys806/traffic-vlm-eval-bias-analysis">代码仓库</a></p>
+<p class="project-actions"><a class="btn btn--primary" href="https://github.com/yys806/traffic-vlm-eval-bias-analysis">&#20195;&#30721;&#20179;&#24211;</a></p>
 
 </div>
