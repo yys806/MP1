@@ -7,43 +7,43 @@
 
 <section class="page__share" data-share-url="{{ share_url | escape }}" data-share-title="{{ share_text | escape }}">
   <h4 class="page__share-title">
-    <span class="lang-en">Share</span><span class="lang-zh">分享</span>
+    <span class="lang-en">Share</span><span class="lang-zh">&#20998;&#20139;</span>
   </h4>
 
   <div class="share-actions">
+    <button class="share-btn share-btn--native" type="button" data-native-share hidden>
+      <i class="fas fa-share-alt" aria-hidden="true"></i><span data-lang-en="Share via app" data-lang-zh="&#29992; App &#20998;&#20139;">Share via app</span>
+    </button>
+
     <button class="share-btn share-btn--wechat" type="button" data-wechat-share aria-expanded="false">
-      <i class="fab fa-weixin" aria-hidden="true"></i><span>微信</span>
+      <i class="fab fa-weixin" aria-hidden="true"></i><span data-lang-en="WeChat" data-lang-zh="&#24494;&#20449;">WeChat</span>
     </button>
 
     <a class="share-btn share-btn--qq" href="https://connect.qq.com/widget/shareqq/index.html?url={{ encoded_url }}&title={{ encoded_title }}" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-qq" aria-hidden="true"></i><span>QQ</span>
-    </a>
-
-    <a class="share-btn share-btn--qzone" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ encoded_url }}&title={{ encoded_title }}" target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-star" aria-hidden="true"></i><span>QQ空间</span>
+      <i class="fab fa-qq" aria-hidden="true"></i><span data-lang-en="QQ" data-lang-zh="QQ">QQ</span>
     </a>
 
     <a class="share-btn share-btn--weibo" href="https://service.weibo.com/share/share.php?url={{ encoded_url }}&title={{ encoded_title }}" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-weibo" aria-hidden="true"></i><span>微博</span>
+      <i class="fab fa-weibo" aria-hidden="true"></i><span data-lang-en="Weibo" data-lang-zh="&#24494;&#21338;">Weibo</span>
     </a>
 
     <a class="share-btn share-btn--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ encoded_url }}" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span>
+      <i class="fab fa-facebook-f" aria-hidden="true"></i><span data-lang-en="Facebook" data-lang-zh="Facebook">Facebook</span>
     </a>
 
     <a class="share-btn share-btn--x" href="https://x.com/intent/post?url={{ encoded_url }}&text={{ encoded_title }}" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-x-twitter" aria-hidden="true"></i><span>X</span>
+      <i class="fab fa-x-twitter" aria-hidden="true"></i><span data-lang-en="X" data-lang-zh="X">X</span>
     </a>
 
     <button class="share-btn share-btn--copy" type="button" data-copy-share>
-      <i class="fas fa-link" aria-hidden="true"></i><span data-copy-label data-lang-en="Copy link" data-lang-zh="复制链接">Copy link</span>
+      <i class="fas fa-link" aria-hidden="true"></i><span data-copy-label data-lang-en="Copy link" data-lang-zh="&#22797;&#21046;&#38142;&#25509;">Copy link</span>
     </button>
   </div>
 
   <div class="wechat-share-panel" data-wechat-panel hidden>
     <div class="wechat-share-panel__inner">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=176x176&margin=8&data={{ encoded_url }}" alt="WeChat QR code for this page" loading="lazy">
-      <p><span class="lang-en">Scan with WeChat to share this page.</span><span class="lang-zh">用微信扫码分享当前页面</span></p>
+      <p><span class="lang-en">Scan with WeChat to share this page.</span><span class="lang-zh">&#29992;&#24494;&#20449;&#25195;&#30721;&#20998;&#20139;&#24403;&#21069;&#39029;&#38754;</span></p>
     </div>
   </div>
 </section>

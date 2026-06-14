@@ -23,10 +23,11 @@ html[data-lang="zh"] .lang-en { display: none !important; }
 .share-btn:hover { transform: translateY(-1px); border-color: rgba(70,80,90,.38); background: #f6f8fa; color: #1f2933; }
 .share-btn i { font-size: .95rem; }
 .share-btn--wechat i { color: #17b45b; }
-.share-btn--qq i, .share-btn--qzone i { color: #2f80ed; }
+.share-btn--qq i { color: #2f80ed; }
 .share-btn--weibo i { color: #df2029; }
 .share-btn--facebook i { color: #1877f2; }
 .share-btn--x i { color: #111; }
+.share-btn--native i { color: #475467; }
 .share-btn--copy i { color: #667085; }
 .wechat-share-panel { margin-top: .75rem; }
 .wechat-share-panel__inner { display: inline-flex; align-items: center; gap: .85rem; padding: .75rem .85rem; border: 1px solid rgba(128,128,128,.22); border-radius: 8px; background: rgba(128,128,128,.045); }
@@ -82,8 +83,17 @@ html[data-lang="zh"] .lang-en { display: none !important; }
       var url = share.getAttribute('data-share-url') || window.location.href;
       var wechatButton = share.querySelector('[data-wechat-share]');
       var wechatPanel = share.querySelector('[data-wechat-panel]');
+      var nativeButton = share.querySelector('[data-native-share]');
       var copyButton = share.querySelector('[data-copy-share]');
       var copyLabel = share.querySelector('[data-copy-label]');
+      var title = share.getAttribute('data-share-title') || document.title;
+
+      if (nativeButton && navigator.share) {
+        nativeButton.hidden = false;
+        nativeButton.addEventListener('click', function () {
+          navigator.share({ title: title, url: url }).catch(function () {});
+        });
+      }
 
       if (wechatButton && wechatPanel) {
         wechatButton.addEventListener('click', function () {
