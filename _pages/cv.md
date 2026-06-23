@@ -31,6 +31,6 @@ author_profile: true
 </div>
 
 
-<iframe class="cv-frame" src="/files/yaoshen-yu-cv.pdf" title="&#31161;&#23591;&#29653;&#31616;&#21382;"></iframe>
+<iframe class="cv-frame" src="/files/yaoshen-yu-cv.pdf" title="&#31161;&#23591;&#29637;&#31616;&#21382;"></iframe>
 
 </div>
