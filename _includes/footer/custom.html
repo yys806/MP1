@@ -45,6 +45,17 @@ html[data-lang="zh"] .lang-en { display: none !important; }
 .page__footer { position: static; }
 .page__footer footer { max-width: 820px; }
 .page__footer-follow { margin-bottom: .15rem; }
+/* 深色主题覆盖:上方硬编码的浅色文字在深色背景(#474747)下几乎不可见,以下为纯追加的对比度修正 */
+html[data-theme="dark"] .section-jump a { color: var(--global-text-color-light, #f3f3f3); }
+html[data-theme="dark"] .section-jump a:hover { background: rgba(255,255,255,.14); color: var(--global-text-color, #fff); }
+html[data-theme="dark"] .research-tags span { border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.07); color: var(--global-text-color-light, #f3f3f3); }
+html[data-theme="dark"] .research-figure figcaption { color: var(--global-fig-caption-color, #bdc1c4); }
+html[data-theme="dark"] .share-btn { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.3); color: var(--global-text-color-light, #f3f3f3); }
+html[data-theme="dark"] .share-btn:hover { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.45); color: #fff; }
+html[data-theme="dark"] .share-btn--x i,
+html[data-theme="dark"] .share-btn--native i,
+html[data-theme="dark"] .share-btn--copy i { color: var(--global-text-color-light, #f3f3f3); }
+html[data-theme="dark"] .wechat-share-panel p { color: var(--global-fig-caption-color, #bdc1c4); }
 </style>
 <script>
 (function () {
