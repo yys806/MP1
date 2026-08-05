@@ -26,7 +26,7 @@ I am Yaoshen Yu, an undergraduate student majoring in Artificial Intelligence at
 
 ## Interests
 
-Outside research and engineering, I enjoy [cubing](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93), running, [films](https://shen806.de5.net/), and building small tools that make daily life slightly more elegant.
+Outside research and engineering, I enjoy [cubing](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93), running, films, and building small tools that make daily life slightly more elegant.
 
 </div>
 
@@ -49,6 +49,6 @@ Outside research and engineering, I enjoy [cubing](https://yys806.github.io/2026
 
 ## &#20852;&#36259;
 
-&#31185;&#30740;&#19982;&#24037;&#31243;&#20043;&#22806;&#65292;&#25105;&#21916;&#27426;[&#29609;&#39764;&#26041;](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93)&#12289;&#36305;&#27493;&#12289;[&#30005;&#24433;](https://shen806.de5.net/)&#65292;&#20063;&#21916;&#27426;&#20570;&#19968;&#20123;&#33021;&#35753;&#26085;&#24120;&#29983;&#27963;&#26356;&#39034;&#25163;&#30340;&#23567;&#24037;&#20855;&#12290;
+&#31185;&#30740;&#19982;&#24037;&#31243;&#20043;&#22806;&#65292;&#25105;&#21916;&#27426;[&#29609;&#39764;&#26041;](https://yys806.github.io/2026/02/05/%E9%AD%94%E6%96%B9%E5%85%AC%E5%BC%8F%E6%80%BB%E7%BB%93)&#12289;&#36305;&#27493;&#12289;&#30005;&#24433;&#65292;&#20063;&#21916;&#27426;&#20570;&#19968;&#20123;&#33021;&#35753;&#26085;&#24120;&#29983;&#27963;&#26356;&#39034;&#25163;&#30340;&#23567;&#24037;&#20855;&#12290;
 
 </div>

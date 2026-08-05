@@ -20,7 +20,7 @@ A skill-based persona conversation website for chatting with different character
 
 This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
 
-<p class="project-actions"><a class="btn" href="https://github.com/yys806/shen.skill">Repository</a> <a class="btn" href="https://yly113.de5.net">Website</a></p>
+<p class="project-actions"><a class="btn" href="https://github.com/yys806/shen.skill">Repository</a></p>
 
 </div>
 
