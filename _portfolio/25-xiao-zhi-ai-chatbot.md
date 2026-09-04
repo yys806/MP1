@@ -9,8 +9,11 @@ project_group: other
 date: 2026-06-13
 header:
   teaser: projects/xiao-zhi-ai-chatbot.png
-  image: projects/xiao-zhi-ai-chatbot.png
 ---
+
+<figure class="project-cover" style="margin:0 0 1.5em;">
+  <img src="/images/projects/xiao-zhi-ai-chatbot.png" alt="Project preview" style="width:100%;border-radius:6px;box-shadow:0 2px 14px rgba(0,0,0,.14);">
+</figure>
 
 <div class="lang-en" markdown="1">
 

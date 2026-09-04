@@ -9,8 +9,11 @@ project_group: campus
 date: 2025-06-30
 header:
   teaser: projects/subway-sitp.png
-  image: projects/subway-sitp.png
 ---
+
+<figure class="project-cover" style="margin:0 0 1.5em;">
+  <img src="/images/projects/subway-sitp.png" alt="Project preview" style="width:100%;border-radius:6px;box-shadow:0 2px 14px rgba(0,0,0,.14);">
+</figure>
 
 <div class="lang-en" markdown="1">
 

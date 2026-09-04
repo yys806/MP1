@@ -9,8 +9,11 @@ project_group: other
 date: 2025-08-01
 header:
   teaser: projects/little-wang-robot-dog-v1-0.png
-  image: projects/little-wang-robot-dog-v1-0.png
 ---
+
+<figure class="project-cover" style="margin:0 0 1.5em;">
+  <img src="/images/projects/little-wang-robot-dog-v1-0.png" alt="Project preview" style="width:100%;border-radius:6px;box-shadow:0 2px 14px rgba(0,0,0,.14);">
+</figure>
 
 <div class="lang-en" markdown="1">
 

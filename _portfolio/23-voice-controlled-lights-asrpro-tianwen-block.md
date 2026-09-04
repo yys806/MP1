@@ -9,8 +9,11 @@ project_group: other
 date: 2025-07-01
 header:
   teaser: projects/voice-controlled-lights-asrpro-tianwen-block.png
-  image: projects/voice-controlled-lights-asrpro-tianwen-block.png
 ---
+
+<figure class="project-cover" style="margin:0 0 1.5em;">
+  <img src="/images/projects/voice-controlled-lights-asrpro-tianwen-block.png" alt="Project preview" style="width:100%;border-radius:6px;box-shadow:0 2px 14px rgba(0,0,0,.14);">
+</figure>
 
 <div class="lang-en" markdown="1">
 

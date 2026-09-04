@@ -9,9 +9,12 @@ project_group: web
 date: 2026-05-20
 header:
   teaser: projects/mirror-room.png
-  image: projects/mirror-room.png
 logo: projects/mirror-room.png
 ---
+
+<figure class="project-cover" style="margin:0 0 1.5em;">
+  <img src="/images/projects/mirror-room.png" alt="Project preview" style="width:100%;border-radius:6px;box-shadow:0 2px 14px rgba(0,0,0,.14);">
+</figure>
 
 <div class="lang-en" markdown="1">
 

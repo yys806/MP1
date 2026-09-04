@@ -9,9 +9,12 @@ project_group: web
 date: 2026-01-08
 header:
   teaser: projects/cyber-ai-divination.png
-  image: projects/cyber-ai-divination.png
 logo: projects/cyber-ai-divination.png
 ---
+
+<figure class="project-cover" style="margin:0 0 1.5em;">
+  <img src="/images/projects/cyber-ai-divination.png" alt="Project preview" style="width:100%;border-radius:6px;box-shadow:0 2px 14px rgba(0,0,0,.14);">
+</figure>
 
 <div class="lang-en" markdown="1">
 

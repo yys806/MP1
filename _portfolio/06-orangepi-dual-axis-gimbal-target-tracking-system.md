@@ -9,8 +9,11 @@ project_group: course
 date: 2026-06-04
 header:
   teaser: projects/orangepi-tracker.png
-  image: projects/orangepi-tracker.png
 ---
+
+<figure class="project-cover" style="margin:0 0 1.5em;">
+  <img src="/images/projects/orangepi-tracker.png" alt="Project preview" style="width:100%;border-radius:6px;box-shadow:0 2px 14px rgba(0,0,0,.14);">
+</figure>
 
 <div class="lang-en" markdown="1">
 
