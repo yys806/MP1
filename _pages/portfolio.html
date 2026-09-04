@@ -33,7 +33,7 @@ Selected campus, coursework, web, and hardware projects. Public GitHub repositor
   {% if posts.size > 0 %}
     <h2 id="{{ anchor }}"><span class="lang-en">{{ label_en }}</span><span class="lang-zh">{{ label_zh }}</span></h2>
     {% for post in posts %}
-      {% include archive-single.html %}
+      {% include archive-single.html show_teaser=true %}
     {% endfor %}
   {% endif %}
 {% endfor %}
