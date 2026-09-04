@@ -7,6 +7,8 @@ collection: portfolio
 permalink: /portfolio/shen-ppt/
 project_group: other
 date: 2026-06-18
+header:
+  teaser: projects/shen-ppt.png
 ---
 
 <div class="lang-en" markdown="1">
