@@ -9,6 +9,7 @@ project_group: web
 date: 2026-01-19
 header:
   teaser: projects/shen-tools.png
+  image: projects/shen-tools.png
 logo: projects/shen-tools.png
 ---
 

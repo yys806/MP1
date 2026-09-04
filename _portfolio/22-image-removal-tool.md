@@ -9,6 +9,7 @@ project_group: web
 date: 2025-12-01
 header:
   teaser: projects/image-removal-tool.png
+  image: projects/image-removal-tool.png
 logo: projects/image-removal-tool.png
 ---
 

@@ -9,6 +9,7 @@ project_group: web
 date: 2026-08-05
 header:
   teaser: projects/luxiaoji.png
+  image: projects/luxiaoji.png
 ---
 
 <div class="lang-en" markdown="1">
@@ -19,7 +20,7 @@ Luxiaoji (噜小记) is a WeChat mini program built exclusively for two people. 
 
 Backend and data are served by a self-hosted Fastify/PostgreSQL stack (no WeChat cloud as the primary store), with WeChat `wx.login` account binding and role-scoped permissions on shared content. The codebase keeps a full bidirectional contract test suite (158 front-end and 172 back-end checks) covering the shared data model, audit trails, and recycle behavior.
 
-</div>
+<p class="project-actions"><a class="btn" href="https://github.com/yys806/lulu">Repository</a></p></div>
 
 <div class="lang-zh" markdown="1">
 
@@ -28,5 +29,7 @@ Backend and data are served by a self-hosted Fastify/PostgreSQL stack (no WeChat
 噜小记是一款只供噜噜与噜妹两人使用的微信小程序。它从最初的点单与噜币工具，逐步扩展为双向情侣生活应用：双方各自管理提供给对方的商品、任务、订单与奖励，同时共享恋爱空间（日记、相册、留言、日历与爱心分）与游戏空间（双人对战与个人挑战）。
 
 登录采用微信 wx.login 账号绑定；数据由自建 Fastify/PostgreSQL 服务持久化，不使用微信云开发作为主数据源；共享内容保留作者身份、权限与审计信息。项目维护完整的前后端契约测试（前端 158 项、后端 172 项），覆盖共享数据模型、审计与回收站逻辑。
+
+<p class="project-actions"><a class="btn" href="https://github.com/yys806/lulu">代码仓库</a></p>
 
 </div>

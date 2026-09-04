@@ -9,6 +9,7 @@ project_group: other
 date: 2025-08-01
 header:
   teaser: projects/little-wang-robot-dog-v1-0.png
+  image: projects/little-wang-robot-dog-v1-0.png
 ---
 
 <div class="lang-en" markdown="1">

@@ -9,6 +9,7 @@ project_group: campus
 date: 2025-06-30
 header:
   teaser: projects/subway-sitp.png
+  image: projects/subway-sitp.png
 ---
 
 <div class="lang-en" markdown="1">

@@ -9,6 +9,7 @@ project_group: web
 date: 2026-05-20
 header:
   teaser: projects/mirror-room.png
+  image: projects/mirror-room.png
 logo: projects/mirror-room.png
 ---
 

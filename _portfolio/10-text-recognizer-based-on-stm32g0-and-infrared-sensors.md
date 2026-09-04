@@ -9,6 +9,7 @@ project_group: course
 date: 2025-06-01
 header:
   teaser: projects/text-recognizer-based-on-stm32g0-and-infrared-sensors.png
+  image: projects/text-recognizer-based-on-stm32g0-and-infrared-sensors.png
 ---
 
 <div class="lang-en" markdown="1">

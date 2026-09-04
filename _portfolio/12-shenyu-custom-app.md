@@ -9,6 +9,7 @@ project_group: web
 date: 2026-04-01
 header:
   teaser: projects/shenyu-custom-app.png
+  image: projects/shenyu-custom-app.png
 logo: projects/shenyu-custom-app.png
 ---
 

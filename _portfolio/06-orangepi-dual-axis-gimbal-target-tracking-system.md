@@ -9,6 +9,7 @@ project_group: course
 date: 2026-06-04
 header:
   teaser: projects/orangepi-tracker.png
+  image: projects/orangepi-tracker.png
 ---
 
 <div class="lang-en" markdown="1">

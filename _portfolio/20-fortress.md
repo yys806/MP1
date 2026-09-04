@@ -9,6 +9,7 @@ project_group: web
 date: 2026-03-27
 header:
   teaser: projects/fortress.png
+  image: projects/fortress.png
 logo: projects/fortress.png
 ---
 

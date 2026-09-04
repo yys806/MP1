@@ -9,6 +9,7 @@ project_group: web
 date: 2026-01-08
 header:
   teaser: projects/cyber-ai-divination.png
+  image: projects/cyber-ai-divination.png
 logo: projects/cyber-ai-divination.png
 ---
 

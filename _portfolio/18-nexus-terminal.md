@@ -9,6 +9,7 @@ project_group: web
 date: 2025-12-20
 header:
   teaser: projects/nexus-terminal.png
+  image: projects/nexus-terminal.png
 logo: projects/nexus-terminal.png
 ---
 

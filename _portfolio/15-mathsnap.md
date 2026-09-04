@@ -9,6 +9,7 @@ project_group: web
 date: 2026-02-04
 header:
   teaser: projects/mathsnap.png
+  image: projects/mathsnap.png
 logo: projects/mathsnap.png
 ---
 

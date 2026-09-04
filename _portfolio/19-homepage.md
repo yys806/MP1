@@ -9,6 +9,7 @@ project_group: web
 date: 2026-01-03
 header:
   teaser: projects/homepage.png
+  image: projects/homepage.png
 logo: projects/homepage.png
 ---
 
