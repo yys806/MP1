@@ -1,8 +1,8 @@
 ---
 title: "Luxiaoji: A Private WeChat Mini Program"
 title_zh: "噜小记微信小程序"
-excerpt: "A private WeChat mini program built for two, evolving from an ordering and token tool into a full bidirectional couple-life app with shared spaces, rewards, and mini-games."
-excerpt_zh: "&#21482;&#20379;&#20004;&#20154;&#20351;&#29992;&#30340;&#31169;&#20154;&#24494;&#20449;&#23567;&#31243;&#24207;&#65306;&#20174;&#28857;&#21333;&#19982;&#22068;&#24065;&#24037;&#20855;&#25193;&#23637;&#20026;&#21452;&#21521;&#24773;&#20387;&#29983;&#27963;&#24212;&#29992;&#65292;&#21547;&#20849;&#20139;&#31169;&#20154;&#31354;&#38388;&#12289;&#22870;&#21169;&#19982;&#28216;&#25103;&#12290;"
+excerpt: "A two-person WeChat mini-program: bilateral points & orders, shared love space (diary/album/calendar), and an online game room."
+excerpt_zh: "只供两人使用的微信小程序：双向点单与噜币体系、恋爱空间（日记/相册/日历/爱心分）、双人游戏空间，Fastify + PostgreSQL 自有后端。"
 collection: portfolio
 permalink: /portfolio/luxiaoji/
 project_group: web
@@ -19,9 +19,8 @@ header:
 
 **Module:** Web Projects
 
-Luxiaoji (噜小记) is a WeChat mini program built exclusively for two people. It started as a lightweight ordering and token ("Lu Coin") tool and grew into a bidirectional couple-life application: each side manages the products, tasks, orders, and rewards they offer to the other, while both share a love space with diary, album, messages, calendar, and heart-score records, plus a game space with two-player and challenge modes.
 
-Backend and data are served by a self-hosted Fastify/PostgreSQL stack (no WeChat cloud as the primary store), with WeChat `wx.login` account binding and role-scoped permissions on shared content. The codebase keeps a full bidirectional contract test suite (158 front-end and 172 back-end checks) covering the shared data model, audit trails, and recycle behavior.
+LuXiaoJi grew from an ordering & points tool into a complete two-person life app: two equal identities (LuLu & LuMei), each managing products, tasks, orders, and rewards for the other, with per-account currencies, ledgers, vouchers, and levels. The shared love space covers diary, album, events, messages, calendar, and heart-score with author identity and audit trails. The game room ships Gomoku, Draw & Guess, memory flip, and Tetris with online play and leaderboards. Powered by a self-hosted Fastify/PostgreSQL backend; 158 frontend + 171 backend automated tests.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/lulu">Repository</a></p></div>
 
@@ -29,9 +28,8 @@ Backend and data are served by a self-hosted Fastify/PostgreSQL stack (no WeChat
 
 **模块：** 网页项目
 
-噜小记是一款只供噜噜与噜妹两人使用的微信小程序。它从最初的点单与噜币工具，逐步扩展为双向情侣生活应用：双方各自管理提供给对方的商品、任务、订单与奖励，同时共享恋爱空间（日记、相册、留言、日历与爱心分）与游戏空间（双人对战与个人挑战）。
 
-登录采用微信 wx.login 账号绑定；数据由自建 Fastify/PostgreSQL 服务持久化，不使用微信云开发作为主数据源；共享内容保留作者身份、权限与审计信息。项目维护完整的前后端契约测试（前端 158 项、后端 172 项），覆盖共享数据模型、审计与回收站逻辑。
+噜小记从点单与噜币工具成长为完整的双向情侣生活应用：噜噜与噜妹两个对等身份，各自管理提供给对方的商品、任务、订单与奖励，币种、流水、券包和等级按账户隔离；恋爱空间由双方共享——日记、相册、小事、留言、恋爱日历、爱心分都保留作者身份与审计信息；游戏空间内置五子棋、你画我猜、翻牌记忆、噜噜方块等双人在线游戏与挑战排行榜。数据由自有 Fastify/PostgreSQL 服务持久化，前端 158 项、后端 171 项自动化测试保障。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/lulu">代码仓库</a></p>
 

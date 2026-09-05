@@ -1,7 +1,7 @@
 ---
 title: "Little Wang Robot Dog v1.0"
 title_zh: "小汪机器狗 v1.0"
-excerpt: "A robot-dog build for companionship and hardware practice."
+excerpt: "A robot-dog build: PCB, soldering, servo control, and assembly."
 excerpt_zh: "机器狗硬件复刻与改造项目，覆盖 PCB、焊接、舵机控制和结构装配。"
 collection: portfolio
 permalink: /portfolio/little-wang-robot-dog-v1-0/
@@ -19,9 +19,8 @@ header:
 
 **Module:** Other Projects
 
-A robot-dog build for companionship and hardware practice.
 
-This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
+Replicated and customized the TianJi XiaoWang robot dog: PCB design & soldering, 12-channel servo control, assembly, and gait debugging.
 
 <p class="project-actions"><a class="btn" href="https://oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban">Details</a></p>
 
@@ -31,9 +30,8 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 其他项目
 
-机器狗硬件复刻与改造项目，覆盖 PCB、焊接、舵机控制和结构装配。
 
-本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
+复刻并改造“天机小汪”机器狗：PCB 绘制与焊接、12 路舵机控制、结构装配与步态调试，一次点亮。
 
 <p class="project-actions"><a class="btn" href="https://oshwhub.com/hanbing666/tian-ji-xiao-wang-wang-xing-xing-da-lao-zhuan-shu-ban">详情</a></p>
 

@@ -1,8 +1,8 @@
 ---
 title: "Xiao Zhi AI Chatbot"
 title_zh: "小智 AI 聊天机器人"
-excerpt: "An MCP-based AI chatbot hardware/software build for natural conversation."
-excerpt_zh: "软硬件结合的 AI 对话项目，结合嵌入式硬件、语音交互和大模型能力。"
+excerpt: "An MCP-based AI voice companion on ESP32."
+excerpt_zh: "软硬件结合的 AI 对话项目：嵌入式硬件、语音交互与大模型能力。"
 collection: portfolio
 permalink: /portfolio/xiao-zhi-ai-chatbot/
 project_group: other
@@ -19,9 +19,8 @@ header:
 
 **Module:** Other Projects
 
-An MCP-based AI chatbot hardware/software build for natural conversation.
 
-This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
+An AI voice companion built on the XiaoZhi ESP32 stack: LLM access over MCP, continuous conversation, and persona settings.
 
 <p class="project-actions"><a class="btn" href="https://github.com/78/xiaozhi-esp32">Repository</a> <a class="btn" href="https://xiaozhi.me">Website</a></p>
 
@@ -31,9 +30,8 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 其他项目
 
-软硬件结合的 AI 对话项目，结合嵌入式硬件、语音交互和大模型能力。
 
-本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
+基于小智 ESP32 方案搭建的 AI 语音伙伴：MCP 协议接入大模型，支持连续对话与角色设定，软硬一体。
 
 <p class="project-actions"><a class="btn" href="https://github.com/78/xiaozhi-esp32">代码仓库</a> <a class="btn" href="https://xiaozhi.me">网站</a></p>
 

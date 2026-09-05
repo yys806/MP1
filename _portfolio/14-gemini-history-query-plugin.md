@@ -1,8 +1,8 @@
 ---
 title: "Gemini History Query Plugin"
 title_zh: "Gemini History Query Plugin"
-excerpt: "A plugin-style project for querying and organizing Gemini conversation history."
-excerpt_zh: "用于查询和整理 Gemini 对话历史的插件式项目，解决记录分散、难以回溯的问题。"
+excerpt: "A plugin to query and organize scattered Gemini chat history."
+excerpt_zh: "查询和整理 Gemini 对话历史的插件式项目，解决记录分散、难以回溯的问题。"
 collection: portfolio
 permalink: /portfolio/gemini-history-query-plugin/
 project_group: web
@@ -19,9 +19,8 @@ header:
 
 **Module:** Web Projects
 
-A plugin-style project for querying and organizing Gemini conversation history.
 
-This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
+Fixes scattered Gemini history: bulk import, keyword search, and per-project organization make past conversations usable again.
 
 <p class="project-actions"><a class="btn" href="https://pan.baidu.com/s/1Qe9SzUnthsM5x78hzk5QBQ?pwd=8qie">Details</a></p>
 
@@ -31,9 +30,8 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 网页项目
 
-用于查询和整理 Gemini 对话历史的插件式项目，解决记录分散、难以回溯的问题。
 
-本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
+解决 Gemini 对话记录分散难查的问题：批量导入、关键词检索与按项目整理，让历史对话重新可用。
 
 <p class="project-actions"><a class="btn" href="https://pan.baidu.com/s/1Qe9SzUnthsM5x78hzk5QBQ?pwd=8qie">详情</a></p>
 

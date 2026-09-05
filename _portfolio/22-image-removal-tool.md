@@ -1,8 +1,8 @@
 ---
 title: "Image Removal Tool"
 title_zh: "图片去黑边工具"
-excerpt: "A private TypeScript image-processing web tool for quickly removing black borders from images."
-excerpt_zh: "一个私有 TypeScript 图片处理网页工具，用于快速去除图片黑边。"
+excerpt: "A TypeScript tool to auto-crop black borders from images."
+excerpt_zh: "TypeScript 图片处理工具，专注快速清理图片黑边的分享前工作流。"
 collection: portfolio
 permalink: /portfolio/image-removal-tool/
 project_group: web
@@ -20,7 +20,8 @@ logo: projects/image-removal-tool.png
 
 **Module:** Web Projects
 
-This private image-processing tool is a TypeScript web app with component, service, and utility layers. It focuses on quick image cleanup workflows, especially removing black borders before sharing or archiving images.
+
+A client-side image cleaner: auto-detects and crops black borders, with batch processing and compressed export.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Picture-process">Repository</a> <a class="btn" href="https://shen-photo.de5.net">Website</a></p>
 
@@ -30,7 +31,8 @@ This private image-processing tool is a TypeScript web app with component, servi
 
 **模块：** 网页项目
 
-这是一个私有 TypeScript 图片处理网页工具，包含组件、服务和工具函数分层。项目面向快速图片清理流程，尤其适合在分享或归档图片前去除黑边。
+
+纯前端图片清理工具：自动检测并裁除黑边，支持批量处理与压缩导出，分享截图前一步到位。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Picture-process">代码仓库</a> <a class="btn" href="https://shen-photo.de5.net">网站</a></p>
 

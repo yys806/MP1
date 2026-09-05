@@ -1,8 +1,8 @@
 ---
 title: "OrangePi Dual-Axis Gimbal Target Tracking System"
 title_zh: "OrangePi 双自由度云台目标跟踪系统"
-excerpt: "A course project that combines OrangePi, vision detection, and servo control for target tracking on a two-axis gimbal."
-excerpt_zh: "基于 OrangePi 的课程项目，结合视觉检测与舵机控制，实现双自由度云台目标跟踪。"
+excerpt: "Dual-axis gimbal target tracking with OrangePi vision + servos."
+excerpt_zh: "结合 OrangePi、视觉检测与舵机控制，实现双自由度云台目标跟踪系统。"
 collection: portfolio
 permalink: /portfolio/orangepi-dual-axis-gimbal-target-tracking-system/
 project_group: course
@@ -19,9 +19,8 @@ header:
 
 **Module:** Course Projects
 
-A course project that combines OrangePi, vision detection, and servo control for target tracking on a two-axis gimbal.
 
-This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
+Vision detection on OrangePi drives a 2-DOF servo gimbal for real-time target tracking: detection, solve, PID control, and UART comms.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/zb_tracker_project">Repository</a></p>
 
@@ -31,9 +30,8 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 课程项目
 
-基于 OrangePi 的课程项目，结合视觉检测与舵机控制，实现双自由度云台目标跟踪。
 
-本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
+OrangePi 上跑视觉检测，舵机驱动双自由度云台实时追踪目标：覆盖检测、解算、PID 控制与串口通信全链路。
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/zb_tracker_project">代码仓库</a></p>
 

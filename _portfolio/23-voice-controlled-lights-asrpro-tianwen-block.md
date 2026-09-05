@@ -1,7 +1,7 @@
 ---
 title: "Voice-Controlled Lights (ASRpro + TianWen Block)"
 title_zh: "语音控制灯（ASRpro + 天问 Block）"
-excerpt: "A voice-control hardware build using ASRpro and TianWen Block."
+excerpt: "Voice-controlled lights with ASRpro + TianWen Block."
 excerpt_zh: "使用 ASRpro 开发板和天问 Block 实现语音开关灯的硬件实践。"
 collection: portfolio
 permalink: /portfolio/voice-controlled-lights-asrpro-tianwen-block/
@@ -19,9 +19,8 @@ header:
 
 **Module:** Other Projects
 
-A voice-control hardware build using ASRpro and TianWen Block.
 
-This page records the product intention, implementation focus, and public entry points for the project. The visual preview above is either a live-site screenshot or a generated project cover for hardware/coursework items.
+Offline voice recognition on ASRpro with TianWen Block visual programming — a complete voice-controlled lighting demo.
 
 <p class="project-actions"><a class="btn" href="https://www.bilibili.com/video/BV1ADmbYEEGp/">Details</a></p>
 
@@ -31,9 +30,8 @@ This page records the product intention, implementation focus, and public entry 
 
 **模块：** 其他项目
 
-使用 ASRpro 开发板和天问 Block 实现语音开关灯的硬件实践。
 
-本页记录该项目的产品意图、实现重点和公开入口。上方预览图优先使用真实站点截图；课程项目和硬件项目使用统一风格的项目封面。
+ASRpro 离线语音识别 + 天问 Block 图形化编程，实现语音开关灯的完整小系统，B 站有演示视频。
 
 <p class="project-actions"><a class="btn" href="https://www.bilibili.com/video/BV1ADmbYEEGp/">详情</a></p>
 

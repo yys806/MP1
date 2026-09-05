@@ -1,8 +1,8 @@
 ---
 title: "Shen-PPT"
 title_zh: "Shen-PPT"
-excerpt: "A Codex skill for generating editable academic, defense, and engineering-report PowerPoint decks through a fixed production pipeline."
-excerpt_zh: "&#19968;&#20010;&#29992;&#20110;&#29983;&#25104;&#21487;&#32534;&#36753;&#23398;&#26415;&#27719;&#25253;&#12289;&#35838;&#31243;&#31572;&#36777;&#12289;&#35770;&#25991;&#31572;&#36777;&#21644;&#39033;&#30446;&#27719;&#25253; PowerPoint &#30340; Codex skill&#65292;&#21253;&#21547;&#22266;&#23450;&#29983;&#20135;&#27969;&#31243;&#12289;&#27169;&#26495;&#24211;&#12289;&#33050;&#26412;&#24341;&#25806;&#21644;&#39564;&#35777;&#27969;&#31243;&#12290;"
+excerpt: "A Codex skill producing truly editable academic PPT decks via a fixed pipeline."
+excerpt_zh: "一个 Codex skill：读取报告、代码、截图与实验结果，生成真正可编辑的 .pptx——含大纲审批、模板锁定、样张审批、QA 修复与答辩问答文档的完整生产管线。"
 collection: portfolio
 permalink: /portfolio/shen-ppt/
 project_group: other
@@ -19,9 +19,8 @@ header:
 
 **Module:** Other Projects
 
-Shen-PPT is a Codex skill for generating editable PowerPoint decks for Chinese academic presentations, course defenses, thesis defenses, and engineering project reports. It reads user-provided reports, code folders, screenshots, charts, experiment results, and reference materials, then produces a real `.pptx` instead of flattened slide images.
 
-The repository includes a fixed production pipeline with outline approval, template/style locking, four-page sample approval, full-deck production, QA repair, speaker scripts, and likely Q&A documents. It also includes a deterministic slide-card engine, PowerPoint COM rendering fallback, validation scripts, and an editable template/reference library.
+A fixed production pipeline turning raw materials into editable decks: reads reports, code, screenshots, and experiment results; runs outline approval, template locking, 4-page sample approval, full-deck generation, and QA repair — output is a real editable .pptx with speaker scripts and defense Q&A docs.
 
 <p class="project-actions"><a class="btn" href="https://github.com/yys806/Shen-PPT">Repository</a></p>
 
