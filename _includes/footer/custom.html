@@ -15,6 +15,21 @@ html[data-lang="zh"] .lang-en { display: none !important; }
 .research-tags span { display: inline-flex; align-items: center; padding: .2rem .48rem; border: 1px solid rgba(64,83,107,.18); border-radius: 999px; background: rgba(64,83,107,.045); color: #536273; font-size: .72rem; font-weight: 600; line-height: 1.2; }
 .project-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
 .project-actions a { margin-right: 0; }
+/* ===== 2026-09-09 项目列表布局重构：介绍在卡牌上方+贴紧，项目间单虚线，模块间双粗虚线 ===== */
+/* 用 flex 列 + order 重排：title(1)→excerpt(2)→meta(3)→teaser(4)，其他 p 兜底 order 3 */
+.list__item { display: flex; flex-direction: column; margin: 0; padding: 1.1rem 0 1.5rem; }
+.archive__item { display: flex; flex-direction: column; }
+.archive__item .archive__item-title { order: 1; margin-top: 0 !important; }
+.archive__item .archive__item-excerpt { order: 2; margin: .2rem 0 .45rem; }
+.archive__item .page__date, .archive__item .page__meta, .archive__item .research-tags, .archive__item > p { order: 3; margin: 0 0 .4rem; }
+.archive__item .archive__item-teaser { order: 4; margin-bottom: 0; }
+/* 项目条目之间单虚线分隔 */
+.list__item + .list__item { border-top: 2px dashed rgba(128,128,128,.35); }
+/* 大模块 h2 前双粗虚线（4px double） */
+.archive h2[id$="-projects"] { border-top: 4px double rgba(90,100,110,.55); margin-top: 1.6rem; padding-top: 1.4rem; }
+.archive h2[id$="-projects"] + .list__item { border-top: none; padding-top: .6rem; }
+.archive__item-teaser { max-width: 420px; border: 1px solid rgba(128,128,128,.22); border-radius: 8px; overflow: hidden; background: rgba(128,128,128,.06); margin-bottom: 0; }
+/* ===== 重构结束 ===== */
 .archive__item-excerpt p { margin-bottom: .35rem; }
 .archive__item-teaser { margin-bottom: .75rem; max-width: 420px; border: 1px solid rgba(128,128,128,.22); border-radius: 8px; overflow: hidden; background: rgba(128,128,128,.06); }
 .archive__item-teaser img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
