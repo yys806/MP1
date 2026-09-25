@@ -15,7 +15,7 @@ I am Yaoshen Yu, an undergraduate student majoring in Artificial Intelligence at
 
 ## Education
 
-- **Tongji University**, B.Eng. in Artificial Intelligence, 2023 - Present
+- **Tongji University**, B.Eng. in Artificial Intelligence, 2023 - Present. GPA 4.80/5.00 &#183; major rank 1/47 (weighted score 92.96, top 2.13%). CET-4 631 &#183; CET-6 582.
 
 ## Research and Experience
 
@@ -39,7 +39,7 @@ Outside research and engineering, I enjoy [cubing](https://yys806.github.io/2026
 
 ## &#25945;&#32946;&#32463;&#21382;
 
-- **&#21516;&#27982;&#22823;&#23398;**&#65292;&#20154;&#24037;&#26234;&#33021;&#19987;&#19994;&#24037;&#23398;&#23398;&#22763;&#65292;2023 - &#33267;&#20170;
+- **&#21516;&#27982;&#22823;&#23398;**&#65292;&#20154;&#24037;&#26234;&#33021;&#19987;&#19994;&#24037;&#23398;&#23398;&#22763;&#65292;2023 - &#33267;&#20170;&#12290;GPA 4.80/5.00 &#65372; &#19987;&#19994;&#25490;&#21517; 1/47&#65288;&#21152;&#26435; 92.96&#65292;&#21069; 2.13%&#65289;&#12290;CET-4 631 &#65372; CET-6 582&#12290;
 
 ## &#31185;&#30740;&#19982;&#32463;&#21382;
 

@@ -20,6 +20,7 @@ author_profile: true
 - **2024.11.1** - **2024 National College English Translation Competition**. Third Prize. [View](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2023-2024/%E5%A4%A7%E8%8B%B1%E7%BF%BB%E8%AF%91.jpg)
 - **2024.9.5** - **2024 National College Student Mathematical Modeling Competition**. Shanghai Third Prize. [View](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/2024%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B.jpg)
 - **2023.12.5** - **Tongji University Freshman Structure Competition**. Third Prize. [View](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2023-2024/%E6%96%B0%E7%94%9F%E7%BB%93%E6%9E%84%E8%B5%9B.jpg)
+- **2026.07** - **Certificates & Proof**: [Rank certificate (1/47, top 2.13%)](https://pub-d6c0e9b0fafc46b5982d5d77ab5e4471.r2.dev/%E8%AF%81%E6%98%8E/%E6%8E%92%E5%90%8D%E8%AF%81%E6%98%8E_2026-07-12.pdf) ｜ [CET-6 · 582](https://pub-d6c0e9b0fafc46b5982d5d77ab5e4471.r2.dev/%E8%AF%81%E6%98%8E/%E8%8B%B1%E8%AF%AD%E5%85%AD%E7%BA%A7_CET6-582.pdf) ｜ [CET-4 · 631](https://pub-d6c0e9b0fafc46b5982d5d77ab5e4471.r2.dev/%E8%AF%81%E6%98%8E/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7_CET4-631.pdf) ｜ [Enrollment certificate](https://pub-d6c0e9b0fafc46b5982d5d77ab5e4471.r2.dev/%E8%AF%81%E6%98%8E/%E5%9C%A8%E8%AF%BB%E8%AF%81%E6%98%8E_2026-07-01.pdf)
 
 </div>
 
@@ -38,5 +39,6 @@ author_profile: true
 - **2024.11.1** - **全国大学生英语翻译竞赛**。三等奖。 [查看](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2023-2024/%E5%A4%A7%E8%8B%B1%E7%BF%BB%E8%AF%91.jpg)
 - **2024.9.5** - **2024 年全国大学生数学建模竞赛**。上海市三等奖。 [查看](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2024-2025/2024%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B.jpg)
 - **2023.12.5** - **同济大学新生结构赛**。三等奖。 [查看](https://pub-fae7c18af59f40679cbe76ee23a170c8.r2.dev/%E8%8E%B7%E5%A5%96/2023-2024/%E6%96%B0%E7%94%9F%E7%BB%93%E6%9E%84%E8%B5%9B.jpg)
+- **2026.07** - **证明材料**：[成绩排名证明（1/47 · 前 2.13%）](https://pub-d6c0e9b0fafc46b5982d5d77ab5e4471.r2.dev/%E8%AF%81%E6%98%8E/%E6%8E%92%E5%90%8D%E8%AF%81%E6%98%8E_2026-07-12.pdf) ｜ [英语六级 CET-6 582](https://pub-d6c0e9b0fafc46b5982d5d77ab5e4471.r2.dev/%E8%AF%81%E6%98%8E/%E8%8B%B1%E8%AF%AD%E5%85%AD%E7%BA%A7_CET6-582.pdf) ｜ [英语四级 CET-4 631](https://pub-d6c0e9b0fafc46b5982d5d77ab5e4471.r2.dev/%E8%AF%81%E6%98%8E/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7_CET4-631.pdf) ｜ [在读证明](https://pub-d6c0e9b0fafc46b5982d5d77ab5e4471.r2.dev/%E8%AF%81%E6%98%8E/%E5%9C%A8%E8%AF%BB%E8%AF%81%E6%98%8E_2026-07-01.pdf)
 
 </div>
